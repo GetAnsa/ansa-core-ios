@@ -489,7 +489,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ClientSecretProvider",
-                "printedName": "AnsaCore.ClientSecretProvider",
+                "printedName": "any AnsaCore.ClientSecretProvider",
                 "usr": "s:8AnsaCore20ClientSecretProviderP"
               },
               {
@@ -520,7 +520,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "AnsaClient",
-                "printedName": "AnsaCore.AnsaClient",
+                "printedName": "any AnsaCore.AnsaClient",
                 "usr": "s:8AnsaCore0A6ClientP"
               }
             ],
@@ -545,7 +545,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "AnsaClient",
-                    "printedName": "AnsaCore.AnsaClient",
+                    "printedName": "any AnsaCore.AnsaClient",
                     "usr": "s:8AnsaCore0A6ClientP"
                   }
                 ],
@@ -573,7 +573,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "AnsaClient",
-                    "printedName": "AnsaCore.AnsaClient",
+                    "printedName": "any AnsaCore.AnsaClient",
                     "usr": "s:8AnsaCore0A6ClientP"
                   }
                 ],
@@ -1103,7 +1103,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CustomerManager",
-                "printedName": "AnsaCore.CustomerManager",
+                "printedName": "any AnsaCore.CustomerManager",
                 "usr": "s:8AnsaCore15CustomerManagerP"
               }
             ],
@@ -1121,7 +1121,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CustomerManager",
-                    "printedName": "AnsaCore.CustomerManager",
+                    "printedName": "any AnsaCore.CustomerManager",
                     "usr": "s:8AnsaCore15CustomerManagerP"
                   }
                 ],
@@ -1145,7 +1145,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MerchantManager",
-                "printedName": "AnsaCore.MerchantManager",
+                "printedName": "any AnsaCore.MerchantManager",
                 "usr": "s:8AnsaCore15MerchantManagerP"
               }
             ],
@@ -1163,7 +1163,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MerchantManager",
-                    "printedName": "AnsaCore.MerchantManager",
+                    "printedName": "any AnsaCore.MerchantManager",
                     "usr": "s:8AnsaCore15MerchantManagerP"
                   }
                 ],
@@ -2193,37 +2193,9 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 465,
-      "length": 50,
-      "value": "\"AnsaSdk.inititialize should be called only once.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
-      "kind": "BooleanLiteral",
-      "offset": 811,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
-      "kind": "StringLiteral",
       "offset": 930,
       "length": 72,
       "value": "\"You must call AnsaSdk.initialize before accessing the shared instance.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/API\/ApiResultHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 944,
-      "length": 23,
-      "value": "\"Something went wrong!\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/DI\/DependenciesManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1908,
-      "length": 17,
-      "value": "\"ansa_pk_sandbox\""
     }
   ]
 }

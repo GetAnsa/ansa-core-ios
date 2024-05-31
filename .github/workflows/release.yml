@@ -1,0 +1,31 @@
+name: Create release on version change
+
+on:
+  push:
+    paths:
+      - 'RELEASE'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Checkout to grab version
+        # Can also specify if this should be a draft or a pre-release as well
+        run: echo "RELEASE_VERSION=$(grep -rH "VERSION" RELEASE | cut -d = -f2)" >> $GITHUB_ENV
+      
+      - name: Create Release
+        id: release-snapshot
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.RELEASE_VERSION }}
+          release_name: "v${{ env.RELEASE_VERSION }}"
+          draft: false
+          prerelease: false
+        

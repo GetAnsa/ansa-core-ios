@@ -1,0 +1,110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AnsaCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AnsaCore
+@_exported import AnsaShared
+import Factory
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class Logging {
+  public init(level: AnsaCore.LogLevel = .none, log: @escaping (Swift.String) -> Swift.Void = { message in print(message) })
+  @objc deinit
+}
+public enum LogLevel {
+  case none
+  case debug
+  case info
+  case warning
+  case error
+  case verbose
+  public static func == (a: AnsaCore.LogLevel, b: AnsaCore.LogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class AnsaSdk {
+  public static func inititialize(publishableKey: Swift.String, clientSecretProvider: any AnsaCore.ClientSecretProvider, logging: AnsaCore.Logging = Logging())
+  public static var shared: any AnsaCore.AnsaClient
+  @objc deinit
+}
+public protocol ClientSecretProvider {
+  #if compiler(>=5.3) && $AsyncAwait
+  func provideClientSecret(ansaCustomerId: Swift.String) async -> Swift.String?
+  #endif
+}
+public protocol MerchantManager {
+  #if compiler(>=5.3) && $AsyncAwait
+  func get(merchantId: Swift.String) async -> Swift.Result<AnsaShared.Merchant, AnsaCore.AnsaApiError>
+  #endif
+}
+public enum AddPaymentMethodType {
+  case creditCard(token: Swift.String)
+  case stripe(paymentMethodId: Swift.String)
+  case square(cardNonce: Swift.String)
+  case applePay(paymentData: Swift.String)
+  case googlePay(paymentData: Swift.String)
+}
+public protocol AnsaClient {
+  var customer: any AnsaCore.CustomerManager { get }
+  var merchant: any AnsaCore.MerchantManager { get }
+}
+public protocol CustomerManager {
+  #if compiler(>=5.3) && $AsyncAwait
+  func get(customerId: Swift.String) async -> Swift.Result<AnsaShared.Customer, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getPaymentMethods(customerId: Swift.String) async -> Swift.Result<AnsaShared.PaymentMethodCollection, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func deletePaymentMethod(customerId: Swift.String, paymentMethodId: Swift.String, idempotencyKey: Swift.String?) async -> Swift.Result<Swift.Void, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getAutoReloadConfiguration(customerId: Swift.String) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func addBalance(request: AnsaShared.AddBalanceRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func useBalance(request: AnsaShared.UseBalanceRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getReloadConfig(customerId: Swift.String) async -> Swift.Result<AnsaShared.UserReloadConfiguration, AnsaCore.AnsaApiError>
+  #endif
+}
+extension AnsaCore.CustomerManager {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType) async -> Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deletePaymentMethod(customerId: Swift.String, paymentMethodId: Swift.String) async -> Swift.Result<Swift.Void, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func addBalance(request: AnsaShared.AddBalanceRequest) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func useBalance(request: AnsaShared.UseBalanceRequest) async -> Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
+  #endif
+}
+public struct AnsaApiError : Swift.Error, Foundation.LocalizedError {
+  public let humanReadableMessage: Swift.String
+  public let errorMessage: Swift.String
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension AnsaCore.LogLevel : Swift.Equatable {}
+extension AnsaCore.LogLevel : Swift.Hashable {}

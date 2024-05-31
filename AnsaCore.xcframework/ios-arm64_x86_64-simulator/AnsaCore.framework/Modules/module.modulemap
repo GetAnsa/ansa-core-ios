@@ -1,0 +1,11 @@
+framework module AnsaCore {
+  umbrella header "AnsaCore.h"
+  export *
+
+  module * { export * }
+}
+
+module AnsaCore.Swift {
+  header "AnsaCore-Swift.h"
+  requires objc
+}

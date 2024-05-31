@@ -1,0 +1,2229 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logging",
+        "printedName": "Logging",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(level:log:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logging",
+                "printedName": "AnsaCore.Logging",
+                "usr": "s:8AnsaCore7LoggingC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AnsaCore.LogLevel",
+                "hasDefaultArg": true,
+                "usr": "s:8AnsaCore8LogLevelO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySSctcfc",
+            "mangledName": "$s8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySSctcfc",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8AnsaCore7LoggingC",
+        "mangledName": "$s8AnsaCore7LoggingC",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogLevel",
+        "printedName": "LogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO4noneyA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO4noneyA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO5debugyA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO5debugyA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO4infoyA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO4infoyA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO7warningyA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO7warningyA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO5erroryA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO5erroryA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.LogLevel.Type) -> AnsaCore.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AnsaCore.LogLevel",
+                    "usr": "s:8AnsaCore8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore8LogLevelO7verboseyA2CmF",
+            "mangledName": "$s8AnsaCore8LogLevelO7verboseyA2CmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AnsaCore.LogLevel",
+                "usr": "s:8AnsaCore8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AnsaCore.LogLevel",
+                "usr": "s:8AnsaCore8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore8LogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8AnsaCore8LogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "AnsaCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore8LogLevelO9hashValueSivp",
+            "mangledName": "$s8AnsaCore8LogLevelO9hashValueSivp",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore8LogLevelO9hashValueSivg",
+                "mangledName": "$s8AnsaCore8LogLevelO9hashValueSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore8LogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8AnsaCore8LogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8AnsaCore8LogLevelO",
+        "mangledName": "$s8AnsaCore8LogLevelO",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsaSdk",
+        "printedName": "AnsaSdk",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "inititialize",
+            "printedName": "inititialize(publishableKey:clientSecretProvider:logging:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClientSecretProvider",
+                "printedName": "AnsaCore.ClientSecretProvider",
+                "usr": "s:8AnsaCore20ClientSecretProviderP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Logging",
+                "printedName": "AnsaCore.Logging",
+                "hasDefaultArg": true,
+                "usr": "s:8AnsaCore7LoggingC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore0A3SdkC12inititialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
+            "mangledName": "$s8AnsaCore0A3SdkC12inititialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
+            "moduleName": "AnsaCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaClient",
+                "printedName": "AnsaCore.AnsaClient",
+                "usr": "s:8AnsaCore0A6ClientP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A3SdkC6sharedAA0A6Client_pvpZ",
+            "mangledName": "$s8AnsaCore0A3SdkC6sharedAA0A6Client_pvpZ",
+            "moduleName": "AnsaCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaClient",
+                    "printedName": "AnsaCore.AnsaClient",
+                    "usr": "s:8AnsaCore0A6ClientP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A3SdkC6sharedAA0A6Client_pvgZ",
+                "mangledName": "$s8AnsaCore0A3SdkC6sharedAA0A6Client_pvgZ",
+                "moduleName": "AnsaCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaClient",
+                    "printedName": "AnsaCore.AnsaClient",
+                    "usr": "s:8AnsaCore0A6ClientP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A3SdkC6sharedAA0A6Client_pvsZ",
+                "mangledName": "$s8AnsaCore0A3SdkC6sharedAA0A6Client_pvsZ",
+                "moduleName": "AnsaCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A3SdkC6sharedAA0A6Client_pvMZ",
+                "mangledName": "$s8AnsaCore0A3SdkC6sharedAA0A6Client_pvMZ",
+                "moduleName": "AnsaCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8AnsaCore0A3SdkC",
+        "mangledName": "$s8AnsaCore0A3SdkC",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClientSecretProvider",
+        "printedName": "ClientSecretProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "provideClientSecret",
+            "printedName": "provideClientSecret(ansaCustomerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore20ClientSecretProviderP07providecD014ansaCustomerIdSSSgSS_tYaF",
+            "mangledName": "$s8AnsaCore20ClientSecretProviderP07providecD014ansaCustomerIdSSSgSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.ClientSecretProvider>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.ClientSecretProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8AnsaCore20ClientSecretProviderP",
+        "mangledName": "$s8AnsaCore20ClientSecretProviderP",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MerchantManager",
+        "printedName": "MerchantManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(merchantId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.Merchant, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Merchant",
+                    "printedName": "AnsaShared.Merchant",
+                    "usr": "c:objc(cs)AnsaSharedMerchant"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15MerchantManagerP3get10merchantIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15MerchantManagerP3get10merchantIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.MerchantManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.MerchantManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8AnsaCore15MerchantManagerP",
+        "mangledName": "$s8AnsaCore15MerchantManagerP",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AddPaymentMethodType",
+        "printedName": "AddPaymentMethodType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "creditCard",
+            "printedName": "creditCard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(token: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO10creditCardyACSS_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO10creditCardyACSS_tcACmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "stripe",
+            "printedName": "stripe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(paymentMethodId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO6stripeyACSS_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO6stripeyACSS_tcACmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "square",
+            "printedName": "square",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(cardNonce: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO6squareyACSS_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO6squareyACSS_tcACmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "applePay",
+            "printedName": "applePay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(paymentData: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO8applePayyACSS_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO8applePayyACSS_tcACmF",
+            "moduleName": "AnsaCore"
+          },
+          {
+            "kind": "Var",
+            "name": "googlePay",
+            "printedName": "googlePay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(paymentData: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AddPaymentMethodType",
+                        "printedName": "AnsaCore.AddPaymentMethodType",
+                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO9googlePayyACSS_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO9googlePayyACSS_tcACmF",
+            "moduleName": "AnsaCore"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8AnsaCore20AddPaymentMethodTypeO",
+        "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Factory",
+        "printedName": "Factory",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Factory",
+        "printedName": "Factory",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsaClient",
+        "printedName": "AnsaClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "customer",
+            "printedName": "customer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomerManager",
+                "printedName": "AnsaCore.CustomerManager",
+                "usr": "s:8AnsaCore15CustomerManagerP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A6ClientP8customerAA15CustomerManager_pvp",
+            "mangledName": "$s8AnsaCore0A6ClientP8customerAA15CustomerManager_pvp",
+            "moduleName": "AnsaCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomerManager",
+                    "printedName": "AnsaCore.CustomerManager",
+                    "usr": "s:8AnsaCore15CustomerManagerP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A6ClientP8customerAA15CustomerManager_pvg",
+                "mangledName": "$s8AnsaCore0A6ClientP8customerAA15CustomerManager_pvg",
+                "moduleName": "AnsaCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.AnsaClient>",
+                "sugared_genericSig": "<Self where Self : AnsaCore.AnsaClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchant",
+            "printedName": "merchant",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MerchantManager",
+                "printedName": "AnsaCore.MerchantManager",
+                "usr": "s:8AnsaCore15MerchantManagerP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A6ClientP8merchantAA15MerchantManager_pvp",
+            "mangledName": "$s8AnsaCore0A6ClientP8merchantAA15MerchantManager_pvp",
+            "moduleName": "AnsaCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantManager",
+                    "printedName": "AnsaCore.MerchantManager",
+                    "usr": "s:8AnsaCore15MerchantManagerP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A6ClientP8merchantAA15MerchantManager_pvg",
+                "mangledName": "$s8AnsaCore0A6ClientP8merchantAA15MerchantManager_pvg",
+                "moduleName": "AnsaCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.AnsaClient>",
+                "sugared_genericSig": "<Self where Self : AnsaCore.AnsaClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8AnsaCore0A6ClientP",
+        "mangledName": "$s8AnsaCore0A6ClientP",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Factory",
+        "printedName": "Factory",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomerManager",
+        "printedName": "CustomerManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.Customer, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Customer",
+                    "printedName": "AnsaShared.Customer",
+                    "usr": "c:objc(cs)AnsaSharedCustomer"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP3get10customerIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP3get10customerIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPaymentMethods",
+            "printedName": "getPaymentMethods(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.PaymentMethodCollection, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethodCollection",
+                    "printedName": "AnsaShared.PaymentMethodCollection",
+                    "usr": "c:objc(cs)AnsaSharedPaymentMethodCollection"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP17getPaymentMethods10customerIds6ResultOySo0a6SharedF16MethodCollectionCAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP17getPaymentMethods10customerIds6ResultOySo0a6SharedF16MethodCollectionCAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addPaymentMethod",
+            "printedName": "addPaymentMethod(customerId:paymentMethodType:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethod",
+                    "printedName": "AnsaShared.PaymentMethod",
+                    "usr": "c:objc(cs)AnsaSharedPaymentMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AddPaymentMethodType",
+                "printedName": "AnsaCore.AddPaymentMethodType",
+                "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP16addPaymentMethod10customerId07paymentG4Type14idempotencyKeys6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_AA03AddfgK0OSSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP16addPaymentMethod10customerId07paymentG4Type14idempotencyKeys6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_AA03AddfgK0OSSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deletePaymentMethod",
+            "printedName": "deletePaymentMethod(customerId:paymentMethodId:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP19deletePaymentMethod10customerId07paymentgI014idempotencyKeys6ResultOyytAA0A8ApiErrorVGSS_S2SSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP19deletePaymentMethod10customerId07paymentgI014idempotencyKeys6ResultOyytAA0A8ApiErrorVGSS_S2SSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAutoReloadConfiguration",
+            "printedName": "getAutoReloadConfiguration(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoReloadConfiguration",
+                    "printedName": "AnsaShared.AutoReloadConfiguration",
+                    "usr": "c:objc(cs)AnsaSharedAutoReloadConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP26getAutoReloadConfiguration10customerIds6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP26getAutoReloadConfiguration10customerIds6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAutoReloadConfiguration",
+            "printedName": "setAutoReloadConfiguration(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoReloadConfiguration",
+                    "printedName": "AnsaShared.AutoReloadConfiguration",
+                    "usr": "c:objc(cs)AnsaSharedAutoReloadConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoReloadConfigurationRequest",
+                "printedName": "AnsaShared.AutoReloadConfigurationRequest",
+                "usr": "c:objc(cs)AnsaSharedAutoReloadConfigurationRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP26setAutoReloadConfiguration7request14idempotencyKeys6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSo0amfgH7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP26setAutoReloadConfiguration7request14idempotencyKeys6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSo0amfgH7RequestC_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addBalance",
+            "printedName": "addBalance(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdate",
+                    "printedName": "AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AddBalanceRequest",
+                "printedName": "AnsaShared.AddBalanceRequest",
+                "usr": "c:objc(cs)AnsaSharedAddBalanceRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "useBalance",
+            "printedName": "useBalance(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdate",
+                    "printedName": "AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UseBalanceRequest",
+                "printedName": "AnsaShared.UseBalanceRequest",
+                "usr": "c:objc(cs)AnsaSharedUseBalanceRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getReloadConfig",
+            "printedName": "getReloadConfig(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.UserReloadConfiguration, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserReloadConfiguration",
+                    "printedName": "AnsaShared.UserReloadConfiguration",
+                    "usr": "c:objc(cs)AnsaSharedUserReloadConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP15getReloadConfig10customerIds6ResultOySo0a10SharedUserF13ConfigurationCAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP15getReloadConfig10customerIds6ResultOySo0a10SharedUserF13ConfigurationCAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addPaymentMethod",
+            "printedName": "addPaymentMethod(customerId:paymentMethodType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentMethod",
+                    "printedName": "AnsaShared.PaymentMethod",
+                    "usr": "c:objc(cs)AnsaSharedPaymentMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AddPaymentMethodType",
+                "printedName": "AnsaCore.AddPaymentMethodType",
+                "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE16addPaymentMethod10customerId07paymentG4Types6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_AA03AddfgK0OtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE16addPaymentMethod10customerId07paymentG4Types6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_AA03AddfgK0OtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deletePaymentMethod",
+            "printedName": "deletePaymentMethod(customerId:paymentMethodId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE19deletePaymentMethod10customerId07paymentgI0s6ResultOyytAA0A8ApiErrorVGSS_SStYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE19deletePaymentMethod10customerId07paymentgI0s6ResultOyytAA0A8ApiErrorVGSS_SStYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAutoReloadConfiguration",
+            "printedName": "setAutoReloadConfiguration(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoReloadConfiguration",
+                    "printedName": "AnsaShared.AutoReloadConfiguration",
+                    "usr": "c:objc(cs)AnsaSharedAutoReloadConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoReloadConfigurationRequest",
+                "printedName": "AnsaShared.AutoReloadConfigurationRequest",
+                "usr": "c:objc(cs)AnsaSharedAutoReloadConfigurationRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE26setAutoReloadConfiguration7requests6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSo0akfgH7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE26setAutoReloadConfiguration7requests6ResultOySo0a6SharedfgH0CAA0A8ApiErrorVGSo0akfgH7RequestC_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addBalance",
+            "printedName": "addBalance(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdate",
+                    "printedName": "AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AddBalanceRequest",
+                "printedName": "AnsaShared.AddBalanceRequest",
+                "usr": "c:objc(cs)AnsaSharedAddBalanceRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "useBalance",
+            "printedName": "useBalance(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdate",
+                    "printedName": "AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UseBalanceRequest",
+                "printedName": "AnsaShared.UseBalanceRequest",
+                "usr": "c:objc(cs)AnsaSharedUseBalanceRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8AnsaCore15CustomerManagerP",
+        "mangledName": "$s8AnsaCore15CustomerManagerP",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Factory",
+        "printedName": "Factory",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsaApiError",
+        "printedName": "AnsaApiError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "humanReadableMessage",
+            "printedName": "humanReadableMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8ApiErrorV20humanReadableMessageSSvp",
+            "mangledName": "$s8AnsaCore0A8ApiErrorV20humanReadableMessageSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8ApiErrorV20humanReadableMessageSSvg",
+                "mangledName": "$s8AnsaCore0A8ApiErrorV20humanReadableMessageSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorMessage",
+            "printedName": "errorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8ApiErrorV12errorMessageSSvp",
+            "mangledName": "$s8AnsaCore0A8ApiErrorV12errorMessageSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8ApiErrorV12errorMessageSSvg",
+                "mangledName": "$s8AnsaCore0A8ApiErrorV12errorMessageSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8ApiErrorV16errorDescriptionSSSgvp",
+            "mangledName": "$s8AnsaCore0A8ApiErrorV16errorDescriptionSSSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8ApiErrorV16errorDescriptionSSSgvg",
+                "mangledName": "$s8AnsaCore0A8ApiErrorV16errorDescriptionSSSgvg",
+                "moduleName": "AnsaCore",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore0A8ApiErrorV",
+        "mangledName": "$s8AnsaCore0A8ApiErrorV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Factory",
+        "printedName": "Factory",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 221,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 50,
+      "value": "\"AnsaSdk.inititialize should be called only once.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 811,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 72,
+      "value": "\"You must call AnsaSdk.initialize before accessing the shared instance.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/API\/ApiResultHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 23,
+      "value": "\"Something went wrong!\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/DI\/DependenciesManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1908,
+      "length": 17,
+      "value": "\"ansa_pk_sandbox\""
+    }
+  ]
+}

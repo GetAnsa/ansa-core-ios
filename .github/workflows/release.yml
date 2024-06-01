@@ -2,6 +2,7 @@ name: Create release on version change
 
 on:
   push:
+    branches: [main]
     paths:
       - 'RELEASE'
 

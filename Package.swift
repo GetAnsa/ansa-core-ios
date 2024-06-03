@@ -1,24 +1,34 @@
 // swift-tools-version:5.10
 import PackageDescription
 
-let packageName = "AnsaCore"
-
 let package = Package(
-    name: packageName,
-    platforms: [
-        .iOS(.v16)
-    ],
+    name: "AnsaCore",
+    platforms: [.iOS(.v16)],
     products: [
-        .library(
-            name: packageName,
-            targets: [packageName]
-        ),
+        .library(name: "AnsaCore", targets: ["AnsaCoreWrapper"]),
+    ],
+    dependencies: [
+       .package(url: "https://github.com/hmlongco/Factory", from: "2.3.2")
     ],
     targets: [
         .binaryTarget(
-            name: packageName,
-            path: "\(packageName).xcframework"
-        )
-        ,
+            name: "AnsaCore",
+            path: "AnsaCore.xcframework"
+        ),
+
+        .binaryTarget(
+            name: "AnsaShared",
+            path: "AnsaShared.xcframework"
+        ),
+
+        .target(
+            name: "AnsaCoreWrapper",
+            dependencies: [
+                 "AnsaCore",
+                 "AnsaShared",
+                 .product(name: "Factory", package: "Factory"),
+            ],
+            path: "./Sources"
+        ),
     ]
 )

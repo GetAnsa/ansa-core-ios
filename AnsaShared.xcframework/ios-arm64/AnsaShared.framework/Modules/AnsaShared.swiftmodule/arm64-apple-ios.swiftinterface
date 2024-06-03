@@ -1,0 +1,1676 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name AnsaShared
+@_exported import AnsaShared
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension AnsaShared.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: AnsaShared.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: AnsaShared.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: AnsaShared.Ktor_utilsPipeline<TSubject, TContext>) -> AnsaShared.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension AnsaShared.Skie.KtorUtils.Pipeline.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+  #endif
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: AnsaShared.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsWeekDay, result: inout AnsaShared.Ktor_utilsWeekDay?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsWeekDay, result: inout AnsaShared.Ktor_utilsWeekDay?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsWeekDay?) -> AnsaShared.Ktor_utilsWeekDay
+  public func _bridgeToObjectiveC() -> AnsaShared.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = AnsaShared.__Ktor_utilsWeekDay
+  public typealias Companion = AnsaShared.__Ktor_utilsWeekDay.Companion
+  public static func == (a: AnsaShared.Ktor_utilsWeekDay, b: AnsaShared.Ktor_utilsWeekDay) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [AnsaShared.Ktor_utilsWeekDay]
+  public static var allCases: [AnsaShared.Ktor_utilsWeekDay] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaShared.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> AnsaShared.__Ktor_utilsWeekDay
+}
+extension AnsaShared.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> AnsaShared.Ktor_utilsWeekDay
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: AnsaShared.__Ktor_utilsMonth.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsMonth, result: inout AnsaShared.Ktor_utilsMonth?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsMonth, result: inout AnsaShared.Ktor_utilsMonth?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__Ktor_utilsMonth?) -> AnsaShared.Ktor_utilsMonth
+  public func _bridgeToObjectiveC() -> AnsaShared.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = AnsaShared.__Ktor_utilsMonth
+  public typealias Companion = AnsaShared.__Ktor_utilsMonth.Companion
+  public static func == (a: AnsaShared.Ktor_utilsMonth, b: AnsaShared.Ktor_utilsMonth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [AnsaShared.Ktor_utilsMonth]
+  public static var allCases: [AnsaShared.Ktor_utilsMonth] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaShared.Ktor_utilsMonth {
+  public func toKotlinEnum() -> AnsaShared.__Ktor_utilsMonth
+}
+extension AnsaShared.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> AnsaShared.Ktor_utilsMonth
+}
+extension AnsaShared.Ktor_client_coreHttpClient {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteResult(resource: Any, builder: @escaping (AnsaShared.Ktor_client_coreHttpRequestBuilder) -> Swift.Void) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResult(resource: Any, builder: @escaping (AnsaShared.Ktor_client_coreHttpRequestBuilder) -> Swift.Void) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func postResult(resource: Any, body: Any?, builder: @escaping (AnsaShared.Ktor_client_coreHttpRequestBuilder) -> Swift.Void) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func postResult(url: Swift.String, body: Any?, builder: @escaping (AnsaShared.Ktor_client_coreHttpRequestBuilder) -> Swift.Void) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+}
+extension AnsaShared.Ktor_client_coreHttpResponse {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func safeBody() async throws -> Any?
+  #endif
+}
+extension AnsaShared.Ktor_client_coreHttpClientCall {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: AnsaShared.Ktor_utilsTypeInfo) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: AnsaShared.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any AnsaShared.Ktor_ioByteReadChannel
+  #endif
+}
+extension AnsaShared.Ktor_client_coreHttpClientEngine {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: AnsaShared.Ktor_client_coreHttpRequestData) async throws -> AnsaShared.Ktor_client_coreHttpResponseData
+  #endif
+}
+extension AnsaShared.Greeting {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trySuspendFun() async throws
+  #endif
+}
+public func getPlatform() -> any AnsaShared.Platform
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: AnsaShared.SkieSwiftStateFlow<AnsaShared.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftOptionalFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftOptionalFlow<T>
+  @objc deinit
+}
+#endif
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = AnsaShared.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = AnsaShared.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = AnsaShared.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = AnsaShared.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = AnsaShared.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = AnsaShared.Skie_SuspendResult
+      public enum Canceled {
+        public typealias __Kotlin = AnsaShared.Skie_SuspendResult.Canceled
+      }
+      public enum Error {
+        public typealias __Kotlin = AnsaShared.Skie_SuspendResult.Error
+      }
+      public enum Success {
+        public typealias __Kotlin = AnsaShared.Skie_SuspendResult.Success
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = AnsaShared.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = AnsaShared.Kotlinx_coroutines_coreRunnable
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectClause2 {
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectInstance {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = AnsaShared.Skie.KotlinxCoroutinesCore
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = AnsaShared.Skie.KtorUtils
+  public enum Public {
+    public enum AutoReloadConfigurationStatus {
+    }
+    public enum AddPaymentMethodType {
+    }
+  }
+  public typealias Ansa_Android_SDK_kmp_customer__public = AnsaShared.Skie.Public
+  public enum Public_ {
+    public enum ApiResult {
+      public enum Error {
+      }
+    }
+    public enum AuthType {
+    }
+  }
+  public typealias Ansa_Android_SDK_kmp_network__public = AnsaShared.Skie.Public_
+  public enum KtorHttp {
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = AnsaShared.Skie.KtorHttp
+  public enum KotlinxSerializationCore {
+    public enum PolymorphicKind {
+    }
+    public enum SerialKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+    public enum SerializersModule {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = AnsaShared.Skie.KotlinxSerializationCore
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public var value: T {
+    get
+  }
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftStateFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftFlow<T>) -> AnsaShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftFlow<T>) -> AnsaShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>) -> AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension AnsaShared.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AnsaShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var value: T? {
+    get
+  }
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftOptionalStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalStateFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftOptionalStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftSharedFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: AnsaShared.SkieSwiftStateFlow<AnsaShared.KotlinInt> {
+    get
+  }
+  final public var value: T? {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftOptionalMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftOptionalSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: AnsaShared.SkieSwiftStateFlow<AnsaShared.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableSharedFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = AnsaShared.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AnsaShared.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: AnsaShared.SkieSwiftStateFlow<AnsaShared.KotlinInt> {
+    get
+  }
+  final public var value: T {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  final public func makeAsyncIterator() -> AnsaShared.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> AnsaShared.SkieSwiftMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout AnsaShared.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.SkieSwiftMutableStateFlow<T>._ObjectiveCType?) -> AnsaShared.SkieSwiftMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+extension AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(AnsaShared.Skie_SuspendResult.Canceled)
+    case error(AnsaShared.Skie_SuspendResult.Error)
+    case success(AnsaShared.Skie_SuspendResult.Success)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : AnsaShared.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : AnsaShared.Skie_SuspendResult
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  public typealias Element = T
+  @objc deinit
+  #if compiler(>=5.3) && $AsyncAwait
+  public func next() async -> AnsaShared.SkieSwiftFlowIterator<T>.Element?
+  #endif
+}
+#endif
+extension AnsaShared.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: AnsaShared.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: AnsaShared.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: AnsaShared.SkieColdFlowIterator<E>) -> AnsaShared.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension AnsaShared.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> AnsaShared.KotlinBoolean
+  #endif
+}
+extension AnsaShared.KtorWrapper {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteResult(resource: Any, authType: any AnsaShared.AuthType, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResult(resource: Any, authType: any AnsaShared.AuthType, builder: @escaping (AnsaShared.Ktor_client_coreHttpRequestBuilder) -> Swift.Void) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func postResult(resource: Any, body: Any?, authType: any AnsaShared.AuthType, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func postResult(url: Swift.String, body: Any?, authType: any AnsaShared.AuthType, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func handleAuth(_ receiver: AnsaShared.Ktor_client_coreHttpRequestBuilder, authType: any AnsaShared.AuthType) async throws
+  #endif
+}
+extension AnsaShared.Skie.Public.AddPaymentMethodType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.AddPaymentMethodTypeKmpApplePay)
+    case creditCard(AnsaShared.AddPaymentMethodTypeKmpCreditCard)
+    case googlePay(AnsaShared.AddPaymentMethodTypeKmpGooglePay)
+    case square(AnsaShared.AddPaymentMethodTypeKmpSquare)
+    case stripe(AnsaShared.AddPaymentMethodTypeKmpStripe)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.Public.AddPaymentMethodType.__Sealed, b: AnsaShared.Skie.Public.AddPaymentMethodType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.Public.AddPaymentMethodType.__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.Public.AddPaymentMethodType.__Sealed? where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
+extension AnsaShared.AuthSessionManager {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getValidSessionOrNull(ansaCustomerId: Swift.String) async throws -> AnsaShared.PaymentSession?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func refreshSession() async throws -> AnsaShared.PaymentSession?
+  #endif
+}
+extension AnsaShared.HttpClientHelpersKt {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public static func requestCatching(block: @escaping () -> AnsaShared.Ktor_client_coreHttpResponse) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+  #endif
+}
+public var GENERIC_ERROR_MESSAGE: Swift.String {
+  get
+}
+public func __requestCatching(block: @escaping () -> AnsaShared.Ktor_client_coreHttpResponse, completionHandler: @escaping (AnsaShared.ApiResult<Swift.AnyObject>?, (any Swift.Error)?) -> Swift.Void)
+#if compiler(>=5.3) && $AsyncAwait
+@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+public func requestCatching(block: @escaping () -> AnsaShared.Ktor_client_coreHttpResponse) async throws -> AnsaShared.ApiResult<Swift.AnyObject>
+#endif
+extension AnsaShared.CustomerRepository {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addBalance(request: AnsaShared.AddBalanceRequest, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.BalanceUpdate>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addPaymentMethod(customerId: Swift.String, paymentMethodType: any AnsaShared.AddPaymentMethodTypeKmp, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.PaymentMethod>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deletePaymentMethod(customerId: Swift.String, paymentMethodId: Swift.String, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.KotlinUnit>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAutoReloadConfiguration(customerId: Swift.String) async throws -> AnsaShared.ApiResult<AnsaShared.AutoReloadConfiguration>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCustomer(customerId: Swift.String) async throws -> AnsaShared.ApiResult<AnsaShared.Customer>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPaymentMethods(customerId: Swift.String) async throws -> AnsaShared.ApiResult<AnsaShared.PaymentMethodCollection>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getReloadConfig(customerId: Swift.String) async throws -> AnsaShared.ApiResult<AnsaShared.UserReloadConfiguration>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.AutoReloadConfiguration>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func useBalance(request: AnsaShared.UseBalanceRequest, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.BalanceUpdate>
+  #endif
+}
+extension AnsaShared.Skie.Public_.AuthType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case clientSecret(AnsaShared.AuthTypeClientSecret)
+    case none(AnsaShared.AuthTypeNone)
+    case publishableKey(AnsaShared.AuthTypePublishableKey)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.Public_.AuthType.__Sealed, b: AnsaShared.Skie.Public_.AuthType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.Public_.AuthType.__Sealed where __Sealed : AnsaShared.AuthType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.Public_.AuthType.__Sealed? where __Sealed : AnsaShared.AuthType
+extension AnsaShared.MerchantRepository {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMerchant(merchantId: Swift.String) async throws -> AnsaShared.ApiResult<AnsaShared.Merchant>
+  #endif
+}
+extension AnsaShared.Skie.Public.AutoReloadConfigurationStatus {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case disabled(AnsaShared.AutoReloadConfigurationStatusDisabled)
+    case enabled(AnsaShared.AutoReloadConfigurationStatusEnabled)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.Public.AutoReloadConfigurationStatus.__Sealed, b: AnsaShared.Skie.Public.AutoReloadConfigurationStatus.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.Public.AutoReloadConfigurationStatus.__Sealed where __Sealed : AnsaShared.AutoReloadConfigurationStatus
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.Public.AutoReloadConfigurationStatus.__Sealed? where __Sealed : AnsaShared.AutoReloadConfigurationStatus
+extension AnsaShared.ClientSecretProviderIos {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func provideClientSecret(ansaCustomerId: Swift.String) async throws -> Swift.String?
+  #endif
+}
+@frozen public enum LogLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case debug
+  case info
+  case warning
+  case error
+  case verbose
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__LogLevel, result: inout AnsaShared.LogLevel?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__LogLevel, result: inout AnsaShared.LogLevel?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__LogLevel?) -> AnsaShared.LogLevel
+  public func _bridgeToObjectiveC() -> AnsaShared.__LogLevel
+  public typealias _ObjectiveCType = AnsaShared.__LogLevel
+  public static func == (a: AnsaShared.LogLevel, b: AnsaShared.LogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [AnsaShared.LogLevel]
+  public static var allCases: [AnsaShared.LogLevel] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaShared.LogLevel {
+  public func toKotlinEnum() -> AnsaShared.__LogLevel
+}
+extension AnsaShared.__LogLevel {
+  public func toSwiftEnum() -> AnsaShared.LogLevel
+}
+@frozen public enum NetworkType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case sandbox
+  case staging
+  case production
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: AnsaShared.__NetworkType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__NetworkType, result: inout AnsaShared.NetworkType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__NetworkType, result: inout AnsaShared.NetworkType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__NetworkType?) -> AnsaShared.NetworkType
+  public func _bridgeToObjectiveC() -> AnsaShared.__NetworkType
+  public typealias _ObjectiveCType = AnsaShared.__NetworkType
+  public typealias Companion = AnsaShared.__NetworkType.Companion
+  public static func == (a: AnsaShared.NetworkType, b: AnsaShared.NetworkType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [AnsaShared.NetworkType]
+  public static var allCases: [AnsaShared.NetworkType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaShared.NetworkType {
+  public func toKotlinEnum() -> AnsaShared.__NetworkType
+}
+extension AnsaShared.__NetworkType {
+  public func toSwiftEnum() -> AnsaShared.NetworkType
+}
+extension AnsaShared.Skie.Public_.ApiResult.Error {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case genericError(AnsaShared.ApiResultError.GenericError)
+    case httpError(AnsaShared.ApiResultError.HttpError)
+    case serializationError(AnsaShared.ApiResultError.SerializationError)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.Public_.ApiResult.Error.__Sealed, b: AnsaShared.Skie.Public_.ApiResult.Error.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.Public_.ApiResult.Error.__Sealed where __Sealed : AnsaShared.ApiResultError
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.Public_.ApiResult.Error.__Sealed? where __Sealed : AnsaShared.ApiResultError
+extension AnsaShared.Skie.Public_.ApiResult {
+  @frozen public enum __Sealed<T> : Swift.Hashable where T : AnyObject {
+    case error(AnsaShared.ApiResultError)
+    case success(AnsaShared.ApiResultSuccess<T>)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.Public_.ApiResult.__Sealed<T>, b: AnsaShared.Skie.Public_.ApiResult.__Sealed<T>) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<T, __Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.Public_.ApiResult.__Sealed<T> where T : AnyObject, __Sealed : AnsaShared.ApiResult<T>
+@_disfavoredOverload public func onEnum<T, __Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.Public_.ApiResult.__Sealed<T>? where T : AnyObject, __Sealed : AnsaShared.ApiResult<T>
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__KotlinKVariance, result: inout AnsaShared.KotlinKVariance?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__KotlinKVariance, result: inout AnsaShared.KotlinKVariance?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__KotlinKVariance?) -> AnsaShared.KotlinKVariance
+  public func _bridgeToObjectiveC() -> AnsaShared.__KotlinKVariance
+  public typealias _ObjectiveCType = AnsaShared.__KotlinKVariance
+  public static func == (a: AnsaShared.KotlinKVariance, b: AnsaShared.KotlinKVariance) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [AnsaShared.KotlinKVariance]
+  public static var allCases: [AnsaShared.KotlinKVariance] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AnsaShared.KotlinKVariance {
+  public func toKotlinEnum() -> AnsaShared.__KotlinKVariance
+}
+extension AnsaShared.__KotlinKVariance {
+  public func toSwiftEnum() -> AnsaShared.KotlinKVariance
+}
+extension AnsaShared.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+  #endif
+}
+extension AnsaShared.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
+}
+extension AnsaShared.KotlinKClass {
+  public func create(publishableKey: Swift.String, networkType: AnsaShared.NetworkType, clientSecretProvider: any AnsaShared.ClientSecretProviderIos, logger: any AnsaShared.AnsaLogger) -> AnsaShared.KmpAppComponent
+}
+extension AnsaShared.Kotlinx_coroutines_coreJob {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+  #endif
+}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any AnsaShared.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any AnsaShared.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any AnsaShared.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance
+extension AnsaShared.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0
+extension AnsaShared.Kotlinx_coroutines_coreFlow {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any AnsaShared.Kotlinx_coroutines_coreFlowCollector) async throws
+  #endif
+}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1
+extension AnsaShared.Ktor_ioByteReadChannel {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func discard(max: Swift.Int64) async throws -> AnsaShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func peekTo(destination: AnsaShared.Ktor_ioMemory, destinationOffset: Swift.Int64, offset: Swift.Int64, min: Swift.Int64, max: Swift.Int64) async throws -> AnsaShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: AnsaShared.Ktor_ioChunkBuffer) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: AnsaShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readBoolean() async throws -> AnsaShared.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readByte() async throws -> AnsaShared.KotlinByte
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readDouble() async throws -> AnsaShared.KotlinDouble
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFloat() async throws -> AnsaShared.KotlinFloat
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: AnsaShared.Ktor_ioChunkBuffer, n: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: AnsaShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readInt() async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readLong() async throws -> AnsaShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readPacket(size: Swift.Int32) async throws -> AnsaShared.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readRemaining(limit: Swift.Int64) async throws -> AnsaShared.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readShort() async throws -> AnsaShared.KotlinShort
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use read { } instead.")
+  public func readSuspendableSession(consumer: any AnsaShared.KotlinSuspendFunction1) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8Line(limit: Swift.Int32) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8LineTo(out: any AnsaShared.KotlinAppendable, limit: Swift.Int32) async throws -> AnsaShared.KotlinBoolean
+  #endif
+}
+extension AnsaShared.Ktor_ioByteWriteChannel {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitFreeSpace() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: AnsaShared.Ktor_ioChunkBuffer) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: AnsaShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> AnsaShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeByte(b: Swift.Int8) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeDouble(d: Swift.Double) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFloat(f: Swift.Float) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(memory: AnsaShared.Ktor_ioMemory, startIndex: Swift.Int32, endIndex: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: AnsaShared.Ktor_ioBuffer) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: AnsaShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeInt(i: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeLong(l: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writePacket(packet: AnsaShared.Ktor_ioByteReadPacket) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeShort(s: Swift.Int16) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use write { } instead.")
+  public func writeSuspendSession(visitor: any AnsaShared.KotlinSuspendFunction1) async throws
+  #endif
+}
+extension AnsaShared.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(AnsaShared.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(AnsaShared.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(AnsaShared.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(AnsaShared.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_coreStructureKind
+extension AnsaShared.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(AnsaShared.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(AnsaShared.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(AnsaShared.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(AnsaShared.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(AnsaShared.Kotlinx_serialization_coreStructureKind)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: AnsaShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_coreSerialKind
+extension AnsaShared.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(AnsaShared.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(AnsaShared.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: AnsaShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_corePolymorphicKind
+extension AnsaShared.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_coreSerializersModule
+extension AnsaShared.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(AnsaShared.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(AnsaShared.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(AnsaShared.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(AnsaShared.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(AnsaShared.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(AnsaShared.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(AnsaShared.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(AnsaShared.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(AnsaShared.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: AnsaShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_corePrimitiveKind
+extension AnsaShared.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(AnsaShared.Ktor_httpOutgoingContent.ByteArrayContent)
+    case noContent(AnsaShared.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(AnsaShared.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(AnsaShared.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(AnsaShared.Ktor_httpOutgoingContent.WriteChannelContent)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed, b: AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : AnsaShared.Ktor_httpOutgoingContent
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : AnsaShared.Ktor_httpOutgoingContent
+extension AnsaShared.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any AnsaShared.Ktor_ioByteReadChannel, output: any AnsaShared.Ktor_ioByteWriteChannel, engineContext: any AnsaShared.KotlinCoroutineContext, userContext: any AnsaShared.KotlinCoroutineContext) async throws -> any AnsaShared.Kotlinx_coroutines_coreJob
+  #endif
+}
+extension AnsaShared.Ktor_httpOutgoingContent.WriteChannelContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any AnsaShared.Ktor_ioByteWriteChannel) async throws
+  #endif
+}
+extension AnsaShared.Ktor_utilsWeekDay : Swift.Sendable {}
+extension AnsaShared.Ktor_utilsMonth : Swift.Sendable {}
+extension AnsaShared.LogLevel : Swift.Sendable {}
+extension AnsaShared.NetworkType : Swift.Sendable {}
+extension AnsaShared.KotlinKVariance : Swift.Sendable {}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}

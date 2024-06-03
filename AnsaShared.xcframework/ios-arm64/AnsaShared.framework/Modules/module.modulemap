@@ -1,0 +1,11 @@
+framework module AnsaShared {
+    umbrella header "AnsaShared.h"
+
+
+    use Foundation
+}
+
+module AnsaShared.Swift {
+    header "AnsaShared-Swift.h"
+    requires objc
+}

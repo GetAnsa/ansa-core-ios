@@ -628,12 +628,6 @@ extension AnsaShared.Kotlinx_coroutines_coreFlowCollector {
   public func emit(value: Any?) async throws
   #endif
 }
-extension AnsaShared.Greeting {
-  #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func trySuspendFun() async throws
-  #endif
-}
 extension AnsaShared.Ktor_httpOutgoingContent.ProtocolUpgrade {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1679,7 +1673,6 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.RuntimeKotl
 extension AnsaShared.KotlinKClass {
   public func create(publishableKey: Swift.String, networkType: AnsaShared.NetworkType, clientSecretProvider: any AnsaShared.ClientSecretProviderIos, logger: any AnsaShared.AnsaLogger) -> AnsaShared.KmpAppComponent
 }
-public func getPlatform() -> any AnsaShared.Platform
 extension AnsaShared.KotlinKVariance : Swift.Sendable {}
 extension AnsaShared.NetworkType : Swift.Sendable {}
 extension AnsaShared.LogLevel : Swift.Sendable {}

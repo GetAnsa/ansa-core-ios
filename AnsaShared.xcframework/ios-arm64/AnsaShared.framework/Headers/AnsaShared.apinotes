@@ -8321,60 +8321,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedGreeting"
-  SwiftName: "Greeting"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "greet"
-    MethodKind: "Instance"
-    SwiftName: "greet()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "printGreeting"
-    MethodKind: "Instance"
-    SwiftName: "printGreeting()"
-    ResultType: "void"
-  - Selector: "testUpdatedGreeting"
-    MethodKind: "Instance"
-    SwiftName: "testUpdatedGreeting()"
-    ResultType: "void"
-  - Selector: "trySuspendFunWithCompletionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__trySuspendFun(completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "void (^ _Nonnull)(NSError * _Nullable)"
-- Name: "AnsaSharedIOSPlatform"
-  SwiftName: "IOSPlatform"
-  Properties:
-  - Name: "name"
-    PropertyKind: "Instance"
-    SwiftName: "name"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-- Name: "AnsaSharedTestRepository"
-  SwiftName: "TestRepository"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "addUserBalance"
-    MethodKind: "Instance"
-    SwiftName: "addUserBalance()"
-    ResultType: "void"
-- Name: "AnsaSharedPlatform_iosKt"
-  SwiftName: "Platform_iosKt"
-  Methods:
-  - Selector: "getPlatform"
-    MethodKind: "Class"
-    SwiftName: "getPlatform()"
-    ResultType: "id<AnsaSharedPlatform> _Nonnull"
 - Name: "AnsaShared__SkieTypeExportsKt"
   SwiftName: "__SkieTypeExportsKt"
   Availability: "nonswift"
@@ -9129,19 +9075,9 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__53__trySuspendFunDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__53__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__53__trySuspendFun(dispatchReceiver:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedGreeting * _Nonnull"
-    - Position: 1
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__54__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__54__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__53__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9157,9 +9093,9 @@ Classes:
       Type: "id<AnsaSharedKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__55__awaitFreeSpaceDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__54__awaitFreeSpaceDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__55__awaitFreeSpace(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__54__awaitFreeSpace(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9167,9 +9103,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__56__writeAvailableDispatchReceiver:src:suspendHandler:"
+  - Selector: "Skie_Suspend__55__writeAvailableDispatchReceiver:src:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__56__writeAvailable(dispatchReceiver:src:suspendHandler:)"
+    SwiftName: "Skie_Suspend__55__writeAvailable(dispatchReceiver:src:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9178,6 +9114,22 @@ Classes:
     - Position: 1
       Type: "AnsaSharedKtor_ioChunkBuffer * _Nonnull"
     - Position: 2
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__56__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__56__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__57__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
     MethodKind: "Class"
@@ -9188,7 +9140,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
+      Type: "void * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -9206,30 +9158,14 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__59__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__59__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
-    - Position: 1
-      Type: "void * _Nonnull"
-    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__60__writeByteDispatchReceiver:b:suspendHandler:"
+  - Selector: "Skie_Suspend__59__writeByteDispatchReceiver:b:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__60__writeByte(dispatchReceiver:b:suspendHandler:)"
+    SwiftName: "Skie_Suspend__59__writeByte(dispatchReceiver:b:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9239,9 +9175,9 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__61__writeDoubleDispatchReceiver:d:suspendHandler:"
+  - Selector: "Skie_Suspend__60__writeDoubleDispatchReceiver:d:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__61__writeDouble(dispatchReceiver:d:suspendHandler:)"
+    SwiftName: "Skie_Suspend__60__writeDouble(dispatchReceiver:d:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9251,9 +9187,9 @@ Classes:
       Type: "double"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__62__writeFloatDispatchReceiver:f:suspendHandler:"
+  - Selector: "Skie_Suspend__61__writeFloatDispatchReceiver:f:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__62__writeFloat(dispatchReceiver:f:suspendHandler:)"
+    SwiftName: "Skie_Suspend__61__writeFloat(dispatchReceiver:f:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9263,9 +9199,9 @@ Classes:
       Type: "float"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__63__writeFullyDispatchReceiver:memory:startIndex:endIndex:suspendHandler:"
+  - Selector: "Skie_Suspend__62__writeFullyDispatchReceiver:memory:startIndex:endIndex:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__63__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)"
+    SwiftName: "Skie_Suspend__62__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9279,9 +9215,9 @@ Classes:
       Type: "int32_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__64__writeFullyDispatchReceiver:src:suspendHandler:"
+  - Selector: "Skie_Suspend__63__writeFullyDispatchReceiver:src:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__64__writeFully(dispatchReceiver:src:suspendHandler:)"
+    SwiftName: "Skie_Suspend__63__writeFully(dispatchReceiver:src:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9290,6 +9226,22 @@ Classes:
     - Position: 1
       Type: "AnsaSharedKtor_ioBuffer * _Nonnull"
     - Position: 2
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__64__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__64__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__65__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
     MethodKind: "Class"
@@ -9300,7 +9252,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
+      Type: "void * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -9318,30 +9270,14 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__67__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__67__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
-    - Position: 1
-      Type: "void * _Nonnull"
-    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__68__writeIntDispatchReceiver:i:suspendHandler:"
+  - Selector: "Skie_Suspend__67__writeIntDispatchReceiver:i:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__68__writeInt(dispatchReceiver:i:suspendHandler:)"
+    SwiftName: "Skie_Suspend__67__writeInt(dispatchReceiver:i:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9351,9 +9287,9 @@ Classes:
       Type: "int32_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__69__writeLongDispatchReceiver:l:suspendHandler:"
+  - Selector: "Skie_Suspend__68__writeLongDispatchReceiver:l:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__69__writeLong(dispatchReceiver:l:suspendHandler:)"
+    SwiftName: "Skie_Suspend__68__writeLong(dispatchReceiver:l:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9363,9 +9299,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__70__writePacketDispatchReceiver:packet:suspendHandler:"
+  - Selector: "Skie_Suspend__69__writePacketDispatchReceiver:packet:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__70__writePacket(dispatchReceiver:packet:suspendHandler:)"
+    SwiftName: "Skie_Suspend__69__writePacket(dispatchReceiver:packet:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9375,9 +9311,9 @@ Classes:
       Type: "AnsaSharedKtor_ioByteReadPacket * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__71__writeShortDispatchReceiver:s:suspendHandler:"
+  - Selector: "Skie_Suspend__70__writeShortDispatchReceiver:s:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__71__writeShort(dispatchReceiver:s:suspendHandler:)"
+    SwiftName: "Skie_Suspend__70__writeShort(dispatchReceiver:s:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9387,9 +9323,9 @@ Classes:
       Type: "int16_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__72__writeSuspendSessionDispatchReceiver:visitor:suspendHandler:"
+  - Selector: "Skie_Suspend__71__writeSuspendSessionDispatchReceiver:visitor:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__72__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)"
+    SwiftName: "Skie_Suspend__71__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9399,9 +9335,9 @@ Classes:
       Type: "id<AnsaSharedKotlinSuspendFunction1> _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__73__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__72__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__73__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__72__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9411,9 +9347,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__74__deleteResultExtensionReceiver:resource:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__73__deleteResultExtensionReceiver:resource:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__74__deleteResult(extensionReceiver:resource:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__73__deleteResult(extensionReceiver:resource:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9425,9 +9361,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__75__getResultExtensionReceiver:resource:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__74__getResultExtensionReceiver:resource:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__75__getResult(extensionReceiver:resource:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__74__getResult(extensionReceiver:resource:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9439,9 +9375,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__76__postResultExtensionReceiver:resource:body:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__75__postResultExtensionReceiver:resource:body:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__76__postResult(extensionReceiver:resource:body:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__75__postResult(extensionReceiver:resource:body:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9455,9 +9391,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__77__postResultExtensionReceiver:url:body:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__76__postResultExtensionReceiver:url:body:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__77__postResult(extensionReceiver:url:body:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__76__postResult(extensionReceiver:url:body:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -9471,9 +9407,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__78__safeBodyExtensionReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__77__safeBodyExtensionReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__78__safeBody(extensionReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__77__safeBody(extensionReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -12020,10 +11956,5 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "id<AnsaSharedKotlinx_coroutines_coreRunnable> _Nonnull"
-- Name: "AnsaSharedPlatform"
-  SwiftName: "Platform"
-  Properties:
-  - Name: "name"
-    PropertyKind: "Instance"
-    SwiftName: "name"
-    Type: "NSString * _Nonnull"
+- Name: "AnsaSharedDummyInterface"
+  SwiftName: "DummyInterface"

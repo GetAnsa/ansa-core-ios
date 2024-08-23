@@ -27,7 +27,7 @@ public enum LogLevel {
   }
 }
 @_hasMissingDesignatedInitializers public class AnsaSdk {
-  public static func inititialize(publishableKey: Swift.String, clientSecretProvider: any AnsaCore.ClientSecretProvider, logging: AnsaCore.Logging = Logging())
+  public static func initialize(publishableKey: Swift.String, clientSecretProvider: any AnsaCore.ClientSecretProvider, logging: AnsaCore.Logging = Logging())
   public static var shared: any AnsaCore.AnsaClient
   @objc deinit
 }
@@ -40,6 +40,12 @@ public protocol MerchantManager {
   #if compiler(>=5.3) && $AsyncAwait
   func get(merchantId: Swift.String) async -> Swift.Result<AnsaShared.Merchant, AnsaCore.AnsaApiError>
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getBasisTheoryApiKey(merchantId: Swift.String) async -> Swift.Result<Swift.String, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getCardArtUrls() async -> Swift.Result<[Swift.String], AnsaCore.AnsaApiError>
+  #endif
 }
 public enum AddPaymentMethodType {
   case creditCard(token: Swift.String)
@@ -51,6 +57,7 @@ public enum AddPaymentMethodType {
 public protocol AnsaClient {
   var customer: any AnsaCore.CustomerManager { get }
   var merchant: any AnsaCore.MerchantManager { get }
+  var isSandboxMode: Swift.Bool { get }
 }
 public protocol CustomerManager {
   #if compiler(>=5.3) && $AsyncAwait
@@ -79,6 +86,9 @@ public protocol CustomerManager {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getReloadConfig(customerId: Swift.String) async -> Swift.Result<AnsaShared.UserReloadConfiguration, AnsaCore.AnsaApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getTransactions(customerId: Swift.String, cursor: Swift.String?) async -> Swift.Result<AnsaShared.TransactionResult, AnsaCore.AnsaApiError>
   #endif
 }
 extension AnsaCore.CustomerManager {

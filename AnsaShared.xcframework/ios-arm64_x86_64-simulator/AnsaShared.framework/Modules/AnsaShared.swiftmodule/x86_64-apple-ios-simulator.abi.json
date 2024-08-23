@@ -69,11 +69,11 @@
             "children": [
               {
                 "kind": "TypeDecl",
-                "name": "Runnable",
-                "printedName": "Runnable",
+                "name": "Flow",
+                "printedName": "Flow",
                 "declKind": "Enum",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO8RunnableO",
-                "mangledName": "$s10AnsaShared4SkieO21KotlinxCoroutinesCoreO8RunnableO",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO4FlowO",
+                "mangledName": "$s10AnsaShared4SkieO21KotlinxCoroutinesCoreO4FlowO",
                 "moduleName": "AnsaShared",
                 "declAttributes": [
                   "AccessControl"
@@ -81,11 +81,11 @@
               },
               {
                 "kind": "TypeDecl",
-                "name": "Flow",
-                "printedName": "Flow",
+                "name": "Runnable",
+                "printedName": "Runnable",
                 "declKind": "Enum",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO4FlowO",
-                "mangledName": "$s10AnsaShared4SkieO21KotlinxCoroutinesCoreO4FlowO",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO8RunnableO",
+                "mangledName": "$s10AnsaShared4SkieO21KotlinxCoroutinesCoreO8RunnableO",
                 "moduleName": "AnsaShared",
                 "declAttributes": [
                   "AccessControl"
@@ -3123,6 +3123,853 @@
               },
               {
                 "kind": "TypeDecl",
+                "name": "TransactionSource",
+                "printedName": "TransactionSource",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "addBalance",
+                        "printedName": "addBalance",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type) -> (AnsaShared.TransactionSource.AddBalance) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionSource.AddBalance) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AddBalance",
+                                    "printedName": "AnsaShared.TransactionSource.AddBalance",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionSourceAddBalance"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10addBalanceyAISo0abfg3AddJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10addBalanceyAISo0abfg3AddJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "autoReload",
+                        "printedName": "autoReload",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type) -> (AnsaShared.TransactionSource.AutoReload) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionSource.AutoReload) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AutoReload",
+                                    "printedName": "AnsaShared.TransactionSource.AutoReload",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionSourceAutoReload"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10autoReloadyAISo0abfg4AutoJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10autoReloadyAISo0abfg4AutoJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "unknown",
+                        "printedName": "unknown",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type) -> (AnsaShared.TransactionSource.Unknown) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionSource.Unknown) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Unknown",
+                                    "printedName": "AnsaShared.TransactionSource.Unknown",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionSourceUnknown"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "useBalance",
+                        "printedName": "useBalance",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type) -> (AnsaShared.TransactionSource.UseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionSource.UseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UseBalance",
+                                    "printedName": "AnsaShared.TransactionSource.UseBalance",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionSourceUseBalance"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "useBalanceAndReload",
+                        "printedName": "useBalanceAndReload",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type) -> (AnsaShared.TransactionSource.UseBalanceAndReload) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionSource.UseBalanceAndReload) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UseBalanceAndReload",
+                                    "printedName": "AnsaShared.TransactionSource.UseBalanceAndReload",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionSourceUseBalanceAndReload"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO19useBalanceAndReloadyAISo0abfg3UsejkL0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO19useBalanceAndReloadyAISo0abfg3UsejkL0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 4
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "TransactionType",
+                "printedName": "TransactionType",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "addBalance",
+                        "printedName": "addBalance",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.AddBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.AddBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AddBalance",
+                                    "printedName": "AnsaShared.TransactionType.AddBalance",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeAddBalance"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10addBalanceyAISo0abfg3AddJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10addBalanceyAISo0abfg3AddJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "merchantAddPromo",
+                        "printedName": "merchantAddPromo",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.MerchantAddPromo) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.MerchantAddPromo) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MerchantAddPromo",
+                                    "printedName": "AnsaShared.TransactionType.MerchantAddPromo",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeMerchantAddPromo"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO16merchantAddPromoyAISo0abfg8MerchantjK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO16merchantAddPromoyAISo0abfg8MerchantjK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "merchantRefund",
+                        "printedName": "merchantRefund",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.MerchantRefund) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.MerchantRefund) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MerchantRefund",
+                                    "printedName": "AnsaShared.TransactionType.MerchantRefund",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeMerchantRefund"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO14merchantRefundyAISo0abfg8MerchantJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO14merchantRefundyAISo0abfg8MerchantJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "refundPaymentMethod",
+                        "printedName": "refundPaymentMethod",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.RefundPaymentMethod) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.RefundPaymentMethod) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "RefundPaymentMethod",
+                                    "printedName": "AnsaShared.TransactionType.RefundPaymentMethod",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeRefundPaymentMethod"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO19refundPaymentMethodyAISo0abfg6RefundjK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO19refundPaymentMethodyAISo0abfg6RefundjK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "unknown",
+                        "printedName": "unknown",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.Unknown) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.Unknown) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Unknown",
+                                    "printedName": "AnsaShared.TransactionType.Unknown",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeUnknown"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 4
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "useBalance",
+                        "printedName": "useBalance",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.UseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.UseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UseBalance",
+                                    "printedName": "AnsaShared.TransactionType.UseBalance",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeUseBalance"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 5
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
                 "name": "AddPaymentMethodType",
                 "printedName": "AddPaymentMethodType",
                 "children": [
@@ -3523,6 +4370,484 @@
             "declKind": "Enum",
             "usr": "s:10AnsaShared4SkieO14CustomerPublicO",
             "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "KotlinxSerializationJson",
+            "printedName": "KotlinxSerializationJson",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "JsonElement",
+                "printedName": "JsonElement",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "jsonPrimitive",
+                        "printedName": "jsonPrimitive",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed.Type) -> (AnsaShared.Kotlinx_serialization_jsonJsonPrimitive) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.Kotlinx_serialization_jsonJsonPrimitive) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Kotlinx_serialization_jsonJsonPrimitive",
+                                    "printedName": "AnsaShared.Kotlinx_serialization_jsonJsonPrimitive",
+                                    "usr": "c:objc(cs)AnsaSharedKotlinx_serialization_jsonJsonPrimitive"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO13jsonPrimitiveyAISo0abd15_serialization_ifJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO13jsonPrimitiveyAISo0abd15_serialization_ifJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "else",
+                        "printedName": "else",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed.Type) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "__Sealed",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO4elseyA2ImF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO4elseyA2ImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO",
+                "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "JsonPrimitive",
+                "printedName": "JsonPrimitive",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "jsonNull",
+                        "printedName": "jsonNull",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed.Type) -> (AnsaShared.Kotlinx_serialization_jsonJsonNull) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.Kotlinx_serialization_jsonJsonNull) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Kotlinx_serialization_jsonJsonNull",
+                                    "printedName": "AnsaShared.Kotlinx_serialization_jsonJsonNull",
+                                    "usr": "c:objc(cs)AnsaSharedKotlinx_serialization_jsonJsonNull"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO8jsonNullyAISo0abd15_serialization_ifJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO8jsonNullyAISo0abd15_serialization_ifJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "else",
+                        "printedName": "else",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed.Type) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "__Sealed",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO4elseyA2ImF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO4elseyA2ImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO",
+                "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO",
+            "mangledName": "$s10AnsaShared4SkieO24KotlinxSerializationJsonO",
             "moduleName": "AnsaShared",
             "declAttributes": [
               "AccessControl"
@@ -19901,6 +21226,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Function",
         "name": "skie",
         "printedName": "skie(_:)",
@@ -20065,26 +21410,6 @@
           "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -24365,6 +25690,33 @@
           },
           {
             "kind": "Function",
+            "name": "virtualCardArtUrl",
+            "printedName": "virtualCardArtUrl(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared11NetworkTypeO17virtualCardArtUrl2idS2S_tF",
+            "mangledName": "$s10AnsaShared11NetworkTypeO17virtualCardArtUrl2idS2S_tF",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "_forceBridgeFromObjectiveC",
             "printedName": "_forceBridgeFromObjectiveC(_:result:)",
             "children": [
@@ -24750,6 +26102,618 @@
                     "name": "__NetworkType",
                     "printedName": "AnsaShared.__NetworkType",
                     "usr": "c:objc(cs)AnsaSharedNetworkType"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BalanceAdjustment",
+        "printedName": "BalanceAdjustment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debit",
+            "printedName": "debit",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaShared.BalanceAdjustment.Type) -> AnsaShared.BalanceAdjustment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaShared.BalanceAdjustment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BalanceAdjustment",
+                        "printedName": "AnsaShared.BalanceAdjustment",
+                        "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO5debityA2CmF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO5debityA2CmF",
+            "moduleName": "AnsaShared",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "credit",
+            "printedName": "credit",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaShared.BalanceAdjustment.Type) -> AnsaShared.BalanceAdjustment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaShared.BalanceAdjustment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BalanceAdjustment",
+                        "printedName": "AnsaShared.BalanceAdjustment",
+                        "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO6credityA2CmF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO6credityA2CmF",
+            "moduleName": "AnsaShared",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AnsaShared.BalanceAdjustment.Type) -> AnsaShared.BalanceAdjustment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AnsaShared.BalanceAdjustment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BalanceAdjustment",
+                        "printedName": "AnsaShared.BalanceAdjustment",
+                        "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO4noneyA2CmF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO4noneyA2CmF",
+            "moduleName": "AnsaShared",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO4nameSSvp",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO4nameSSvp",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO4nameSSvg",
+                "mangledName": "$s10AnsaShared17BalanceAdjustmentO4nameSSvg",
+                "moduleName": "AnsaShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO7ordinals5Int32Vvp",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO7ordinals5Int32Vvp",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO7ordinals5Int32Vvg",
+                "mangledName": "$s10AnsaShared17BalanceAdjustmentO7ordinals5Int32Vvg",
+                "moduleName": "AnsaShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BalanceAdjustment",
+                "printedName": "AnsaShared.__BalanceAdjustment",
+                "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaShared.BalanceAdjustment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO26_forceBridgeFromObjectiveC_6resultySo0abcD0C_ACSgztFZ",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO26_forceBridgeFromObjectiveC_6resultySo0abcD0C_ACSgztFZ",
+            "moduleName": "AnsaShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BalanceAdjustment",
+                "printedName": "AnsaShared.__BalanceAdjustment",
+                "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaShared.BalanceAdjustment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcD0C_ACSgztFZ",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO34_conditionallyBridgeFromObjectiveC_6resultSbSo0abcD0C_ACSgztFZ",
+            "moduleName": "AnsaShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BalanceAdjustment",
+                "printedName": "AnsaShared.BalanceAdjustment",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaShared.__BalanceAdjustment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BalanceAdjustment",
+                    "printedName": "AnsaShared.__BalanceAdjustment",
+                    "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO36_unconditionallyBridgeFromObjectiveCyACSo0abcD0CSgFZ",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO36_unconditionallyBridgeFromObjectiveCyACSo0abcD0CSgFZ",
+            "moduleName": "AnsaShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BalanceAdjustment",
+                "printedName": "AnsaShared.__BalanceAdjustment",
+                "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO19_bridgeToObjectiveCSo0abcD0CyF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO19_bridgeToObjectiveCSo0abcD0CyF",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BalanceAdjustment",
+                "printedName": "AnsaShared.BalanceAdjustment",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BalanceAdjustment",
+                "printedName": "AnsaShared.BalanceAdjustment",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "AnsaShared",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO9hashValueSivp",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO9hashValueSivp",
+            "moduleName": "AnsaShared",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO9hashValueSivg",
+                "mangledName": "$s10AnsaShared17BalanceAdjustmentO9hashValueSivg",
+                "moduleName": "AnsaShared",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "AnsaShared",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AnsaShared.BalanceAdjustment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceAdjustment",
+                    "printedName": "AnsaShared.BalanceAdjustment",
+                    "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO8allCasesSayACGvpZ",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO8allCasesSayACGvpZ",
+            "moduleName": "AnsaShared",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AnsaShared.BalanceAdjustment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BalanceAdjustment",
+                        "printedName": "AnsaShared.BalanceAdjustment",
+                        "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO8allCasesSayACGvgZ",
+                "mangledName": "$s10AnsaShared17BalanceAdjustmentO8allCasesSayACGvgZ",
+                "moduleName": "AnsaShared",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BalanceAdjustment",
+                "printedName": "AnsaShared.__BalanceAdjustment",
+                "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AnsaShared17BalanceAdjustmentO12toKotlinEnumSo0abcD0CyF",
+            "mangledName": "$s10AnsaShared17BalanceAdjustmentO12toKotlinEnumSo0abcD0CyF",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10AnsaShared17BalanceAdjustmentO",
+        "mangledName": "$s10AnsaShared17BalanceAdjustmentO",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AnsaShared.BalanceAdjustment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BalanceAdjustment",
+                        "printedName": "AnsaShared.BalanceAdjustment",
+                        "usr": "s:10AnsaShared17BalanceAdjustmentO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BalanceAdjustment",
+                    "printedName": "AnsaShared.__BalanceAdjustment",
+                    "usr": "c:objc(cs)AnsaSharedBalanceAdjustment"
                   }
                 ]
               }
@@ -27392,6 +29356,421 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed",
+            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed",
+            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed",
+            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed",
+            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed",
+            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed",
+                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "AnsaShared.Skie.NetworkPublic.ApiResult.__Sealed<τ_0_0>",
             "children": [
               {
@@ -27738,6 +30117,172 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17TransactionSourceO8__SealedOx_tSo0abiJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17TransactionSourceO8__SealedOx_tSo0abiJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.TransactionSource>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.TransactionSource>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO17TransactionSourceO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17TransactionSourceO8__SealedOSgxSg_tSo0abiJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17TransactionSourceO8__SealedOSgxSg_tSo0abiJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.TransactionSource>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.TransactionSource>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO15TransactionTypeO8__SealedOx_tSo0abiJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO15TransactionTypeO8__SealedOx_tSo0abiJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.TransactionType>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.TransactionType>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO15TransactionTypeO8__SealedOSgxSg_tSo0abiJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO15TransactionTypeO8__SealedOSgxSg_tSo0abiJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.TransactionType>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.TransactionType>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed",
             "usr": "s:10AnsaShared4SkieO14CustomerPublicO20AddPaymentMethodTypeO8__SealedO"
           },
@@ -27797,6 +30342,172 @@
         "moduleName": "AnsaShared",
         "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.AddPaymentMethodTypeKmp>",
         "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I7ElementO8__SealedOx_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I7ElementO8__SealedOx_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_serialization_jsonJsonElement>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed",
+                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F7ElementO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I7ElementO8__SealedOSgxSg_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I7ElementO8__SealedOSgxSg_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_serialization_jsonJsonElement>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+            "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I9PrimitiveO8__SealedOx_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I9PrimitiveO8__SealedOx_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed",
+                "usr": "s:10AnsaShared4SkieO24KotlinxSerializationJsonO0F9PrimitiveO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I9PrimitiveO8__SealedOSgxSg_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO24KotlinxSerializationJsonO0I9PrimitiveO8__SealedOSgxSg_tSo0abg19_serialization_jsoniJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -28319,421 +31030,6 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed",
-            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedO"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "GenericTypeParam",
-            "printedName": "τ_0_0"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__Sealed",
-                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedO"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "τ_0_0?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause0O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause0>",
-        "declAttributes": [
-          "AccessControl",
-          "DisfavoredOverload"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "__Sealed",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed",
-            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedO"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "GenericTypeParam",
-            "printedName": "τ_0_0"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__Sealed",
-                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedO"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "τ_0_0?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO12SelectClauseO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause>",
-        "declAttributes": [
-          "AccessControl",
-          "DisfavoredOverload"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "__Sealed",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed",
-            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedO"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "GenericTypeParam",
-            "printedName": "τ_0_0"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__Sealed",
-                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedO"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "τ_0_0?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO14SelectInstanceO8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectInstance>",
-        "declAttributes": [
-          "AccessControl",
-          "DisfavoredOverload"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "__Sealed",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed",
-            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedO"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "GenericTypeParam",
-            "printedName": "τ_0_0"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__Sealed",
-                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedO"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "τ_0_0?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause1O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause1>",
-        "declAttributes": [
-          "AccessControl",
-          "DisfavoredOverload"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "__Sealed",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed",
-            "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedO"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "GenericTypeParam",
-            "printedName": "τ_0_0"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOx_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__Sealed",
-                "printedName": "AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed",
-                "usr": "s:10AnsaShared4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedO"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "τ_0_0?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO21KotlinxCoroutinesCoreO13SelectClause2O8__SealedOSgxSg_tSo0abg16_coroutines_corejK0RzlF",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
-        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Kotlinx_coroutines_coreSelectClause2>",
-        "declAttributes": [
-          "AccessControl",
-          "DisfavoredOverload"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "onEnum",
-        "printedName": "onEnum(of:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "__Sealed",
             "printedName": "AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed",
             "usr": "s:10AnsaShared4SkieO13RuntimeKotlinO0C14_SuspendResultO8__SealedO"
           },
@@ -28947,6 +31243,53 @@
         "children": [
           {
             "kind": "Function",
+            "name": "getBasisTheoryApiKey",
+            "printedName": "getBasisTheoryApiKey(merchantId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResult",
+                "printedName": "AnsaShared.ApiResult<AnsaShared.MerchantBasisTheoryInfo>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantBasisTheoryInfo",
+                    "printedName": "AnsaShared.MerchantBasisTheoryInfo",
+                    "usr": "c:objc(cs)AnsaSharedMerchantBasisTheoryInfo"
+                  }
+                ],
+                "usr": "c:objc(cs)AnsaSharedApiResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28AnsaSharedMerchantRepositoryP0aB0E20getBasisTheoryApiKey10merchantIdSo0abH6ResultCySo0abcfG4InfoCGSS_tYaKF",
+            "mangledName": "$sSo28AnsaSharedMerchantRepositoryP0aB0E20getBasisTheoryApiKey10merchantIdSo0abH6ResultCySo0abcfG4InfoCGSS_tYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.MerchantRepository>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.MerchantRepository>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMerchant",
             "printedName": "getMerchant(merchantId:)",
             "children": [
@@ -28991,6 +31334,47 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVirtualCardArt",
+            "printedName": "getVirtualCardArt()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResult",
+                "printedName": "AnsaShared.ApiResult<AnsaShared.MerchantCartArtInfo>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantCartArtInfo",
+                    "printedName": "AnsaShared.MerchantCartArtInfo",
+                    "usr": "c:objc(cs)AnsaSharedMerchantCartArtInfo"
+                  }
+                ],
+                "usr": "c:objc(cs)AnsaSharedApiResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28AnsaSharedMerchantRepositoryP0aB0E17getVirtualCardArtSo0aB9ApiResultCySo0abc4CartH4InfoCGyYaKF",
+            "mangledName": "$sSo28AnsaSharedMerchantRepositoryP0aB0E17getVirtualCardArtSo0aB9ApiResultCySo0abc4CartH4InfoCGyYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.MerchantRepository>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.MerchantRepository>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -28999,6 +31383,125 @@
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "objc_name": "AnsaSharedMerchantRepository",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Kotlinx_coroutines_coreFlow",
+        "printedName": "Kotlinx_coroutines_coreFlow",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "collect",
+            "printedName": "collect(collector:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Kotlinx_coroutines_coreFlowCollector",
+                "printedName": "any AnsaShared.Kotlinx_coroutines_coreFlowCollector",
+                "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlowCollector"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So37AnsaSharedKotlinx_coroutines_coreFlowP0aB0E7collect9collectorySo0abc1_d1_eF9Collector_p_tYaKF",
+            "mangledName": "$sSo37AnsaSharedKotlinx_coroutines_coreFlowP0aB0E7collect9collectorySo0abc1_d1_eF9Collector_p_tYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreFlow>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.Kotlinx_coroutines_coreFlow>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlow",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "AnsaSharedKotlinx_coroutines_coreFlow",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Kotlinx_coroutines_coreFlowCollector",
+        "printedName": "Kotlinx_coroutines_coreFlowCollector",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "emit",
+            "printedName": "emit(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So46AnsaSharedKotlinx_coroutines_coreFlowCollectorP0aB0E4emit5valueyypSg_tYaKF",
+            "mangledName": "$sSo46AnsaSharedKotlinx_coroutines_coreFlowCollectorP0aB0E4emit5valueyypSg_tYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreFlowCollector>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.Kotlinx_coroutines_coreFlowCollector>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlowCollector",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "AnsaSharedKotlinx_coroutines_coreFlowCollector",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -29375,6 +31878,67 @@
             "declKind": "Func",
             "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E15getReloadConfig10customerIdSo0aB9ApiResultCySo0ab4UserF13ConfigurationCGSS_tYaKF",
             "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E15getReloadConfig10customerIdSo0aB9ApiResultCySo0ab4UserF13ConfigurationCGSS_tYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTransactions",
+            "printedName": "getTransactions(customerId:cursor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResult",
+                "printedName": "AnsaShared.ApiResult<AnsaShared.TransactionResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionResult",
+                    "printedName": "AnsaShared.TransactionResult",
+                    "usr": "c:objc(cs)AnsaSharedTransactionResult"
+                  }
+                ],
+                "usr": "c:objc(cs)AnsaSharedApiResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E15getTransactions10customerId6cursorSo0aB9ApiResultCySo0ab11TransactionK0CGSS_SSSgtYaKF",
+            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E15getTransactions10customerId6cursorSo0aB9ApiResultCySo0ab11TransactionK0CGSS_SSSgtYaKF",
             "moduleName": "AnsaShared",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
             "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",
@@ -31525,125 +34089,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Kotlinx_coroutines_coreFlow",
-        "printedName": "Kotlinx_coroutines_coreFlow",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "collect",
-            "printedName": "collect(collector:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Kotlinx_coroutines_coreFlowCollector",
-                "printedName": "any AnsaShared.Kotlinx_coroutines_coreFlowCollector",
-                "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlowCollector"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So37AnsaSharedKotlinx_coroutines_coreFlowP0aB0E7collect9collectorySo0abc1_d1_eF9Collector_p_tYaKF",
-            "mangledName": "$sSo37AnsaSharedKotlinx_coroutines_coreFlowP0aB0E7collect9collectorySo0abc1_d1_eF9Collector_p_tYaKF",
-            "moduleName": "AnsaShared",
-            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreFlow>",
-            "sugared_genericSig": "<Self where Self : AnsaShared.Kotlinx_coroutines_coreFlow>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlow",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "AnsaSharedKotlinx_coroutines_coreFlow",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Kotlinx_coroutines_coreFlowCollector",
-        "printedName": "Kotlinx_coroutines_coreFlowCollector",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "emit",
-            "printedName": "emit(value:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So46AnsaSharedKotlinx_coroutines_coreFlowCollectorP0aB0E4emit5valueyypSg_tYaKF",
-            "mangledName": "$sSo46AnsaSharedKotlinx_coroutines_coreFlowCollectorP0aB0E4emit5valueyypSg_tYaKF",
-            "moduleName": "AnsaShared",
-            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Kotlinx_coroutines_coreFlowCollector>",
-            "sugared_genericSig": "<Self where Self : AnsaShared.Kotlinx_coroutines_coreFlowCollector>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)AnsaSharedKotlinx_coroutines_coreFlowCollector",
-        "moduleName": "AnsaShared",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "AnsaSharedKotlinx_coroutines_coreFlowCollector",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true
-      },
-      {
-        "kind": "TypeDecl",
         "name": "ProtocolUpgrade",
         "printedName": "ProtocolUpgrade",
         "children": [
@@ -33264,6 +35709,102 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "AnsaShared.KotlinEnum<AnsaShared.__NetworkType>",
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__BalanceAdjustment",
+        "printedName": "__BalanceAdjustment",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BalanceAdjustment",
+                "printedName": "AnsaShared.BalanceAdjustment",
+                "usr": "s:10AnsaShared17BalanceAdjustmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So27AnsaSharedBalanceAdjustmentC0aB0E11toSwiftEnumAC0cD0OyF",
+            "mangledName": "$sSo27AnsaSharedBalanceAdjustmentC0aB0E11toSwiftEnumAC0cD0OyF",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedBalanceAdjustment",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedBalanceAdjustment",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinEnum<AnsaShared.__BalanceAdjustment>",
           "AnsaShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],

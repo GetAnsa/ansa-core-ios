@@ -82,7 +82,8 @@
         "mangledName": "$s8AnsaCore7LoggingC",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -125,7 +126,10 @@
             "declKind": "EnumElement",
             "usr": "s:8AnsaCore8LogLevelO4noneyA2CmF",
             "mangledName": "$s8AnsaCore8LogLevelO4noneyA2CmF",
-            "moduleName": "AnsaCore"
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -310,7 +314,10 @@
             "declKind": "EnumElement",
             "usr": "s:8AnsaCore8LogLevelO7verboseyA2CmF",
             "mangledName": "$s8AnsaCore8LogLevelO7verboseyA2CmF",
-            "moduleName": "AnsaCore"
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -472,8 +479,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "inititialize",
-            "printedName": "inititialize(publishableKey:clientSecretProvider:logging:)",
+            "name": "initialize",
+            "printedName": "initialize(publishableKey:clientSecretProvider:logging:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -501,8 +508,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore0A3SdkC12inititialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
-            "mangledName": "$s8AnsaCore0A3SdkC12inititialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
+            "usr": "s:8AnsaCore0A3SdkC10initialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
+            "mangledName": "$s8AnsaCore0A3SdkC10initialize14publishableKey20clientSecretProvider7loggingySS_AA06ClienthI0_pAA7LoggingCtFZ",
             "moduleName": "AnsaCore",
             "static": true,
             "declAttributes": [
@@ -667,6 +674,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.ClientSecretProvider>",
             "sugared_genericSig": "<Self where Self : AnsaCore.ClientSecretProvider>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -676,7 +686,8 @@
         "mangledName": "$s8AnsaCore20ClientSecretProviderP",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -737,6 +748,95 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.MerchantManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.MerchantManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBasisTheoryApiKey",
+            "printedName": "getBasisTheoryApiKey(merchantId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15MerchantManagerP20getBasisTheoryApiKey10merchantIds6ResultOySSAA0aH5ErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15MerchantManagerP20getBasisTheoryApiKey10merchantIds6ResultOySSAA0aH5ErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.MerchantManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.MerchantManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCardArtUrls",
+            "printedName": "getCardArtUrls()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<[Swift.String], AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15MerchantManagerP14getCardArtUrlss6ResultOySaySSGAA0A8ApiErrorVGyYaF",
+            "mangledName": "$s8AnsaCore15MerchantManagerP14getCardArtUrlss6ResultOySaySSGAA0A8ApiErrorVGyYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.MerchantManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.MerchantManager>",
+            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -746,7 +846,8 @@
         "mangledName": "$s8AnsaCore15MerchantManagerP",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1052,7 +1153,8 @@
         "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1112,6 +1214,9 @@
             "mangledName": "$s8AnsaCore0A6ClientP8customerAA15CustomerManager_pvp",
             "moduleName": "AnsaCore",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1154,6 +1259,9 @@
             "mangledName": "$s8AnsaCore0A6ClientP8merchantAA15MerchantManager_pvp",
             "moduleName": "AnsaCore",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1178,6 +1286,51 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSandboxMode",
+            "printedName": "isSandboxMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A6ClientP13isSandboxModeSbvp",
+            "mangledName": "$s8AnsaCore0A6ClientP13isSandboxModeSbvp",
+            "moduleName": "AnsaCore",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A6ClientP13isSandboxModeSbvg",
+                "mangledName": "$s8AnsaCore0A6ClientP13isSandboxModeSbvg",
+                "moduleName": "AnsaCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.AnsaClient>",
+                "sugared_genericSig": "<Self where Self : AnsaCore.AnsaClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -1185,7 +1338,8 @@
         "mangledName": "$s8AnsaCore0A6ClientP",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1281,6 +1435,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1323,6 +1480,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1385,6 +1545,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1446,6 +1609,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1488,6 +1654,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1544,6 +1713,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1600,6 +1772,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1656,6 +1831,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1698,6 +1876,68 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTransactions",
+            "printedName": "getTransactions(customerId:cursor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.TransactionResult, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionResult",
+                    "printedName": "AnsaShared.TransactionResult",
+                    "usr": "c:objc(cs)AnsaSharedTransactionResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP15getTransactions10customerId6cursors6ResultOySo0a17SharedTransactionJ0CAA0A8ApiErrorVGSS_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP15getTransactions10customerId6cursors6ResultOySo0a17SharedTransactionJ0CAA0A8ApiErrorVGSS_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1796,7 +2036,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1840,7 +2081,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1884,7 +2126,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1928,7 +2171,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1939,7 +2183,8 @@
         "mangledName": "$s8AnsaCore15CustomerManagerP",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1967,6 +2212,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
         "declKind": "Import",
         "moduleName": "AnsaCore"
       },
@@ -2132,7 +2384,8 @@
         "mangledName": "$s8AnsaCore0A8ApiErrorV",
         "moduleName": "AnsaCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -2186,14 +2439,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 221,
+      "offset": 268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 1408,
       "length": 72,
       "value": "\"You must call AnsaSdk.initialize before accessing the shared instance.\""
     }

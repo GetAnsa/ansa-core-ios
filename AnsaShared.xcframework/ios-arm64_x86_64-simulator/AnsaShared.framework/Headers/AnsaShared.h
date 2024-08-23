@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, AnsaShared__SkieTypeExportsKt, AnsaShared__SkieSuspendWrappersKt, AnsaSharedUserReloadConfiguration, AnsaSharedUserReferralConfiguration, AnsaSharedUserPresetReloadAmounts, AnsaSharedUseBalanceRequest, AnsaSharedUShort, AnsaSharedULong, AnsaSharedUInt, AnsaSharedUByte, AnsaSharedSkie_SuspendResultSuccess, AnsaSharedSkie_SuspendResultError, AnsaSharedSkie_SuspendResultCanceled, AnsaSharedSkie_SuspendResult, AnsaSharedSkie_SuspendHandler, AnsaSharedSkie_CancellationHandler, AnsaSharedSkieKotlinStateFlow<T>, AnsaSharedSkieKotlinSharedFlow<T>, AnsaSharedSkieKotlinOptionalStateFlow<T>, AnsaSharedSkieKotlinOptionalSharedFlow<T>, AnsaSharedSkieKotlinOptionalMutableStateFlow<T>, AnsaSharedSkieKotlinOptionalMutableSharedFlow<T>, AnsaSharedSkieKotlinOptionalFlow<T>, AnsaSharedSkieKotlinMutableStateFlow<T>, AnsaSharedSkieKotlinMutableSharedFlow<T>, AnsaSharedSkieKotlinFlow<T>, AnsaSharedSkieColdFlowIterator<E>, AnsaSharedShort, AnsaSharedRewardTier, AnsaSharedPromotions, AnsaSharedPresetReloadAmounts, AnsaSharedPaymentSession, AnsaSharedPaymentMethodCollection, AnsaSharedPaymentMethod, AnsaSharedNumber, AnsaSharedNetwork_implRealAuthSessionManager, AnsaSharedNetworkTypeCompanion, AnsaSharedNetworkType, AnsaSharedMutableSet<ObjectType>, AnsaSharedMutableDictionary<KeyType, ObjectType>, AnsaSharedMerchant_implUserReferralConfigResponseCompanion, AnsaSharedMerchant_implUserReferralConfigResponse, AnsaSharedMerchant_implRewardTierResponseCompanion, AnsaSharedMerchant_implRewardTierResponse, AnsaSharedMerchant_implRealMerchantRepository, AnsaSharedMerchant_implPromotionsResponseCompanion, AnsaSharedMerchant_implPromotionsResponse, AnsaSharedMerchant_implPresetReloadAmountResponseCompanion, AnsaSharedMerchant_implPresetReloadAmountResponse, AnsaSharedMerchant_implMetadataResponseCompanion, AnsaSharedMerchant_implMetadataResponse, AnsaSharedMerchant_implMerchantResponseCompanion, AnsaSharedMerchant_implMerchantResponse, AnsaSharedMerchant_implMerchantMapper, AnsaSharedMerchant_implAutoReloadConfigResponseCompanion, AnsaSharedMerchant_implAutoReloadConfigResponse, AnsaSharedMerchant_implAppReloadConfigurationResponseCompanion, AnsaSharedMerchant_implAppReloadConfigurationResponse, AnsaSharedMerchantMetadata, AnsaSharedMerchantAutoReloadConfiguration, AnsaSharedMerchant, AnsaSharedLong, AnsaSharedLogLevel, AnsaSharedKtor_utilsWeekDayCompanion, AnsaSharedKtor_utilsWeekDay, AnsaSharedKtor_utilsTypeInfo, AnsaSharedKtor_utilsStringValuesBuilderImpl, AnsaSharedKtor_utilsPipelinePhase, AnsaSharedKtor_utilsPipeline<TSubject, TContext>, AnsaSharedKtor_utilsMonthCompanion, AnsaSharedKtor_utilsMonth, AnsaSharedKtor_utilsGMTDateCompanion, AnsaSharedKtor_utilsGMTDate, AnsaSharedKtor_utilsAttributeKey<T>, AnsaSharedKtor_ioMemoryCompanion, AnsaSharedKtor_ioMemory, AnsaSharedKtor_ioInputCompanion, AnsaSharedKtor_ioInput, AnsaSharedKtor_ioChunkBufferCompanion, AnsaSharedKtor_ioChunkBuffer, AnsaSharedKtor_ioByteReadPacketCompanion, AnsaSharedKtor_ioByteReadPacket, AnsaSharedKtor_ioBufferCompanion, AnsaSharedKtor_ioBuffer, AnsaSharedKtor_httpUrlCompanion, AnsaSharedKtor_httpUrl, AnsaSharedKtor_httpURLProtocolCompanion, AnsaSharedKtor_httpURLProtocol, AnsaSharedKtor_httpURLBuilderCompanion, AnsaSharedKtor_httpURLBuilder, AnsaSharedKtor_httpOutgoingContentWriteChannelContent, AnsaSharedKtor_httpOutgoingContentReadChannelContent, AnsaSharedKtor_httpOutgoingContentProtocolUpgrade, AnsaSharedKtor_httpOutgoingContentNoContent, AnsaSharedKtor_httpOutgoingContentByteArrayContent, AnsaSharedKtor_httpOutgoingContent, AnsaSharedKtor_httpHttpStatusCodeCompanion, AnsaSharedKtor_httpHttpStatusCode, AnsaSharedKtor_httpHttpProtocolVersionCompanion, AnsaSharedKtor_httpHttpProtocolVersion, AnsaSharedKtor_httpHttpMethodCompanion, AnsaSharedKtor_httpHttpMethod, AnsaSharedKtor_httpHeadersBuilder, AnsaSharedKtor_httpHeaderValueWithParametersCompanion, AnsaSharedKtor_httpHeaderValueWithParameters, AnsaSharedKtor_httpHeaderValueParam, AnsaSharedKtor_httpContentTypeCompanion, AnsaSharedKtor_httpContentType, AnsaSharedKtor_eventsEvents, AnsaSharedKtor_eventsEventDefinition<T>, AnsaSharedKtor_client_coreResponseException, AnsaSharedKtor_client_coreProxyConfig, AnsaSharedKtor_client_coreHttpSendPipelinePhases, AnsaSharedKtor_client_coreHttpSendPipeline, AnsaSharedKtor_client_coreHttpResponsePipelinePhases, AnsaSharedKtor_client_coreHttpResponsePipeline, AnsaSharedKtor_client_coreHttpResponseData, AnsaSharedKtor_client_coreHttpResponseContainer, AnsaSharedKtor_client_coreHttpResponse, AnsaSharedKtor_client_coreHttpRequestPipelinePhases, AnsaSharedKtor_client_coreHttpRequestPipeline, AnsaSharedKtor_client_coreHttpRequestData, AnsaSharedKtor_client_coreHttpRequestBuilderCompanion, AnsaSharedKtor_client_coreHttpRequestBuilder, AnsaSharedKtor_client_coreHttpReceivePipelinePhases, AnsaSharedKtor_client_coreHttpReceivePipeline, AnsaSharedKtor_client_coreHttpClientEngineConfig, AnsaSharedKtor_client_coreHttpClientConfig<T>, AnsaSharedKtor_client_coreHttpClientCallCompanion, AnsaSharedKtor_client_coreHttpClientCall, AnsaSharedKtor_client_coreHttpClient, AnsaSharedKtorWrapper, AnsaSharedKtorProvider, AnsaSharedKotlinx_serialization_coreStructureKindOBJECT, AnsaSharedKotlinx_serialization_coreStructureKindMAP, AnsaSharedKotlinx_serialization_coreStructureKindLIST, AnsaSharedKotlinx_serialization_coreStructureKindCLASS, AnsaSharedKotlinx_serialization_coreStructureKind, AnsaSharedKotlinx_serialization_coreSerializersModule, AnsaSharedKotlinx_serialization_coreSerialKindENUM, AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL, AnsaSharedKotlinx_serialization_coreSerialKind, AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING, AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT, AnsaSharedKotlinx_serialization_corePrimitiveKindLONG, AnsaSharedKotlinx_serialization_corePrimitiveKindINT, AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT, AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE, AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR, AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE, AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN, AnsaSharedKotlinx_serialization_corePrimitiveKind, AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED, AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN, AnsaSharedKotlinx_serialization_corePolymorphicKind, AnsaSharedKotlinx_coroutines_coreCoroutineDispatcherKey, AnsaSharedKotlinx_coroutines_coreCoroutineDispatcher, AnsaSharedKotlin_inject_runtimeLazyMap, AnsaSharedKotlinUnit, AnsaSharedKotlinThrowable, AnsaSharedKotlinRuntimeException, AnsaSharedKotlinNothing, AnsaSharedKotlinLongRangeCompanion, AnsaSharedKotlinLongRange, AnsaSharedKotlinLongProgressionCompanion, AnsaSharedKotlinLongProgression, AnsaSharedKotlinLongIterator, AnsaSharedKotlinKVariance, AnsaSharedKotlinKTypeProjectionCompanion, AnsaSharedKotlinKTypeProjection, AnsaSharedKotlinIllegalStateException, AnsaSharedKotlinException, AnsaSharedKotlinEnumCompanion, AnsaSharedKotlinEnum<E>, AnsaSharedKotlinCancellationException, AnsaSharedKotlinByteIterator, AnsaSharedKotlinByteArray, AnsaSharedKotlinArray<T>, AnsaSharedKotlinAbstractCoroutineContextKey<B, E>, AnsaSharedKotlinAbstractCoroutineContextElement, AnsaSharedKmpAppComponentCompanion, AnsaSharedKmpAppComponent, AnsaSharedInt, AnsaSharedInjectKmpAppComponentKt, AnsaSharedInjectKmpAppComponent, AnsaSharedHttpExceptions, AnsaSharedHttpErrorResponseCompanion, AnsaSharedHttpErrorResponse, AnsaSharedHttpClientHelpersKt, AnsaSharedFloat, AnsaSharedDouble, AnsaSharedCustomer_implUserReloadConfigurationResponseCompanion, AnsaSharedCustomer_implUserReloadConfigurationResponse, AnsaSharedCustomer_implUserReloadConfigurationMapper, AnsaSharedCustomer_implUseBalanceResponseCompanion, AnsaSharedCustomer_implUseBalanceResponse, AnsaSharedCustomer_implUseBalanceMapper, AnsaSharedCustomer_implRealCustomerRepository, AnsaSharedCustomer_implPresetReloadAmountResponseCompanion, AnsaSharedCustomer_implPresetReloadAmountResponse, AnsaSharedCustomer_implPaymentMethodsResponseCompanion, AnsaSharedCustomer_implPaymentMethodsResponse, AnsaSharedCustomer_implPaymentMethodResponseCompanion, AnsaSharedCustomer_implPaymentMethodResponse, AnsaSharedCustomer_implPaymentMethodMapper, AnsaSharedCustomer_implPaymentMethodListMapper, AnsaSharedCustomer_implCustomerResponseSquareCompanion, AnsaSharedCustomer_implCustomerResponseSquare, AnsaSharedCustomer_implCustomerResponseCurrentBalanceCompanion, AnsaSharedCustomer_implCustomerResponseCurrentBalance, AnsaSharedCustomer_implCustomerResponseCompanion, AnsaSharedCustomer_implCustomerResponseBillingDetailsCompanion, AnsaSharedCustomer_implCustomerResponseBillingDetails, AnsaSharedCustomer_implCustomerResponseAnsaMetadataCompanion, AnsaSharedCustomer_implCustomerResponseAnsaMetadata, AnsaSharedCustomer_implCustomerResponse, AnsaSharedCustomer_implCustomerMapper, AnsaSharedCustomer_implCurrentBalanceCompanion, AnsaSharedCustomer_implCurrentBalance, AnsaSharedCustomer_implCardResponseCompanion, AnsaSharedCustomer_implCardResponse, AnsaSharedCustomer_implCardMapper, AnsaSharedCustomer_implBillingDetailsMapper, AnsaSharedCustomer_implBalanceMapper_, AnsaSharedCustomer_implBalanceMapper, AnsaSharedCustomer_implAutoReloadConfigurationResponseCompanion, AnsaSharedCustomer_implAutoReloadConfigurationResponse, AnsaSharedCustomer_implAutoReloadConfigMapper, AnsaSharedCustomer_implAddPaymentMethodResponseCompanion, AnsaSharedCustomer_implAddPaymentMethodResponse, AnsaSharedCustomer_implAddPaymentMethodMapper, AnsaSharedCustomer_implAddBalanceResponseCompanion, AnsaSharedCustomer_implAddBalanceResponse, AnsaSharedCustomer_implAddBalanceMapper, AnsaSharedCustomer, AnsaSharedCard, AnsaSharedByte, AnsaSharedBoolean, AnsaSharedBillingDetails, AnsaSharedBase, AnsaSharedBalanceUpdate, AnsaSharedBalance, AnsaSharedAutoReloadConfigurationStatusEnabled, AnsaSharedAutoReloadConfigurationStatusDisabled, AnsaSharedAutoReloadConfigurationRequest, AnsaSharedAutoReloadConfiguration, AnsaSharedAuthTypePublishableKey, AnsaSharedAuthTypeNone, AnsaSharedAuthTypeClientSecret, AnsaSharedAppReloadConfiguration, AnsaSharedApiResultSuccess<T>, AnsaSharedApiResultErrorSerializationError, AnsaSharedApiResultErrorHttpError, AnsaSharedApiResultErrorGenericError, AnsaSharedApiResultError, AnsaSharedApiResult<T>, AnsaSharedAddPaymentMethodTypeKmpStripe, AnsaSharedAddPaymentMethodTypeKmpSquare, AnsaSharedAddPaymentMethodTypeKmpGooglePay, AnsaSharedAddPaymentMethodTypeKmpCreditCard, AnsaSharedAddPaymentMethodTypeKmpApplePay, AnsaSharedAddPaymentMethodRequest, AnsaSharedAddBalanceRequest;
+@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, AnsaShared__SkieTypeExportsKt, AnsaShared__SkieSuspendWrappersKt, AnsaSharedUserReloadConfiguration, AnsaSharedUserReferralConfiguration, AnsaSharedUserPresetReloadAmounts, AnsaSharedUseBalanceRequest, AnsaSharedUShort, AnsaSharedULong, AnsaSharedUInt, AnsaSharedUByte, AnsaSharedTransactionTypeUseBalance, AnsaSharedTransactionTypeUnknown, AnsaSharedTransactionTypeRefundPaymentMethod, AnsaSharedTransactionTypeMerchantRefund, AnsaSharedTransactionTypeMerchantAddPromo, AnsaSharedTransactionTypeCompanion, AnsaSharedTransactionTypeAddBalance, AnsaSharedTransactionType, AnsaSharedTransactionSourceUseBalanceAndReload, AnsaSharedTransactionSourceUseBalance, AnsaSharedTransactionSourceUnknown, AnsaSharedTransactionSourceCompanion, AnsaSharedTransactionSourceAutoReload, AnsaSharedTransactionSourceAddBalance, AnsaSharedTransactionSource, AnsaSharedTransactionResult, AnsaSharedTransaction, AnsaSharedSkie_SuspendResultSuccess, AnsaSharedSkie_SuspendResultError, AnsaSharedSkie_SuspendResultCanceled, AnsaSharedSkie_SuspendResult, AnsaSharedSkie_SuspendHandler, AnsaSharedSkie_CancellationHandler, AnsaSharedSkieKotlinStateFlow<T>, AnsaSharedSkieKotlinSharedFlow<T>, AnsaSharedSkieKotlinOptionalStateFlow<T>, AnsaSharedSkieKotlinOptionalSharedFlow<T>, AnsaSharedSkieKotlinOptionalMutableStateFlow<T>, AnsaSharedSkieKotlinOptionalMutableSharedFlow<T>, AnsaSharedSkieKotlinOptionalFlow<T>, AnsaSharedSkieKotlinMutableStateFlow<T>, AnsaSharedSkieKotlinMutableSharedFlow<T>, AnsaSharedSkieKotlinFlow<T>, AnsaSharedSkieColdFlowIterator<E>, AnsaSharedShort, AnsaSharedRewardTier, AnsaSharedPromotions, AnsaSharedPresetReloadAmounts, AnsaSharedPaymentSession, AnsaSharedPaymentMethodCollection, AnsaSharedPaymentMethod, AnsaSharedNumber, AnsaSharedNetwork_implRealAuthSessionManager, AnsaSharedNetworkTypeCompanion, AnsaSharedNetworkType, AnsaSharedMutableSet<ObjectType>, AnsaSharedMutableDictionary<KeyType, ObjectType>, AnsaSharedMerchant_implUserReferralConfigResponseCompanion, AnsaSharedMerchant_implUserReferralConfigResponse, AnsaSharedMerchant_implRewardTierResponseCompanion, AnsaSharedMerchant_implRewardTierResponse, AnsaSharedMerchant_implRealMerchantRepository, AnsaSharedMerchant_implPromotionsResponseCompanion, AnsaSharedMerchant_implPromotionsResponse, AnsaSharedMerchant_implPresetReloadAmountResponseCompanion, AnsaSharedMerchant_implPresetReloadAmountResponse, AnsaSharedMerchant_implMetadataResponseCompanion, AnsaSharedMerchant_implMetadataResponse, AnsaSharedMerchant_implMerchantResponseCompanion, AnsaSharedMerchant_implMerchantResponse, AnsaSharedMerchant_implMerchantMapper, AnsaSharedMerchant_implAutoReloadConfigResponseCompanion, AnsaSharedMerchant_implAutoReloadConfigResponse, AnsaSharedMerchant_implAppReloadConfigurationResponseCompanion, AnsaSharedMerchant_implAppReloadConfigurationResponse, AnsaSharedMerchantMetadata, AnsaSharedMerchantCartArtInfo, AnsaSharedMerchantBasisTheoryInfo, AnsaSharedMerchantAutoReloadConfiguration, AnsaSharedMerchant, AnsaSharedLong, AnsaSharedLogLevel, AnsaSharedKtor_utilsWeekDayCompanion, AnsaSharedKtor_utilsWeekDay, AnsaSharedKtor_utilsTypeInfo, AnsaSharedKtor_utilsStringValuesBuilderImpl, AnsaSharedKtor_utilsPipelinePhase, AnsaSharedKtor_utilsPipeline<TSubject, TContext>, AnsaSharedKtor_utilsMonthCompanion, AnsaSharedKtor_utilsMonth, AnsaSharedKtor_utilsGMTDateCompanion, AnsaSharedKtor_utilsGMTDate, AnsaSharedKtor_utilsAttributeKey<T>, AnsaSharedKtor_ioMemoryCompanion, AnsaSharedKtor_ioMemory, AnsaSharedKtor_ioInputCompanion, AnsaSharedKtor_ioInput, AnsaSharedKtor_ioChunkBufferCompanion, AnsaSharedKtor_ioChunkBuffer, AnsaSharedKtor_ioByteReadPacketCompanion, AnsaSharedKtor_ioByteReadPacket, AnsaSharedKtor_ioBufferCompanion, AnsaSharedKtor_ioBuffer, AnsaSharedKtor_httpUrlCompanion, AnsaSharedKtor_httpUrl, AnsaSharedKtor_httpURLProtocolCompanion, AnsaSharedKtor_httpURLProtocol, AnsaSharedKtor_httpURLBuilderCompanion, AnsaSharedKtor_httpURLBuilder, AnsaSharedKtor_httpOutgoingContentWriteChannelContent, AnsaSharedKtor_httpOutgoingContentReadChannelContent, AnsaSharedKtor_httpOutgoingContentProtocolUpgrade, AnsaSharedKtor_httpOutgoingContentNoContent, AnsaSharedKtor_httpOutgoingContentByteArrayContent, AnsaSharedKtor_httpOutgoingContent, AnsaSharedKtor_httpHttpStatusCodeCompanion, AnsaSharedKtor_httpHttpStatusCode, AnsaSharedKtor_httpHttpProtocolVersionCompanion, AnsaSharedKtor_httpHttpProtocolVersion, AnsaSharedKtor_httpHttpMethodCompanion, AnsaSharedKtor_httpHttpMethod, AnsaSharedKtor_httpHeadersBuilder, AnsaSharedKtor_httpHeaderValueWithParametersCompanion, AnsaSharedKtor_httpHeaderValueWithParameters, AnsaSharedKtor_httpHeaderValueParam, AnsaSharedKtor_httpContentTypeCompanion, AnsaSharedKtor_httpContentType, AnsaSharedKtor_eventsEvents, AnsaSharedKtor_eventsEventDefinition<T>, AnsaSharedKtor_client_coreResponseException, AnsaSharedKtor_client_coreProxyConfig, AnsaSharedKtor_client_coreHttpSendPipelinePhases, AnsaSharedKtor_client_coreHttpSendPipeline, AnsaSharedKtor_client_coreHttpResponsePipelinePhases, AnsaSharedKtor_client_coreHttpResponsePipeline, AnsaSharedKtor_client_coreHttpResponseData, AnsaSharedKtor_client_coreHttpResponseContainer, AnsaSharedKtor_client_coreHttpResponse, AnsaSharedKtor_client_coreHttpRequestPipelinePhases, AnsaSharedKtor_client_coreHttpRequestPipeline, AnsaSharedKtor_client_coreHttpRequestData, AnsaSharedKtor_client_coreHttpRequestBuilderCompanion, AnsaSharedKtor_client_coreHttpRequestBuilder, AnsaSharedKtor_client_coreHttpReceivePipelinePhases, AnsaSharedKtor_client_coreHttpReceivePipeline, AnsaSharedKtor_client_coreHttpClientEngineConfig, AnsaSharedKtor_client_coreHttpClientConfig<T>, AnsaSharedKtor_client_coreHttpClientCallCompanion, AnsaSharedKtor_client_coreHttpClientCall, AnsaSharedKtor_client_coreHttpClient, AnsaSharedKtorWrapper, AnsaSharedKtorProvider, AnsaSharedKotlinx_serialization_jsonJsonPrimitiveCompanion, AnsaSharedKotlinx_serialization_jsonJsonPrimitive, AnsaSharedKotlinx_serialization_jsonJsonNull, AnsaSharedKotlinx_serialization_jsonJsonElementCompanion, AnsaSharedKotlinx_serialization_jsonJsonElement, AnsaSharedKotlinx_serialization_coreStructureKindOBJECT, AnsaSharedKotlinx_serialization_coreStructureKindMAP, AnsaSharedKotlinx_serialization_coreStructureKindLIST, AnsaSharedKotlinx_serialization_coreStructureKindCLASS, AnsaSharedKotlinx_serialization_coreStructureKind, AnsaSharedKotlinx_serialization_coreSerializersModule, AnsaSharedKotlinx_serialization_coreSerialKindENUM, AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL, AnsaSharedKotlinx_serialization_coreSerialKind, AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING, AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT, AnsaSharedKotlinx_serialization_corePrimitiveKindLONG, AnsaSharedKotlinx_serialization_corePrimitiveKindINT, AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT, AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE, AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR, AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE, AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN, AnsaSharedKotlinx_serialization_corePrimitiveKind, AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED, AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN, AnsaSharedKotlinx_serialization_corePolymorphicKind, AnsaSharedKotlinx_coroutines_coreCoroutineDispatcherKey, AnsaSharedKotlinx_coroutines_coreCoroutineDispatcher, AnsaSharedKotlin_inject_runtimeLazyMap, AnsaSharedKotlinUnit, AnsaSharedKotlinThrowable, AnsaSharedKotlinRuntimeException, AnsaSharedKotlinNothing, AnsaSharedKotlinLongRangeCompanion, AnsaSharedKotlinLongRange, AnsaSharedKotlinLongProgressionCompanion, AnsaSharedKotlinLongProgression, AnsaSharedKotlinLongIterator, AnsaSharedKotlinKVariance, AnsaSharedKotlinKTypeProjectionCompanion, AnsaSharedKotlinKTypeProjection, AnsaSharedKotlinIllegalStateException, AnsaSharedKotlinException, AnsaSharedKotlinEnumCompanion, AnsaSharedKotlinEnum<E>, AnsaSharedKotlinCancellationException, AnsaSharedKotlinByteIterator, AnsaSharedKotlinByteArray, AnsaSharedKotlinArray<T>, AnsaSharedKotlinAbstractCoroutineContextKey<B, E>, AnsaSharedKotlinAbstractCoroutineContextElement, AnsaSharedKmpAppComponentCompanion, AnsaSharedKmpAppComponent, AnsaSharedInt, AnsaSharedInjectKmpAppComponentKt, AnsaSharedInjectKmpAppComponent, AnsaSharedHttpExceptions, AnsaSharedHttpErrorResponseCompanion, AnsaSharedHttpErrorResponse, AnsaSharedHttpClientHelpersKt, AnsaSharedFloat, AnsaSharedDouble, AnsaSharedCustomer_implUserReloadConfigurationResponseCompanion, AnsaSharedCustomer_implUserReloadConfigurationResponse, AnsaSharedCustomer_implUserReloadConfigurationMapper, AnsaSharedCustomer_implUseBalanceResponseCompanion, AnsaSharedCustomer_implUseBalanceResponse, AnsaSharedCustomer_implUseBalanceMapper, AnsaSharedCustomer_implTransactionResponseCompanion, AnsaSharedCustomer_implTransactionResponse, AnsaSharedCustomer_implTransactionMapper, AnsaSharedCustomer_implRealCustomerRepository, AnsaSharedCustomer_implPresetReloadAmountResponseCompanion, AnsaSharedCustomer_implPresetReloadAmountResponse, AnsaSharedCustomer_implPaymentMethodsResponseCompanion, AnsaSharedCustomer_implPaymentMethodsResponse, AnsaSharedCustomer_implPaymentMethodResponseCompanion, AnsaSharedCustomer_implPaymentMethodResponse, AnsaSharedCustomer_implPaymentMethodMapper, AnsaSharedCustomer_implPaymentMethodListMapper, AnsaSharedCustomer_implCustomerResponseSquareCompanion, AnsaSharedCustomer_implCustomerResponseSquare, AnsaSharedCustomer_implCustomerResponseCurrentBalanceCompanion, AnsaSharedCustomer_implCustomerResponseCurrentBalance, AnsaSharedCustomer_implCustomerResponseCompanion, AnsaSharedCustomer_implCustomerResponseBillingDetailsCompanion, AnsaSharedCustomer_implCustomerResponseBillingDetails, AnsaSharedCustomer_implCustomerResponseAnsaMetadataCompanion, AnsaSharedCustomer_implCustomerResponseAnsaMetadata, AnsaSharedCustomer_implCustomerResponse, AnsaSharedCustomer_implCustomerMapper, AnsaSharedCustomer_implCurrentBalanceCompanion, AnsaSharedCustomer_implCurrentBalance, AnsaSharedCustomer_implCardResponseCompanion, AnsaSharedCustomer_implCardResponse, AnsaSharedCustomer_implCardMapper, AnsaSharedCustomer_implBillingDetailsMapper, AnsaSharedCustomer_implBalanceMapper_, AnsaSharedCustomer_implBalanceMapper, AnsaSharedCustomer_implAutoReloadConfigurationResponseCompanion, AnsaSharedCustomer_implAutoReloadConfigurationResponse, AnsaSharedCustomer_implAutoReloadConfigMapper, AnsaSharedCustomer_implAddPaymentMethodResponseCompanion, AnsaSharedCustomer_implAddPaymentMethodResponse, AnsaSharedCustomer_implAddPaymentMethodMapper, AnsaSharedCustomer_implAddBalanceResponseCompanion, AnsaSharedCustomer_implAddBalanceResponse, AnsaSharedCustomer_implAddBalanceMapper, AnsaSharedCustomer, AnsaSharedCard, AnsaSharedByte, AnsaSharedBoolean, AnsaSharedBillingDetails, AnsaSharedBase, AnsaSharedBalanceUpdate, AnsaSharedBalanceAdjustment, AnsaSharedBalance, AnsaSharedAutoReloadConfigurationStatusEnabled, AnsaSharedAutoReloadConfigurationStatusDisabled, AnsaSharedAutoReloadConfigurationRequest, AnsaSharedAutoReloadConfiguration, AnsaSharedAuthTypePublishableKey, AnsaSharedAuthTypeNone, AnsaSharedAuthTypeClientSecret, AnsaSharedAppReloadConfiguration, AnsaSharedApiResultSuccess<T>, AnsaSharedApiResultErrorSerializationError, AnsaSharedApiResultErrorHttpError, AnsaSharedApiResultErrorGenericError, AnsaSharedApiResultError, AnsaSharedApiResult<T>, AnsaSharedAddPaymentMethodTypeKmpStripe, AnsaSharedAddPaymentMethodTypeKmpSquare, AnsaSharedAddPaymentMethodTypeKmpGooglePay, AnsaSharedAddPaymentMethodTypeKmpCreditCard, AnsaSharedAddPaymentMethodTypeKmpApplePay, AnsaSharedAddPaymentMethodRequest, AnsaSharedAddBalanceRequest;
 
 @protocol NSCopying, AnsaSharedSkie_DispatcherDelegate, AnsaSharedNetwork_implNetworkBindings, AnsaSharedMerchant_implMerchantBindings, AnsaSharedMerchantRepository, AnsaSharedKtor_utilsStringValuesBuilder, AnsaSharedKtor_utilsStringValues, AnsaSharedKtor_utilsAttributes, AnsaSharedKtor_ioReadSession, AnsaSharedKtor_ioObjectPool, AnsaSharedKtor_ioCloseable, AnsaSharedKtor_ioByteWriteChannel, AnsaSharedKtor_ioByteReadChannel, AnsaSharedKtor_httpParametersBuilder, AnsaSharedKtor_httpParameters, AnsaSharedKtor_httpHttpMessageBuilder, AnsaSharedKtor_httpHttpMessage, AnsaSharedKtor_httpHeaders, AnsaSharedKtor_client_coreHttpRequest, AnsaSharedKtor_client_coreHttpClientPlugin, AnsaSharedKtor_client_coreHttpClientEngineCapability, AnsaSharedKtor_client_coreHttpClientEngine, AnsaSharedKtor_client_coreClientPlugin, AnsaSharedKotlinx_serialization_coreSerializersModuleCollector, AnsaSharedKotlinx_serialization_coreSerializationStrategy, AnsaSharedKotlinx_serialization_coreSerialDescriptor, AnsaSharedKotlinx_serialization_coreKSerializer, AnsaSharedKotlinx_serialization_coreEncoder, AnsaSharedKotlinx_serialization_coreDeserializationStrategy, AnsaSharedKotlinx_serialization_coreDecoder, AnsaSharedKotlinx_serialization_coreCompositeEncoder, AnsaSharedKotlinx_serialization_coreCompositeDecoder, AnsaSharedKotlinx_coroutines_coreStateFlow, AnsaSharedKotlinx_coroutines_coreSharedFlow, AnsaSharedKotlinx_coroutines_coreSelectInstance, AnsaSharedKotlinx_coroutines_coreSelectClause2, AnsaSharedKotlinx_coroutines_coreSelectClause1, AnsaSharedKotlinx_coroutines_coreSelectClause0, AnsaSharedKotlinx_coroutines_coreSelectClause, AnsaSharedKotlinx_coroutines_coreRunnable, AnsaSharedKotlinx_coroutines_coreParentJob, AnsaSharedKotlinx_coroutines_coreMutableStateFlow, AnsaSharedKotlinx_coroutines_coreMutableSharedFlow, AnsaSharedKotlinx_coroutines_coreJob, AnsaSharedKotlinx_coroutines_coreFlowCollector, AnsaSharedKotlinx_coroutines_coreFlow, AnsaSharedKotlinx_coroutines_coreDisposableHandle, AnsaSharedKotlinx_coroutines_coreCoroutineScope, AnsaSharedKotlinx_coroutines_coreChildJob, AnsaSharedKotlinx_coroutines_coreChildHandle, AnsaSharedKotlin_inject_runtimeScopedComponent, AnsaSharedKotlinSuspendFunction2, AnsaSharedKotlinSuspendFunction1, AnsaSharedKotlinSequence, AnsaSharedKotlinOpenEndRange, AnsaSharedKotlinMapEntry, AnsaSharedKotlinKType, AnsaSharedKotlinKDeclarationContainer, AnsaSharedKotlinKClassifier, AnsaSharedKotlinKClass, AnsaSharedKotlinKAnnotatedElement, AnsaSharedKotlinIterator, AnsaSharedKotlinIterable, AnsaSharedKotlinFunction, AnsaSharedKotlinCoroutineContextKey, AnsaSharedKotlinCoroutineContextElement, AnsaSharedKotlinCoroutineContext, AnsaSharedKotlinContinuationInterceptor, AnsaSharedKotlinContinuation, AnsaSharedKotlinComparable, AnsaSharedKotlinClosedRange, AnsaSharedKotlinAppendable, AnsaSharedKotlinAnnotation, AnsaSharedKmpAppComponentBindings, AnsaSharedDummyInterface, AnsaSharedCustomer_implCustomerBindings, AnsaSharedCustomerRepository, AnsaSharedCore_implMapper, AnsaSharedClientSecretProviderIos, AnsaSharedAutoReloadConfigurationStatus, AnsaSharedAuthType, AnsaSharedAuthSessionManager, AnsaSharedAnsaLogger, AnsaSharedAddPaymentMethodTypeKmp;
 
@@ -563,65 +563,6 @@ __attribute__((swift_name("Customer")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
-__attribute__((swift_name("CustomerRepository")))
-@protocol AnsaSharedCustomerRepository
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)addBalanceRequest:(AnsaSharedAddBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addBalance(request:idempotencyKey:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)addPaymentMethodCustomerId:(NSString *)customerId paymentMethodType:(id<AnsaSharedAddPaymentMethodTypeKmp>)paymentMethodType idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedPaymentMethod *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)deletePaymentMethodCustomerId:(NSString *)customerId paymentMethodId:(NSString *)paymentMethodId idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedKotlinUnit *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("deletePaymentMethod(customerId:paymentMethodId:idempotencyKey:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getAutoReloadConfigurationCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getAutoReloadConfiguration(customerId:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getCustomerCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedCustomer *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getCustomer(customerId:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getPaymentMethodsCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedPaymentMethodCollection *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getPaymentMethods(customerId:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getReloadConfigCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedUserReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getReloadConfig(customerId:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)setAutoReloadConfigurationRequest:(AnsaSharedAutoReloadConfigurationRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)useBalanceRequest:(AnsaSharedUseBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("useBalance(request:idempotencyKey:completionHandler:)")));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UserPresetReloadAmounts")))
 @interface AnsaSharedUserPresetReloadAmounts : AnsaSharedBase
@@ -652,11 +593,11 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AutoReloadConfiguration")))
 @interface AnsaSharedAutoReloadConfiguration : AnsaSharedBase
 @property (readonly) BOOL enabled __attribute__((swift_name("enabled")));
-@property (readonly) NSString *paymentMethodId __attribute__((swift_name("paymentMethodId")));
-@property (readonly) int32_t reloadAmount __attribute__((swift_name("reloadAmount")));
-@property (readonly) int32_t reloadThreshold __attribute__((swift_name("reloadThreshold")));
-- (instancetype)initWithEnabled:(BOOL)enabled paymentMethodId:(NSString *)paymentMethodId reloadAmount:(int32_t)reloadAmount reloadThreshold:(int32_t)reloadThreshold __attribute__((swift_name("init(enabled:paymentMethodId:reloadAmount:reloadThreshold:)"))) __attribute__((objc_designated_initializer));
-- (AnsaSharedAutoReloadConfiguration *)doCopyEnabled:(BOOL)enabled paymentMethodId:(NSString *)paymentMethodId reloadAmount:(int32_t)reloadAmount reloadThreshold:(int32_t)reloadThreshold __attribute__((swift_name("doCopy(enabled:paymentMethodId:reloadAmount:reloadThreshold:)")));
+@property (readonly) NSString * _Nullable paymentMethodId __attribute__((swift_name("paymentMethodId")));
+@property (readonly) AnsaSharedInt * _Nullable reloadAmount __attribute__((swift_name("reloadAmount")));
+@property (readonly) AnsaSharedInt * _Nullable reloadThreshold __attribute__((swift_name("reloadThreshold")));
+- (instancetype)initWithEnabled:(BOOL)enabled paymentMethodId:(NSString * _Nullable)paymentMethodId reloadAmount:(AnsaSharedInt * _Nullable)reloadAmount reloadThreshold:(AnsaSharedInt * _Nullable)reloadThreshold __attribute__((swift_name("init(enabled:paymentMethodId:reloadAmount:reloadThreshold:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedAutoReloadConfiguration *)doCopyEnabled:(BOOL)enabled paymentMethodId:(NSString * _Nullable)paymentMethodId reloadAmount:(AnsaSharedInt * _Nullable)reloadAmount reloadThreshold:(AnsaSharedInt * _Nullable)reloadThreshold __attribute__((swift_name("doCopy(enabled:paymentMethodId:reloadAmount:reloadThreshold:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -771,6 +712,72 @@ __attribute__((swift_name("BillingDetails")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
+__attribute__((swift_name("CustomerRepository")))
+@protocol AnsaSharedCustomerRepository
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)addBalanceRequest:(AnsaSharedAddBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addBalance(request:idempotencyKey:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)addPaymentMethodCustomerId:(NSString *)customerId paymentMethodType:(id<AnsaSharedAddPaymentMethodTypeKmp>)paymentMethodType idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedPaymentMethod *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)deletePaymentMethodCustomerId:(NSString *)customerId paymentMethodId:(NSString *)paymentMethodId idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedKotlinUnit *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("deletePaymentMethod(customerId:paymentMethodId:idempotencyKey:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getAutoReloadConfigurationCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getAutoReloadConfiguration(customerId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getCustomerCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedCustomer *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getCustomer(customerId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getPaymentMethodsCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedPaymentMethodCollection *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getPaymentMethods(customerId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getReloadConfigCustomerId:(NSString *)customerId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedUserReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getReloadConfig(customerId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getTransactionsCustomerId:(NSString *)customerId cursor:(NSString * _Nullable)cursor completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedTransactionResult *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getTransactions(customerId:cursor:completionHandler:)")));
+- (id<AnsaSharedKotlinx_coroutines_coreFlow>)observeCustomerCustomerId:(NSString *)customerId __attribute__((swift_name("observeCustomer(customerId:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)setAutoReloadConfigurationRequest:(AnsaSharedAutoReloadConfigurationRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)useBalanceRequest:(AnsaSharedUseBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("useBalance(request:idempotencyKey:completionHandler:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AddPaymentMethodRequest")))
 @interface AnsaSharedAddPaymentMethodRequest : AnsaSharedBase
@@ -865,10 +872,9 @@ __attribute__((swift_name("PaymentMethod")))
 @interface AnsaSharedPaymentMethod : AnsaSharedBase
 @property (readonly) AnsaSharedCard *card __attribute__((swift_name("card")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
-@property (readonly) BOOL preferred __attribute__((swift_name("preferred")));
 @property (readonly) NSString *type __attribute__((swift_name("type")));
-- (instancetype)initWithCard:(AnsaSharedCard *)card preferred:(BOOL)preferred id:(NSString *)id type:(NSString *)type __attribute__((swift_name("init(card:preferred:id:type:)"))) __attribute__((objc_designated_initializer));
-- (AnsaSharedPaymentMethod *)doCopyCard:(AnsaSharedCard *)card preferred:(BOOL)preferred id:(NSString *)id type:(NSString *)type __attribute__((swift_name("doCopy(card:preferred:id:type:)")));
+- (instancetype)initWithCard:(AnsaSharedCard *)card id:(NSString *)id type:(NSString *)type __attribute__((swift_name("init(card:id:type:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedPaymentMethod *)doCopyCard:(AnsaSharedCard *)card id:(NSString *)id type:(NSString *)type __attribute__((swift_name("doCopy(card:id:type:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -884,15 +890,6 @@ __attribute__((swift_name("PaymentMethodCollection")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((swift_name("AnsaLogger")))
-@protocol AnsaSharedAnsaLogger
-@required
-- (void)debugMessage:(NSString *)message __attribute__((swift_name("debug(message:)")));
-- (void)errorMessage:(NSString *)message error:(AnsaSharedKotlinThrowable * _Nullable)error __attribute__((swift_name("error(message:error:)")));
-- (void)infoMessage:(NSString *)message __attribute__((swift_name("info(message:)")));
-- (void)warningMessage:(NSString *)message __attribute__((swift_name("warning(message:)")));
 @end
 
 __attribute__((swift_name("KotlinComparable")))
@@ -911,6 +908,226 @@ __attribute__((swift_name("KotlinEnum")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BalanceAdjustment")))
+@interface AnsaSharedBalanceAdjustment : AnsaSharedKotlinEnum<AnsaSharedBalanceAdjustment *>
+@property (class, readonly) AnsaSharedBalanceAdjustment *debit __attribute__((swift_name("debit")));
+@property (class, readonly) AnsaSharedBalanceAdjustment *credit __attribute__((swift_name("credit")));
+@property (class, readonly) AnsaSharedBalanceAdjustment *none __attribute__((swift_name("none")));
+@property (class, readonly) NSArray<AnsaSharedBalanceAdjustment *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (AnsaSharedKotlinArray<AnsaSharedBalanceAdjustment *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Transaction")))
+@interface AnsaSharedTransaction : AnsaSharedBase
+@property (readonly) AnsaSharedBalanceAdjustment *adjustment __attribute__((swift_name("adjustment")));
+@property (readonly) int32_t amount __attribute__((swift_name("amount")));
+@property (readonly) NSString *created __attribute__((swift_name("created")));
+@property (readonly) NSString *displayName __attribute__((swift_name("displayName")));
+@property (readonly) NSString *from __attribute__((swift_name("from")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) AnsaSharedBoolean * _Nullable isCredit __attribute__((swift_name("isCredit")));
+@property (readonly) NSString * _Nullable label __attribute__((swift_name("label")));
+@property (readonly) NSDictionary<NSString *, AnsaSharedKotlinx_serialization_jsonJsonElement *> *metadata __attribute__((swift_name("metadata")));
+@property (readonly) NSString * _Nullable paymentMethodId __attribute__((swift_name("paymentMethodId")));
+@property (readonly) NSString * _Nullable reason __attribute__((swift_name("reason")));
+@property (readonly) AnsaSharedTransactionSource * _Nullable source __attribute__((swift_name("source")));
+@property (readonly) NSString *to __attribute__((swift_name("to")));
+@property (readonly) AnsaSharedTransactionType *type __attribute__((swift_name("type")));
+- (instancetype)initWithId:(NSString *)id type:(AnsaSharedTransactionType *)type amount:(int32_t)amount created:(NSString *)created source:(AnsaSharedTransactionSource * _Nullable)source paymentMethodId:(NSString * _Nullable)paymentMethodId reason:(NSString * _Nullable)reason from:(NSString *)from to:(NSString *)to metadata:(NSDictionary<NSString *, AnsaSharedKotlinx_serialization_jsonJsonElement *> *)metadata label:(NSString * _Nullable)label displayName:(NSString *)displayName isCredit:(AnsaSharedBoolean * _Nullable)isCredit __attribute__((swift_name("init(id:type:amount:created:source:paymentMethodId:reason:from:to:metadata:label:displayName:isCredit:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedTransaction *)doCopyId:(NSString *)id type:(AnsaSharedTransactionType *)type amount:(int32_t)amount created:(NSString *)created source:(AnsaSharedTransactionSource * _Nullable)source paymentMethodId:(NSString * _Nullable)paymentMethodId reason:(NSString * _Nullable)reason from:(NSString *)from to:(NSString *)to metadata:(NSDictionary<NSString *, AnsaSharedKotlinx_serialization_jsonJsonElement *> *)metadata label:(NSString * _Nullable)label displayName:(NSString *)displayName isCredit:(AnsaSharedBoolean * _Nullable)isCredit __attribute__((swift_name("doCopy(id:type:amount:created:source:paymentMethodId:reason:from:to:metadata:label:displayName:isCredit:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionResult")))
+@interface AnsaSharedTransactionResult : AnsaSharedBase
+@property (readonly) NSString * _Nullable nextCursor __attribute__((swift_name("nextCursor")));
+@property (readonly) NSArray<AnsaSharedTransaction *> *transactions __attribute__((swift_name("transactions")));
+- (instancetype)initWithNextCursor:(NSString * _Nullable)nextCursor transactions:(NSArray<AnsaSharedTransaction *> *)transactions __attribute__((swift_name("init(nextCursor:transactions:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedTransactionResult *)doCopyNextCursor:(NSString * _Nullable)nextCursor transactions:(NSArray<AnsaSharedTransaction *> *)transactions __attribute__((swift_name("doCopy(nextCursor:transactions:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("TransactionSource")))
+@interface AnsaSharedTransactionSource : AnsaSharedBase
+@property (class, readonly, getter=companion) AnsaSharedTransactionSourceCompanion *companion __attribute__((swift_name("companion")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.AddBalance")))
+@interface AnsaSharedTransactionSourceAddBalance : AnsaSharedTransactionSource
+@property (class, readonly, getter=shared) AnsaSharedTransactionSourceAddBalance *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)addBalance __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.AutoReload")))
+@interface AnsaSharedTransactionSourceAutoReload : AnsaSharedTransactionSource
+@property (class, readonly, getter=shared) AnsaSharedTransactionSourceAutoReload *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)autoReload __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.Companion")))
+@interface AnsaSharedTransactionSourceCompanion : AnsaSharedBase
+@property (class, readonly, getter=shared) AnsaSharedTransactionSourceCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (AnsaSharedTransactionSource *)fromNameName:(NSString * _Nullable)name __attribute__((swift_name("fromName(name:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.Unknown")))
+@interface AnsaSharedTransactionSourceUnknown : AnsaSharedTransactionSource
+- (instancetype)initWithRaw:(NSString *)raw __attribute__((swift_name("init(raw:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedTransactionSourceUnknown *)doCopyRaw:(NSString *)raw __attribute__((swift_name("doCopy(raw:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.UseBalance")))
+@interface AnsaSharedTransactionSourceUseBalance : AnsaSharedTransactionSource
+@property (class, readonly, getter=shared) AnsaSharedTransactionSourceUseBalance *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)useBalance __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionSource.UseBalanceAndReload")))
+@interface AnsaSharedTransactionSourceUseBalanceAndReload : AnsaSharedTransactionSource
+@property (class, readonly, getter=shared) AnsaSharedTransactionSourceUseBalanceAndReload *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)useBalanceAndReload __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("TransactionType")))
+@interface AnsaSharedTransactionType : AnsaSharedBase
+@property (class, readonly, getter=companion) AnsaSharedTransactionTypeCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *displayName __attribute__((swift_name("displayName")));
+@property (readonly) AnsaSharedBoolean * _Nullable isCredit __attribute__((swift_name("isCredit")));
+@property (readonly) NSString *raw __attribute__((swift_name("raw")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.AddBalance")))
+@interface AnsaSharedTransactionTypeAddBalance : AnsaSharedTransactionType
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeAddBalance *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)addBalance __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.Companion")))
+@interface AnsaSharedTransactionTypeCompanion : AnsaSharedBase
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (AnsaSharedTransactionType *)fromNameName:(NSString *)name __attribute__((swift_name("fromName(name:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.MerchantAddPromo")))
+@interface AnsaSharedTransactionTypeMerchantAddPromo : AnsaSharedTransactionType
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeMerchantAddPromo *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)merchantAddPromo __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.MerchantRefund")))
+@interface AnsaSharedTransactionTypeMerchantRefund : AnsaSharedTransactionType
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeMerchantRefund *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)merchantRefund __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.RefundPaymentMethod")))
+@interface AnsaSharedTransactionTypeRefundPaymentMethod : AnsaSharedTransactionType
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeRefundPaymentMethod *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)refundPaymentMethod __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.Unknown")))
+@interface AnsaSharedTransactionTypeUnknown : AnsaSharedTransactionType
+@property (readonly) NSString *raw __attribute__((swift_name("raw")));
+- (instancetype)initWithRaw:(NSString *)raw __attribute__((swift_name("init(raw:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedTransactionTypeUnknown *)doCopyRaw:(NSString *)raw __attribute__((swift_name("doCopy(raw:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TransactionType.UseBalance")))
+@interface AnsaSharedTransactionTypeUseBalance : AnsaSharedTransactionType
+@property (class, readonly, getter=shared) AnsaSharedTransactionTypeUseBalance *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)useBalance __attribute__((swift_name("init()")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("AnsaLogger")))
+@protocol AnsaSharedAnsaLogger
+@required
+- (void)debugMessage:(NSString *)message __attribute__((swift_name("debug(message:)")));
+- (void)errorMessage:(NSString *)message error:(AnsaSharedKotlinThrowable * _Nullable)error __attribute__((swift_name("error(message:error:)")));
+- (void)infoMessage:(NSString *)message __attribute__((swift_name("info(message:)")));
+- (void)warningMessage:(NSString *)message __attribute__((swift_name("warning(message:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -968,6 +1185,28 @@ __attribute__((swift_name("MerchantAutoReloadConfiguration")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("MerchantBasisTheoryInfo")))
+@interface AnsaSharedMerchantBasisTheoryInfo : AnsaSharedBase
+@property (readonly) NSString *apiKey __attribute__((swift_name("apiKey")));
+- (instancetype)initWithApiKey:(NSString *)apiKey __attribute__((swift_name("init(apiKey:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedMerchantBasisTheoryInfo *)doCopyApiKey:(NSString *)apiKey __attribute__((swift_name("doCopy(apiKey:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("MerchantCartArtInfo")))
+@interface AnsaSharedMerchantCartArtInfo : AnsaSharedBase
+@property (readonly) NSArray<NSString *> *cartArtUrls __attribute__((swift_name("cartArtUrls")));
+- (instancetype)initWithCartArtUrls:(NSArray<NSString *> *)cartArtUrls __attribute__((swift_name("init(cartArtUrls:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedMerchantCartArtInfo *)doCopyCartArtUrls:(NSArray<NSString *> *)cartArtUrls __attribute__((swift_name("doCopy(cartArtUrls:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MerchantMetadata")))
 @interface AnsaSharedMerchantMetadata : AnsaSharedBase
 @property (readonly) AnsaSharedAppReloadConfiguration *appReloadConfiguration __attribute__((swift_name("appReloadConfiguration")));
@@ -981,17 +1220,6 @@ __attribute__((swift_name("MerchantMetadata")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((swift_name("MerchantRepository")))
-@protocol AnsaSharedMerchantRepository
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getMerchantMerchantId:(NSString *)merchantId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchant *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMerchant(merchantId:completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1044,6 +1272,30 @@ __attribute__((swift_name("UserReferralConfiguration")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("MerchantRepository")))
+@protocol AnsaSharedMerchantRepository
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getBasisTheoryApiKeyMerchantId:(NSString *)merchantId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchantBasisTheoryInfo *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getBasisTheoryApiKey(merchantId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getMerchantMerchantId:(NSString *)merchantId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchant *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMerchant(merchantId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getVirtualCardArtWithCompletionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchantCartArtInfo *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getVirtualCardArt(completionHandler:)")));
+- (id<AnsaSharedKotlinx_coroutines_coreFlow>)observeMerchantMerchantId:(NSString *)merchantId __attribute__((swift_name("observeMerchant(merchantId:)")));
 @end
 
 __attribute__((swift_name("ApiResult")))
@@ -1109,6 +1361,17 @@ __attribute__((swift_name("ApiResultSuccess")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
+__attribute__((swift_name("ClientSecretProviderIos")))
+@protocol AnsaSharedClientSecretProviderIos
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)provideClientSecretAnsaCustomerId:(NSString *)ansaCustomerId completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("provideClientSecret(ansaCustomerId:completionHandler:)")));
+@end
+
 __attribute__((swift_name("AuthSessionManager")))
 @protocol AnsaSharedAuthSessionManager
 @required
@@ -1164,17 +1427,6 @@ __attribute__((swift_name("AuthTypePublishableKey")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((swift_name("ClientSecretProviderIos")))
-@protocol AnsaSharedClientSecretProviderIos
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)provideClientSecretAnsaCustomerId:(NSString *)ansaCustomerId completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("provideClientSecret(ansaCustomerId:completionHandler:)")));
 @end
 
 
@@ -1367,7 +1619,14 @@ __attribute__((swift_name("PaymentSession")))
 @end
 
 @interface AnsaSharedApiResult (Extensions)
+- (id _Nullable)getOrNull __attribute__((swift_name("getOrNull()")));
 - (AnsaSharedApiResult<id> *)mapTransform:(id _Nullable (^)(id))transform __attribute__((swift_name("map(transform:)")));
+- (AnsaSharedApiResult<id> *)onErrorBlock:(void (^)(AnsaSharedKotlinThrowable *))block __attribute__((swift_name("onError(block:)")));
+- (AnsaSharedApiResult<id> *)onSuccessBlock:(void (^)(id))block __attribute__((swift_name("onSuccess(block:)")));
+@end
+
+@interface AnsaSharedNetworkType (Extensions)
+- (NSString *)virtualCardArtUrlId:(NSString *)id __attribute__((swift_name("virtualCardArtUrl(id:)")));
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
@@ -1448,6 +1707,7 @@ __attribute__((swift_name("Ktor_client_coreHttpResponse")))
 @end
 
 @interface AnsaSharedKtor_client_coreHttpResponse (Extensions)
+@property (readonly) int64_t duration __attribute__((swift_name("duration")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1478,93 +1738,96 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("__SkieSuspendWrappersKt")))
 @interface AnsaShared__SkieSuspendWrappersKt : AnsaSharedBase
 + (void)Skie_Suspend__0__requestCatchingBlock:(AnsaSharedKtor_client_coreHttpResponse *(^)(void))block suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__0__requestCatching(block:suspendHandler:)")));
-+ (void)Skie_Suspend__10__useBalanceDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedUseBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__useBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__11__provideClientSecretDispatchReceiver:(id<AnsaSharedClientSecretProviderIos>)dispatchReceiver ansaCustomerId:(NSString *)ansaCustomerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__11__provideClientSecret(dispatchReceiver:ansaCustomerId:suspendHandler:)")));
-+ (void)Skie_Suspend__12__deleteResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__deleteResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__13__getResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource authType:(id<AnsaSharedAuthType>)authType builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__getResult(dispatchReceiver:resource:authType:builder:suspendHandler:)")));
-+ (void)Skie_Suspend__14__postResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource body:(id _Nullable)body authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__postResult(dispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__15__postResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver url:(NSString *)url body:(id _Nullable)body authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__postResult(dispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__16__handleAuthDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver extensionReceiver:(AnsaSharedKtor_client_coreHttpRequestBuilder *)extensionReceiver authType:(id<AnsaSharedAuthType>)authType suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__handleAuth(dispatchReceiver:extensionReceiver:authType:suspendHandler:)")));
-+ (void)Skie_Suspend__17__joinDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreJob>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__join(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__18__executeDispatchReceiver:(AnsaSharedKtor_utilsPipeline<id, id> *)dispatchReceiver context:(id)context subject:(id)subject suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__18__execute(dispatchReceiver:context:subject:suspendHandler:)")));
-+ (void)Skie_Suspend__19__invokeDispatchReceiver:(id<AnsaSharedKotlinSuspendFunction2>)dispatchReceiver p1:(id _Nullable)p1 p2:(id _Nullable)p2 suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__19__invoke(dispatchReceiver:p1:p2:suspendHandler:)")));
-+ (void)Skie_Suspend__1__getMerchantDispatchReceiver:(id<AnsaSharedMerchantRepository>)dispatchReceiver merchantId:(NSString *)merchantId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__1__getMerchant(dispatchReceiver:merchantId:suspendHandler:)")));
-+ (void)Skie_Suspend__20__bodyDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver info:(AnsaSharedKtor_utilsTypeInfo *)info suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__20__body(dispatchReceiver:info:suspendHandler:)")));
-+ (void)Skie_Suspend__21__bodyNullableDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver info:(AnsaSharedKtor_utilsTypeInfo *)info suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__21__bodyNullable(dispatchReceiver:info:suspendHandler:)")));
++ (void)Skie_Suspend__10__getCustomerDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__getCustomer(dispatchReceiver:customerId:suspendHandler:)")));
++ (void)Skie_Suspend__11__getPaymentMethodsDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__11__getPaymentMethods(dispatchReceiver:customerId:suspendHandler:)")));
++ (void)Skie_Suspend__12__getReloadConfigDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__getReloadConfig(dispatchReceiver:customerId:suspendHandler:)")));
++ (void)Skie_Suspend__13__getTransactionsDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId cursor:(NSString * _Nullable)cursor suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__getTransactions(dispatchReceiver:customerId:cursor:suspendHandler:)")));
++ (void)Skie_Suspend__14__setAutoReloadConfigurationDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedAutoReloadConfigurationRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__setAutoReloadConfiguration(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__15__useBalanceDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedUseBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__useBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__16__provideClientSecretDispatchReceiver:(id<AnsaSharedClientSecretProviderIos>)dispatchReceiver ansaCustomerId:(NSString *)ansaCustomerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__provideClientSecret(dispatchReceiver:ansaCustomerId:suspendHandler:)")));
++ (void)Skie_Suspend__17__deleteResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__deleteResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__18__getResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource authType:(id<AnsaSharedAuthType>)authType builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__18__getResult(dispatchReceiver:resource:authType:builder:suspendHandler:)")));
++ (void)Skie_Suspend__19__postResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver resource:(id)resource body:(id _Nullable)body authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__19__postResult(dispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__1__getBasisTheoryApiKeyDispatchReceiver:(id<AnsaSharedMerchantRepository>)dispatchReceiver merchantId:(NSString *)merchantId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__1__getBasisTheoryApiKey(dispatchReceiver:merchantId:suspendHandler:)")));
++ (void)Skie_Suspend__20__postResultDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver url:(NSString *)url body:(id _Nullable)body authType:(id<AnsaSharedAuthType>)authType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__20__postResult(dispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__21__handleAuthDispatchReceiver:(AnsaSharedKtorWrapper *)dispatchReceiver extensionReceiver:(AnsaSharedKtor_client_coreHttpRequestBuilder *)extensionReceiver authType:(id<AnsaSharedAuthType>)authType suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__21__handleAuth(dispatchReceiver:extensionReceiver:authType:suspendHandler:)")));
++ (void)Skie_Suspend__22__joinDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreJob>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__join(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__23__executeDispatchReceiver:(AnsaSharedKtor_utilsPipeline<id, id> *)dispatchReceiver context:(id)context subject:(id)subject suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__23__execute(dispatchReceiver:context:subject:suspendHandler:)")));
++ (void)Skie_Suspend__24__invokeDispatchReceiver:(id<AnsaSharedKotlinSuspendFunction2>)dispatchReceiver p1:(id _Nullable)p1 p2:(id _Nullable)p2 suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__24__invoke(dispatchReceiver:p1:p2:suspendHandler:)")));
++ (void)Skie_Suspend__25__bodyDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver info:(AnsaSharedKtor_utilsTypeInfo *)info suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__25__body(dispatchReceiver:info:suspendHandler:)")));
++ (void)Skie_Suspend__26__bodyNullableDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver info:(AnsaSharedKtor_utilsTypeInfo *)info suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__26__bodyNullable(dispatchReceiver:info:suspendHandler:)")));
 
 /**
  * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
-+ (void)Skie_Suspend__22__getResponseContentDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__getResponseContent(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__23__awaitContentDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__23__awaitContent(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__24__discardDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver max:(int64_t)max suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__24__discard(dispatchReceiver:max:suspendHandler:)")));
-+ (void)Skie_Suspend__25__peekToDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver destination:(AnsaSharedKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__25__peekTo(dispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:)")));
-+ (void)Skie_Suspend__26__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKtor_ioChunkBuffer *)dst suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__26__readAvailable(dispatchReceiver:dst:suspendHandler:)")));
-+ (void)Skie_Suspend__27__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__27__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__28__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__29__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__2__addBalanceDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedAddBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__addBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__30__readBooleanDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__readBoolean(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__31__readByteDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__readByte(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__32__readDoubleDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__readDouble(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__33__readFloatDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__readFloat(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__34__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKtor_ioChunkBuffer *)dst n:(int32_t)n suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__readFully(dispatchReceiver:dst:n:suspendHandler:)")));
-+ (void)Skie_Suspend__35__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__36__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__37__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__38__readIntDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__readInt(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__39__readLongDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__readLong(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__3__addPaymentMethodDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId paymentMethodType:(id<AnsaSharedAddPaymentMethodTypeKmp>)paymentMethodType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__addPaymentMethod(dispatchReceiver:customerId:paymentMethodType:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__40__readPacketDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver size:(int32_t)size suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__readPacket(dispatchReceiver:size:suspendHandler:)")));
-+ (void)Skie_Suspend__41__readRemainingDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver limit:(int64_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__readRemaining(dispatchReceiver:limit:suspendHandler:)")));
-+ (void)Skie_Suspend__42__readShortDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__readShort(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__43__readSuspendableSessionDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver consumer:(id<AnsaSharedKotlinSuspendFunction1>)consumer suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__readSuspendableSession(dispatchReceiver:consumer:suspendHandler:)")));
-+ (void)Skie_Suspend__44__readUTF8LineDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver limit:(int32_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__readUTF8Line(dispatchReceiver:limit:suspendHandler:)")));
-+ (void)Skie_Suspend__45__readUTF8LineToDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver out:(id<AnsaSharedKotlinAppendable>)out limit:(int32_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__readUTF8LineTo(dispatchReceiver:out:limit:suspendHandler:)")));
-+ (void)Skie_Suspend__46__invokeDispatchReceiver:(id<AnsaSharedKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__invoke(dispatchReceiver:p1:suspendHandler:)")));
-+ (void)Skie_Suspend__47__executeDispatchReceiver:(id<AnsaSharedKtor_client_coreHttpClientEngine>)dispatchReceiver data:(AnsaSharedKtor_client_coreHttpRequestData *)data suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__execute(dispatchReceiver:data:suspendHandler:)")));
-+ (void)Skie_Suspend__48__getValidSessionOrNullDispatchReceiver:(id<AnsaSharedAuthSessionManager>)dispatchReceiver ansaCustomerId:(NSString *)ansaCustomerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__48__getValidSessionOrNull(dispatchReceiver:ansaCustomerId:suspendHandler:)")));
-+ (void)Skie_Suspend__49__refreshSessionDispatchReceiver:(id<AnsaSharedAuthSessionManager>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__49__refreshSession(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__4__deletePaymentMethodDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId paymentMethodId:(NSString *)paymentMethodId idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__deletePaymentMethod(dispatchReceiver:customerId:paymentMethodId:idempotencyKey:suspendHandler:)")));
-+ (void)Skie_Suspend__50__hasNextDispatchReceiver:(AnsaSharedSkieColdFlowIterator<id> *)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__50__hasNext(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__51__collectDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreFlow>)dispatchReceiver collector:(id<AnsaSharedKotlinx_coroutines_coreFlowCollector>)collector suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__51__collect(dispatchReceiver:collector:suspendHandler:)")));
-+ (void)Skie_Suspend__52__emitDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__52__emit(dispatchReceiver:value:suspendHandler:)")));
-+ (void)Skie_Suspend__53__upgradeDispatchReceiver:(AnsaSharedKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<AnsaSharedKtor_ioByteReadChannel>)input output:(id<AnsaSharedKtor_ioByteWriteChannel>)output engineContext:(id<AnsaSharedKotlinCoroutineContext>)engineContext userContext:(id<AnsaSharedKotlinCoroutineContext>)userContext suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__53__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
-+ (void)Skie_Suspend__54__awaitFreeSpaceDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__54__awaitFreeSpace(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__55__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKtor_ioChunkBuffer *)src suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__55__writeAvailable(dispatchReceiver:src:suspendHandler:)")));
-+ (void)Skie_Suspend__56__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKotlinByteArray *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__56__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__57__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__57__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__58__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__58__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__59__writeByteDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver b:(int8_t)b suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__59__writeByte(dispatchReceiver:b:suspendHandler:)")));
-+ (void)Skie_Suspend__5__getAutoReloadConfigurationDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__getAutoReloadConfiguration(dispatchReceiver:customerId:suspendHandler:)")));
-+ (void)Skie_Suspend__60__writeDoubleDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver d:(double)d suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__60__writeDouble(dispatchReceiver:d:suspendHandler:)")));
-+ (void)Skie_Suspend__61__writeFloatDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver f:(float)f suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__61__writeFloat(dispatchReceiver:f:suspendHandler:)")));
-+ (void)Skie_Suspend__62__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver memory:(AnsaSharedKtor_ioMemory *)memory startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__62__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)")));
-+ (void)Skie_Suspend__63__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKtor_ioBuffer *)src suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__63__writeFully(dispatchReceiver:src:suspendHandler:)")));
-+ (void)Skie_Suspend__64__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKotlinByteArray *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__64__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__65__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__65__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__66__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__66__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
-+ (void)Skie_Suspend__67__writeIntDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver i:(int32_t)i suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__67__writeInt(dispatchReceiver:i:suspendHandler:)")));
-+ (void)Skie_Suspend__68__writeLongDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver l:(int64_t)l suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__68__writeLong(dispatchReceiver:l:suspendHandler:)")));
-+ (void)Skie_Suspend__69__writePacketDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver packet:(AnsaSharedKtor_ioByteReadPacket *)packet suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__69__writePacket(dispatchReceiver:packet:suspendHandler:)")));
-+ (void)Skie_Suspend__6__getCustomerDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__getCustomer(dispatchReceiver:customerId:suspendHandler:)")));
-+ (void)Skie_Suspend__70__writeShortDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver s:(int16_t)s suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__70__writeShort(dispatchReceiver:s:suspendHandler:)")));
-+ (void)Skie_Suspend__71__writeSuspendSessionDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver visitor:(id<AnsaSharedKotlinSuspendFunction1>)visitor suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__71__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)")));
-+ (void)Skie_Suspend__72__writeToDispatchReceiver:(AnsaSharedKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<AnsaSharedKtor_ioByteWriteChannel>)channel suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__72__writeTo(dispatchReceiver:channel:suspendHandler:)")));
-+ (void)Skie_Suspend__73__deleteResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__73__deleteResult(extensionReceiver:resource:builder:suspendHandler:)")));
-+ (void)Skie_Suspend__74__getResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__74__getResult(extensionReceiver:resource:builder:suspendHandler:)")));
-+ (void)Skie_Suspend__75__postResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource body:(id _Nullable)body builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__75__postResult(extensionReceiver:resource:body:builder:suspendHandler:)")));
-+ (void)Skie_Suspend__76__postResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver url:(NSString *)url body:(id _Nullable)body builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__76__postResult(extensionReceiver:url:body:builder:suspendHandler:)")));
-+ (void)Skie_Suspend__77__safeBodyExtensionReceiver:(AnsaSharedKtor_client_coreHttpResponse *)extensionReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__77__safeBody(extensionReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__7__getPaymentMethodsDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__getPaymentMethods(dispatchReceiver:customerId:suspendHandler:)")));
-+ (void)Skie_Suspend__8__getReloadConfigDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__getReloadConfig(dispatchReceiver:customerId:suspendHandler:)")));
-+ (void)Skie_Suspend__9__setAutoReloadConfigurationDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedAutoReloadConfigurationRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__setAutoReloadConfiguration(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__27__getResponseContentDispatchReceiver:(AnsaSharedKtor_client_coreHttpClientCall *)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__27__getResponseContent(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__28__awaitContentDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__awaitContent(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__29__discardDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver max:(int64_t)max suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__discard(dispatchReceiver:max:suspendHandler:)")));
++ (void)Skie_Suspend__2__getMerchantDispatchReceiver:(id<AnsaSharedMerchantRepository>)dispatchReceiver merchantId:(NSString *)merchantId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__getMerchant(dispatchReceiver:merchantId:suspendHandler:)")));
++ (void)Skie_Suspend__30__peekToDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver destination:(AnsaSharedKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__peekTo(dispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:)")));
++ (void)Skie_Suspend__31__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKtor_ioChunkBuffer *)dst suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__readAvailable(dispatchReceiver:dst:suspendHandler:)")));
++ (void)Skie_Suspend__32__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__33__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__34__readAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__35__readBooleanDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__readBoolean(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__36__readByteDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__readByte(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__37__readDoubleDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__readDouble(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__38__readFloatDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__readFloat(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__39__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKtor_ioChunkBuffer *)dst n:(int32_t)n suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__readFully(dispatchReceiver:dst:n:suspendHandler:)")));
++ (void)Skie_Suspend__3__getVirtualCardArtDispatchReceiver:(id<AnsaSharedMerchantRepository>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__getVirtualCardArt(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__40__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(AnsaSharedKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__41__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__42__readFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver dst:(void *)dst offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__43__readIntDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__readInt(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__44__readLongDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__readLong(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__45__readPacketDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver size:(int32_t)size suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__readPacket(dispatchReceiver:size:suspendHandler:)")));
++ (void)Skie_Suspend__46__readRemainingDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver limit:(int64_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__readRemaining(dispatchReceiver:limit:suspendHandler:)")));
++ (void)Skie_Suspend__47__readShortDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__readShort(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__48__readSuspendableSessionDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver consumer:(id<AnsaSharedKotlinSuspendFunction1>)consumer suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__48__readSuspendableSession(dispatchReceiver:consumer:suspendHandler:)")));
++ (void)Skie_Suspend__49__readUTF8LineDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver limit:(int32_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__49__readUTF8Line(dispatchReceiver:limit:suspendHandler:)")));
++ (void)Skie_Suspend__4__collectDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreFlow>)dispatchReceiver collector:(id<AnsaSharedKotlinx_coroutines_coreFlowCollector>)collector suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__collect(dispatchReceiver:collector:suspendHandler:)")));
++ (void)Skie_Suspend__50__readUTF8LineToDispatchReceiver:(id<AnsaSharedKtor_ioByteReadChannel>)dispatchReceiver out:(id<AnsaSharedKotlinAppendable>)out limit:(int32_t)limit suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__50__readUTF8LineTo(dispatchReceiver:out:limit:suspendHandler:)")));
++ (void)Skie_Suspend__51__invokeDispatchReceiver:(id<AnsaSharedKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__51__invoke(dispatchReceiver:p1:suspendHandler:)")));
++ (void)Skie_Suspend__52__executeDispatchReceiver:(id<AnsaSharedKtor_client_coreHttpClientEngine>)dispatchReceiver data:(AnsaSharedKtor_client_coreHttpRequestData *)data suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__52__execute(dispatchReceiver:data:suspendHandler:)")));
++ (void)Skie_Suspend__53__getValidSessionOrNullDispatchReceiver:(id<AnsaSharedAuthSessionManager>)dispatchReceiver ansaCustomerId:(NSString *)ansaCustomerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__53__getValidSessionOrNull(dispatchReceiver:ansaCustomerId:suspendHandler:)")));
++ (void)Skie_Suspend__54__refreshSessionDispatchReceiver:(id<AnsaSharedAuthSessionManager>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__54__refreshSession(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__55__hasNextDispatchReceiver:(AnsaSharedSkieColdFlowIterator<id> *)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__55__hasNext(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__56__upgradeDispatchReceiver:(AnsaSharedKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<AnsaSharedKtor_ioByteReadChannel>)input output:(id<AnsaSharedKtor_ioByteWriteChannel>)output engineContext:(id<AnsaSharedKotlinCoroutineContext>)engineContext userContext:(id<AnsaSharedKotlinCoroutineContext>)userContext suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__56__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
++ (void)Skie_Suspend__57__awaitFreeSpaceDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__57__awaitFreeSpace(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__58__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKtor_ioChunkBuffer *)src suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__58__writeAvailable(dispatchReceiver:src:suspendHandler:)")));
++ (void)Skie_Suspend__59__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKotlinByteArray *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__59__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__5__emitDispatchReceiver:(id<AnsaSharedKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__emit(dispatchReceiver:value:suspendHandler:)")));
++ (void)Skie_Suspend__60__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__60__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__61__writeAvailableDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__61__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__62__writeByteDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver b:(int8_t)b suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__62__writeByte(dispatchReceiver:b:suspendHandler:)")));
++ (void)Skie_Suspend__63__writeDoubleDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver d:(double)d suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__63__writeDouble(dispatchReceiver:d:suspendHandler:)")));
++ (void)Skie_Suspend__64__writeFloatDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver f:(float)f suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__64__writeFloat(dispatchReceiver:f:suspendHandler:)")));
++ (void)Skie_Suspend__65__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver memory:(AnsaSharedKtor_ioMemory *)memory startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__65__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)")));
++ (void)Skie_Suspend__66__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKtor_ioBuffer *)src suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__66__writeFully(dispatchReceiver:src:suspendHandler:)")));
++ (void)Skie_Suspend__67__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(AnsaSharedKotlinByteArray *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__67__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__68__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int32_t)offset length:(int32_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__68__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__69__writeFullyDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver src:(void *)src offset:(int64_t)offset length:(int64_t)length suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__69__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)")));
++ (void)Skie_Suspend__6__addBalanceDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver request:(AnsaSharedAddBalanceRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__addBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__70__writeIntDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver i:(int32_t)i suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__70__writeInt(dispatchReceiver:i:suspendHandler:)")));
++ (void)Skie_Suspend__71__writeLongDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver l:(int64_t)l suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__71__writeLong(dispatchReceiver:l:suspendHandler:)")));
++ (void)Skie_Suspend__72__writePacketDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver packet:(AnsaSharedKtor_ioByteReadPacket *)packet suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__72__writePacket(dispatchReceiver:packet:suspendHandler:)")));
++ (void)Skie_Suspend__73__writeShortDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver s:(int16_t)s suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__73__writeShort(dispatchReceiver:s:suspendHandler:)")));
++ (void)Skie_Suspend__74__writeSuspendSessionDispatchReceiver:(id<AnsaSharedKtor_ioByteWriteChannel>)dispatchReceiver visitor:(id<AnsaSharedKotlinSuspendFunction1>)visitor suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__74__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)")));
++ (void)Skie_Suspend__75__writeToDispatchReceiver:(AnsaSharedKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<AnsaSharedKtor_ioByteWriteChannel>)channel suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__75__writeTo(dispatchReceiver:channel:suspendHandler:)")));
++ (void)Skie_Suspend__76__deleteResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__76__deleteResult(extensionReceiver:resource:builder:suspendHandler:)")));
++ (void)Skie_Suspend__77__getResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__77__getResult(extensionReceiver:resource:builder:suspendHandler:)")));
++ (void)Skie_Suspend__78__postResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver resource:(id)resource body:(id _Nullable)body builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__78__postResult(extensionReceiver:resource:body:builder:suspendHandler:)")));
++ (void)Skie_Suspend__79__postResultExtensionReceiver:(AnsaSharedKtor_client_coreHttpClient *)extensionReceiver url:(NSString *)url body:(id _Nullable)body builder:(void (^)(AnsaSharedKtor_client_coreHttpRequestBuilder *))builder suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__79__postResult(extensionReceiver:url:body:builder:suspendHandler:)")));
++ (void)Skie_Suspend__7__addPaymentMethodDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId paymentMethodType:(id<AnsaSharedAddPaymentMethodTypeKmp>)paymentMethodType idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__addPaymentMethod(dispatchReceiver:customerId:paymentMethodType:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__80__safeBodyExtensionReceiver:(AnsaSharedKtor_client_coreHttpResponse *)extensionReceiver suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__80__safeBody(extensionReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__8__deletePaymentMethodDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId paymentMethodId:(NSString *)paymentMethodId idempotencyKey:(NSString * _Nullable)idempotencyKey suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__deletePaymentMethod(dispatchReceiver:customerId:paymentMethodId:idempotencyKey:suspendHandler:)")));
++ (void)Skie_Suspend__9__getAutoReloadConfigurationDispatchReceiver:(id<AnsaSharedCustomerRepository>)dispatchReceiver customerId:(NSString *)customerId suspendHandler:(AnsaSharedSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__getAutoReloadConfiguration(dispatchReceiver:customerId:suspendHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("__SkieTypeExportsKt")))
 @interface AnsaShared__SkieTypeExportsKt : AnsaSharedBase
-+ (void)skieTypeExports_0P0:(AnsaSharedKtor_httpOutgoingContentByteArrayContent *)p0 p1:(AnsaSharedKtor_httpOutgoingContentNoContent *)p1 p2:(AnsaSharedKtor_httpOutgoingContentProtocolUpgrade *)p2 p3:(AnsaSharedKtor_httpOutgoingContentReadChannelContent *)p3 p4:(AnsaSharedKtor_httpOutgoingContentWriteChannelContent *)p4 p5:(id<AnsaSharedKotlinx_coroutines_coreSelectClause1>)p5 p6:(id<AnsaSharedKotlinx_coroutines_coreSelectClause2>)p6 p7:(AnsaSharedKotlinx_serialization_corePolymorphicKind *)p7 p8:(AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN *)p8 p9:(AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED *)p9 p10:(AnsaSharedKotlinx_serialization_corePrimitiveKind *)p10 p11:(AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN *)p11 p12:(AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE *)p12 p13:(AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR *)p13 p14:(AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE *)p14 p15:(AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT *)p15 p16:(AnsaSharedKotlinx_serialization_corePrimitiveKindINT *)p16 p17:(AnsaSharedKotlinx_serialization_corePrimitiveKindLONG *)p17 p18:(AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT *)p18 p19:(AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING *)p19 p20:(AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL *)p20 p21:(AnsaSharedKotlinx_serialization_coreSerialKindENUM *)p21 p22:(AnsaSharedKotlinx_serialization_coreStructureKind *)p22 p23:(AnsaSharedKotlinx_serialization_coreStructureKindCLASS *)p23 p24:(AnsaSharedKotlinx_serialization_coreStructureKindLIST *)p24 p25:(AnsaSharedKotlinx_serialization_coreStructureKindMAP *)p25 p26:(AnsaSharedKotlinx_serialization_coreStructureKindOBJECT *)p26 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:)")));
++ (void)skieTypeExports_0P0:(AnsaSharedKtor_httpOutgoingContentByteArrayContent *)p0 p1:(AnsaSharedKtor_httpOutgoingContentNoContent *)p1 p2:(AnsaSharedKtor_httpOutgoingContentProtocolUpgrade *)p2 p3:(AnsaSharedKtor_httpOutgoingContentReadChannelContent *)p3 p4:(AnsaSharedKtor_httpOutgoingContentWriteChannelContent *)p4 p5:(id<AnsaSharedKotlinx_coroutines_coreSelectClause1>)p5 p6:(id<AnsaSharedKotlinx_coroutines_coreSelectClause2>)p6 p7:(AnsaSharedKotlinx_serialization_corePolymorphicKind *)p7 p8:(AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN *)p8 p9:(AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED *)p9 p10:(AnsaSharedKotlinx_serialization_corePrimitiveKind *)p10 p11:(AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN *)p11 p12:(AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE *)p12 p13:(AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR *)p13 p14:(AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE *)p14 p15:(AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT *)p15 p16:(AnsaSharedKotlinx_serialization_corePrimitiveKindINT *)p16 p17:(AnsaSharedKotlinx_serialization_corePrimitiveKindLONG *)p17 p18:(AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT *)p18 p19:(AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING *)p19 p20:(AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL *)p20 p21:(AnsaSharedKotlinx_serialization_coreSerialKindENUM *)p21 p22:(AnsaSharedKotlinx_serialization_coreStructureKind *)p22 p23:(AnsaSharedKotlinx_serialization_coreStructureKindCLASS *)p23 p24:(AnsaSharedKotlinx_serialization_coreStructureKindLIST *)p24 p25:(AnsaSharedKotlinx_serialization_coreStructureKindMAP *)p25 p26:(AnsaSharedKotlinx_serialization_coreStructureKindOBJECT *)p26 p27:(AnsaSharedKotlinx_serialization_jsonJsonNull *)p27 p28:(AnsaSharedKotlinx_serialization_jsonJsonPrimitive *)p28 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:)")));
 @end
 
 
@@ -1620,8 +1883,9 @@ __attribute__((swift_name("Ktor_client_coreClientPlugin")))
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Customer_implRealCustomerRepository")))
-@interface AnsaSharedCustomer_implRealCustomerRepository : AnsaSharedBase <AnsaSharedCustomerRepository>
-- (instancetype)initWithKtorWrapper:(AnsaSharedKtorWrapper *)ktorWrapper networkType:(AnsaSharedNetworkType *)networkType customerMapper:(AnsaSharedCustomer_implCustomerMapper *)customerMapper paymentMethodListMapper:(AnsaSharedCustomer_implPaymentMethodListMapper *)paymentMethodListMapper addPaymentMethodMapper:(AnsaSharedCustomer_implAddPaymentMethodMapper *)addPaymentMethodMapper autoReloadConfigMapper:(AnsaSharedCustomer_implAutoReloadConfigMapper *)autoReloadConfigMapper addBalanceMapper:(AnsaSharedCustomer_implAddBalanceMapper *)addBalanceMapper useBalanceMapper:(AnsaSharedCustomer_implUseBalanceMapper *)useBalanceMapper userReloadConfigurationMapper:(AnsaSharedCustomer_implUserReloadConfigurationMapper *)userReloadConfigurationMapper __attribute__((swift_name("init(ktorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:userReloadConfigurationMapper:)"))) __attribute__((objc_designated_initializer));
+@interface AnsaSharedCustomer_implRealCustomerRepository : AnsaSharedBase <AnsaSharedCustomerRepository, AnsaSharedKotlinx_coroutines_coreCoroutineScope>
+@property (readonly) id<AnsaSharedKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+- (instancetype)initWithKtorWrapper:(AnsaSharedKtorWrapper *)ktorWrapper networkType:(AnsaSharedNetworkType *)networkType customerMapper:(AnsaSharedCustomer_implCustomerMapper *)customerMapper paymentMethodListMapper:(AnsaSharedCustomer_implPaymentMethodListMapper *)paymentMethodListMapper addPaymentMethodMapper:(AnsaSharedCustomer_implAddPaymentMethodMapper *)addPaymentMethodMapper autoReloadConfigMapper:(AnsaSharedCustomer_implAutoReloadConfigMapper *)autoReloadConfigMapper addBalanceMapper:(AnsaSharedCustomer_implAddBalanceMapper *)addBalanceMapper useBalanceMapper:(AnsaSharedCustomer_implUseBalanceMapper *)useBalanceMapper userReloadConfigurationMapper:(AnsaSharedCustomer_implUserReloadConfigurationMapper *)userReloadConfigurationMapper transactionsMapper:(AnsaSharedCustomer_implTransactionMapper *)transactionsMapper __attribute__((swift_name("init(ktorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:userReloadConfigurationMapper:transactionsMapper:)"))) __attribute__((objc_designated_initializer));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1669,6 +1933,13 @@ __attribute__((swift_name("Customer_implRealCustomerRepository")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)getTransactionsCustomerId:(NSString *)customerId cursor:(NSString * _Nullable)cursor completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedTransactionResult *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getTransactions(customerId:cursor:completionHandler:)")));
+- (id<AnsaSharedKotlinx_coroutines_coreFlow>)observeCustomerCustomerId:(NSString *)customerId __attribute__((swift_name("observeCustomer(customerId:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)setAutoReloadConfigurationRequest:(AnsaSharedAutoReloadConfigurationRequest *)request idempotencyKey:(NSString * _Nullable)idempotencyKey completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)")));
 
 /**
@@ -1680,14 +1951,28 @@ __attribute__((swift_name("Customer_implRealCustomerRepository")))
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Merchant_implRealMerchantRepository")))
-@interface AnsaSharedMerchant_implRealMerchantRepository : AnsaSharedBase <AnsaSharedMerchantRepository>
+@interface AnsaSharedMerchant_implRealMerchantRepository : AnsaSharedBase <AnsaSharedMerchantRepository, AnsaSharedKotlinx_coroutines_coreCoroutineScope>
+@property (readonly) id<AnsaSharedKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
 - (instancetype)initWithKtorWrapper:(AnsaSharedKtorWrapper *)ktorWrapper merchantMapper:(AnsaSharedMerchant_implMerchantMapper *)merchantMapper __attribute__((swift_name("init(ktorWrapper:merchantMapper:)"))) __attribute__((objc_designated_initializer));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)getBasisTheoryApiKeyMerchantId:(NSString *)merchantId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchantBasisTheoryInfo *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getBasisTheoryApiKey(merchantId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)getMerchantMerchantId:(NSString *)merchantId completionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchant *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMerchant(merchantId:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getVirtualCardArtWithCompletionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchantCartArtInfo *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getVirtualCardArt(completionHandler:)")));
+- (id<AnsaSharedKotlinx_coroutines_coreFlow>)observeMerchantMerchantId:(NSString *)merchantId __attribute__((swift_name("observeMerchant(merchantId:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1727,6 +2012,16 @@ __attribute__((swift_name("KotlinArray")))
 - (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
 - (id<AnsaSharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonElementSerializer))
+*/
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonElement")))
+@interface AnsaSharedKotlinx_serialization_jsonJsonElement : AnsaSharedBase
+@property (class, readonly, getter=companion) AnsaSharedKotlinx_serialization_jsonJsonElementCompanion *companion __attribute__((swift_name("companion")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2858,6 +3153,37 @@ __attribute__((swift_name("Kotlinx_serialization_coreStructureKind.OBJECT")))
 + (instancetype)oBJECT __attribute__((swift_name("init()")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonPrimitiveSerializer))
+*/
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive")))
+@interface AnsaSharedKotlinx_serialization_jsonJsonPrimitive : AnsaSharedKotlinx_serialization_jsonJsonElement
+@property (class, readonly, getter=companion) AnsaSharedKotlinx_serialization_jsonJsonPrimitiveCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *content __attribute__((swift_name("content")));
+@property (readonly) BOOL isString __attribute__((swift_name("isString")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonNullSerializer))
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonNull")))
+@interface AnsaSharedKotlinx_serialization_jsonJsonNull : AnsaSharedKotlinx_serialization_jsonJsonPrimitive
+@property (class, readonly, getter=shared) AnsaSharedKotlinx_serialization_jsonJsonNull *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *content __attribute__((swift_name("content")));
+@property (readonly) BOOL isString __attribute__((swift_name("isString")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)jsonNull __attribute__((swift_name("init()")));
+- (id<AnsaSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<AnsaSharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_utilsAttributeKey")))
 @interface AnsaSharedKtor_utilsAttributeKey<T> : AnsaSharedBase
@@ -2900,7 +3226,7 @@ __attribute__((swift_name("Customer_implAutoReloadConfigMapper")))
 @interface AnsaSharedCustomer_implAutoReloadConfigMapper : AnsaSharedBase <AnsaSharedCore_implMapper>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (AnsaSharedAutoReloadConfiguration * _Nullable)mapFrom:(AnsaSharedCustomer_implAutoReloadConfigurationResponse *)from __attribute__((swift_name("map(from:)")));
+- (AnsaSharedAutoReloadConfiguration *)mapFrom:(AnsaSharedCustomer_implAutoReloadConfigurationResponse *)from __attribute__((swift_name("map(from:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2926,6 +3252,14 @@ __attribute__((swift_name("Customer_implUserReloadConfigurationMapper")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Customer_implTransactionMapper")))
+@interface AnsaSharedCustomer_implTransactionMapper : AnsaSharedBase <AnsaSharedCore_implMapper>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (AnsaSharedTransaction *)mapFrom:(AnsaSharedCustomer_implTransactionResponse *)from __attribute__((swift_name("map(from:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Merchant_implMerchantMapper")))
 @interface AnsaSharedMerchant_implMerchantMapper : AnsaSharedBase <AnsaSharedCore_implMapper>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -2938,6 +3272,16 @@ __attribute__((swift_name("KotlinIterator")))
 @required
 - (BOOL)hasNext __attribute__((swift_name("hasNext()")));
 - (id _Nullable)next_ __attribute__((swift_name("next()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonElement.Companion")))
+@interface AnsaSharedKotlinx_serialization_jsonJsonElementCompanion : AnsaSharedBase
+@property (class, readonly, getter=shared) AnsaSharedKotlinx_serialization_jsonJsonElementCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<AnsaSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
@@ -3770,6 +4114,16 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive.Companion")))
+@interface AnsaSharedKotlinx_serialization_jsonJsonPrimitiveCompanion : AnsaSharedBase
+@property (class, readonly, getter=shared) AnsaSharedKotlinx_serialization_jsonJsonPrimitiveCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<AnsaSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Customer_implBalanceMapper")))
 @interface AnsaSharedCustomer_implBalanceMapper : AnsaSharedBase <AnsaSharedCore_implMapper>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -3855,10 +4209,9 @@ __attribute__((swift_name("Customer_implAddPaymentMethodResponse")))
 @property (class, readonly, getter=companion) AnsaSharedCustomer_implAddPaymentMethodResponseCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) AnsaSharedCustomer_implCardResponse *card __attribute__((swift_name("card")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
-@property (readonly) AnsaSharedBoolean * _Nullable preferred __attribute__((swift_name("preferred")));
 @property (readonly) NSString *type __attribute__((swift_name("type")));
-- (instancetype)initWithCard:(AnsaSharedCustomer_implCardResponse *)card id:(NSString *)id preferred:(AnsaSharedBoolean * _Nullable)preferred type:(NSString *)type __attribute__((swift_name("init(card:id:preferred:type:)"))) __attribute__((objc_designated_initializer));
-- (AnsaSharedCustomer_implAddPaymentMethodResponse *)doCopyCard:(AnsaSharedCustomer_implCardResponse *)card id:(NSString *)id preferred:(AnsaSharedBoolean * _Nullable)preferred type:(NSString *)type __attribute__((swift_name("doCopy(card:id:preferred:type:)")));
+- (instancetype)initWithCard:(AnsaSharedCustomer_implCardResponse *)card id:(NSString *)id type:(NSString *)type __attribute__((swift_name("init(card:id:type:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedCustomer_implAddPaymentMethodResponse *)doCopyCard:(AnsaSharedCustomer_implCardResponse *)card id:(NSString *)id type:(NSString *)type __attribute__((swift_name("doCopy(card:id:type:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3945,6 +4298,33 @@ __attribute__((swift_name("Customer_implUserReloadConfigurationResponse")))
 @property (readonly) NSArray<AnsaSharedCustomer_implPresetReloadAmountResponse *> *presetAmounts __attribute__((swift_name("presetAmounts")));
 - (instancetype)initWithAllowCustomAmount:(BOOL)allowCustomAmount presetAmounts:(NSArray<AnsaSharedCustomer_implPresetReloadAmountResponse *> *)presetAmounts __attribute__((swift_name("init(allowCustomAmount:presetAmounts:)"))) __attribute__((objc_designated_initializer));
 - (AnsaSharedCustomer_implUserReloadConfigurationResponse *)doCopyAllowCustomAmount:(BOOL)allowCustomAmount presetAmounts:(NSArray<AnsaSharedCustomer_implPresetReloadAmountResponse *> *)presetAmounts __attribute__((swift_name("doCopy(allowCustomAmount:presetAmounts:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Customer_implTransactionResponse")))
+@interface AnsaSharedCustomer_implTransactionResponse : AnsaSharedBase
+@property (class, readonly, getter=companion) AnsaSharedCustomer_implTransactionResponseCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) int32_t amount __attribute__((swift_name("amount")));
+@property (readonly) NSString *createdAtIso __attribute__((swift_name("createdAtIso")));
+@property (readonly) NSString *from __attribute__((swift_name("from")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) NSString * _Nullable label __attribute__((swift_name("label")));
+@property (readonly) NSString * _Nullable metadataJson __attribute__((swift_name("metadataJson")));
+@property (readonly) NSString * _Nullable paymentMethodId __attribute__((swift_name("paymentMethodId")));
+@property (readonly) NSString * _Nullable reason __attribute__((swift_name("reason")));
+@property (readonly) NSString * _Nullable source __attribute__((swift_name("source")));
+@property (readonly) NSString *to __attribute__((swift_name("to")));
+@property (readonly) NSString *type __attribute__((swift_name("type")));
+- (instancetype)initWithId:(NSString *)id type:(NSString *)type amount:(int32_t)amount createdAtIso:(NSString *)createdAtIso source:(NSString * _Nullable)source paymentMethodId:(NSString * _Nullable)paymentMethodId reason:(NSString * _Nullable)reason from:(NSString *)from to:(NSString *)to metadataJson:(NSString * _Nullable)metadataJson label:(NSString * _Nullable)label __attribute__((swift_name("init(id:type:amount:createdAtIso:source:paymentMethodId:reason:from:to:metadataJson:label:)"))) __attribute__((objc_designated_initializer));
+- (AnsaSharedCustomer_implTransactionResponse *)doCopyId:(NSString *)id type:(NSString *)type amount:(int32_t)amount createdAtIso:(NSString *)createdAtIso source:(NSString * _Nullable)source paymentMethodId:(NSString * _Nullable)paymentMethodId reason:(NSString * _Nullable)reason from:(NSString *)from to:(NSString *)to metadataJson:(NSString * _Nullable)metadataJson label:(NSString * _Nullable)label __attribute__((swift_name("doCopy(id:type:amount:createdAtIso:source:paymentMethodId:reason:from:to:metadataJson:label:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4466,6 +4846,16 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Customer_implUserReloadConfigurationResponse.Companion")))
 @interface AnsaSharedCustomer_implUserReloadConfigurationResponseCompanion : AnsaSharedBase
 @property (class, readonly, getter=shared) AnsaSharedCustomer_implUserReloadConfigurationResponseCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<AnsaSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Customer_implTransactionResponse.Companion")))
+@interface AnsaSharedCustomer_implTransactionResponseCompanion : AnsaSharedBase
+@property (class, readonly, getter=shared) AnsaSharedCustomer_implTransactionResponseCompanion *shared __attribute__((swift_name("shared")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));

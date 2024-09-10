@@ -2203,6 +2203,13 @@
       },
       {
         "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
@@ -2212,13 +2219,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AnsaCore"
-      },
-      {
-        "kind": "Import",
-        "name": "AnsaShared",
-        "printedName": "AnsaShared",
         "declKind": "Import",
         "moduleName": "AnsaCore"
       },
@@ -2446,7 +2446,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ansa-mobile-sdks\/ansa-mobile-sdks\/iOS\/AnsaCore\/AnsaCore\/Initializer\/AnsaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1400,
       "length": 72,
       "value": "\"You must call AnsaSdk.initialize before accessing the shared instance.\""
     }

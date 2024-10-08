@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AnsaCore",
+    "printedName": "AnsaCore",
     "children": [
       {
         "kind": "Import",
@@ -84,6 +84,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -426,6 +442,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -627,7 +657,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -688,6 +734,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -848,6 +910,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1155,6 +1233,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1340,6 +1434,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1943,6 +2053,124 @@
           },
           {
             "kind": "Function",
+            "name": "createVirtualCard",
+            "printedName": "createVirtualCard(customerId:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VirtualCard",
+                    "printedName": "AnsaShared.VirtualCard",
+                    "usr": "c:objc(cs)AnsaSharedVirtualCard"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP17createVirtualCard10customerId14idempotencyKeys6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP17createVirtualCard10customerId14idempotencyKeys6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provisionVirtualCard",
+            "printedName": "provisionVirtualCard(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Provisioning",
+                    "printedName": "AnsaShared.Provisioning",
+                    "usr": "c:objc(cs)AnsaSharedProvisioning"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningRequest",
+                "printedName": "AnsaShared.ProvisioningRequest",
+                "usr": "c:objc(cs)AnsaSharedProvisioningRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addPaymentMethod",
             "printedName": "addPaymentMethod(customerId:paymentMethodType:)",
             "children": [
@@ -2176,6 +2404,96 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createVirtualCard",
+            "printedName": "createVirtualCard(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VirtualCard",
+                    "printedName": "AnsaShared.VirtualCard",
+                    "usr": "c:objc(cs)AnsaSharedVirtualCard"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE17createVirtualCard10customerIds6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE17createVirtualCard10customerIds6ResultOySo0a6SharedfG0CAA0A8ApiErrorVGSS_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provisionVirtualCard",
+            "printedName": "provisionVirtualCard(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Provisioning",
+                    "printedName": "AnsaShared.Provisioning",
+                    "usr": "c:objc(cs)AnsaSharedProvisioning"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningRequest",
+                "printedName": "AnsaShared.ProvisioningRequest",
+                "usr": "c:objc(cs)AnsaSharedProvisioningRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2185,6 +2503,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2388,6 +2722,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",

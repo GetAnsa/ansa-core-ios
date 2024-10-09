@@ -1256,7 +1256,10 @@
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
-        "moduleName": "AnsaCore"
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1277,7 +1280,10 @@
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
-        "moduleName": "AnsaCore"
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1464,7 +1470,10 @@
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
-        "moduleName": "AnsaCore"
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2547,7 +2556,10 @@
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
-        "moduleName": "AnsaCore"
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2771,7 +2783,10 @@
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
-        "moduleName": "AnsaCore"
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",

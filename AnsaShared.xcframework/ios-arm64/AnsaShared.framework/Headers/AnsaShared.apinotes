@@ -771,6 +771,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "autoReloadConfiguration"
     Type: "AnsaSharedMerchantAutoReloadConfiguration * _Nonnull"
+  - Name: "isTapToPayEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isTapToPayEnabled"
+    Type: "BOOL"
   - Name: "omsProvider"
     PropertyKind: "Instance"
     SwiftName: "omsProvider"
@@ -788,9 +792,9 @@ Classes:
     SwiftName: "userReferralConfiguration"
     Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
   Methods:
-  - Selector: "initWithAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:"
+  - Selector: "initWithAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "init(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:)"
+    SwiftName: "init(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedAppReloadConfiguration * _Nonnull"
@@ -804,9 +808,11 @@ Classes:
       Type: "AnsaSharedPromotions * _Nonnull"
     - Position: 5
       Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
-  - Selector: "doCopyAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:"
+    - Position: 6
+      Type: "BOOL"
+  - Selector: "doCopyAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:)"
+    SwiftName: "doCopy(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:)"
     ResultType: "AnsaSharedMerchantMetadata * _Nonnull"
     Parameters:
     - Position: 0
@@ -821,6 +827,8 @@ Classes:
       Type: "AnsaSharedPromotions * _Nonnull"
     - Position: 5
       Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
+    - Position: 6
+      Type: "BOOL"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3175,6 +3183,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "id"
     Type: "NSString * _Nonnull"
+  - Name: "isTapToPayEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isTapToPayEnabled"
+    Type: "BOOL"
   - Name: "merchantID"
     PropertyKind: "Instance"
     SwiftName: "merchantID"
@@ -3192,9 +3204,9 @@ Classes:
     SwiftName: "status"
     Type: "NSString * _Nonnull"
   Methods:
-  - Selector: "initWithId:balance:billingDetails:email:merchantID:phone:status:autoReloadConfig:paymentMethods:"
+  - Selector: "initWithId:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "init(id:balance:billingDetails:email:merchantID:phone:status:autoReloadConfig:paymentMethods:)"
+    SwiftName: "init(id:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -3211,12 +3223,14 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+      Type: "BOOL"
     - Position: 8
+      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+    - Position: 9
       Type: "NSArray<AnsaSharedPaymentMethod *> * _Nonnull"
-  - Selector: "doCopyId:balance:billingDetails:email:merchantID:phone:status:autoReloadConfig:paymentMethods:"
+  - Selector: "doCopyId:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:balance:billingDetails:email:merchantID:phone:status:autoReloadConfig:paymentMethods:)"
+    SwiftName: "doCopy(id:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
     ResultType: "AnsaSharedCustomer * _Nonnull"
     Parameters:
     - Position: 0
@@ -3234,8 +3248,10 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+      Type: "BOOL"
     - Position: 8
+      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+    - Position: 9
       Type: "NSArray<AnsaSharedPaymentMethod *> * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -4022,6 +4038,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "autoReloadConfig"
     Type: "AnsaSharedMerchant_implAutoReloadConfigResponse * _Nonnull"
+  - Name: "isTapToPayEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isTapToPayEnabled"
+    Type: "BOOL"
   - Name: "omsProvider"
     PropertyKind: "Instance"
     SwiftName: "omsProvider"
@@ -4039,9 +4059,9 @@ Classes:
     SwiftName: "userReferralConfig"
     Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
   Methods:
-  - Selector: "initWithAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:"
+  - Selector: "initWithAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "init(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:)"
+    SwiftName: "init(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedMerchant_implAppReloadConfigurationResponse * _Nonnull"
@@ -4055,9 +4075,11 @@ Classes:
       Type: "AnsaSharedMerchant_implPromotionsResponse * _Nonnull"
     - Position: 5
       Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
-  - Selector: "doCopyAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:"
+    - Position: 6
+      Type: "BOOL"
+  - Selector: "doCopyAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:)"
+    SwiftName: "doCopy(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:)"
     ResultType: "AnsaSharedMerchant_implMetadataResponse * _Nonnull"
     Parameters:
     - Position: 0
@@ -4072,6 +4094,8 @@ Classes:
       Type: "AnsaSharedMerchant_implPromotionsResponse * _Nonnull"
     - Position: 5
       Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
+    - Position: 6
+      Type: "BOOL"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -8983,6 +9007,10 @@ Classes:
 - Name: "AnsaSharedCustomer_implCustomerResponseAnsaMetadata"
   SwiftName: "Customer_implCustomerResponse.AnsaMetadata"
   Properties:
+  - Name: "isTapToPayEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isTapToPayEnabled"
+    Type: "BOOL"
   - Name: "referralCode"
     PropertyKind: "Instance"
     SwiftName: "referralCode"
@@ -8996,9 +9024,9 @@ Classes:
     SwiftName: "stripe"
     Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
   Methods:
-  - Selector: "initWithReferralCode:square:stripe:"
+  - Selector: "initWithReferralCode:square:stripe:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "init(referralCode:square:stripe:)"
+    SwiftName: "init(referralCode:square:stripe:isTapToPayEnabled:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -9006,9 +9034,11 @@ Classes:
       Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
     - Position: 2
       Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-  - Selector: "doCopyReferralCode:square:stripe:"
+    - Position: 3
+      Type: "BOOL"
+  - Selector: "doCopyReferralCode:square:stripe:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(referralCode:square:stripe:)"
+    SwiftName: "doCopy(referralCode:square:stripe:isTapToPayEnabled:)"
     ResultType: "AnsaSharedCustomer_implCustomerResponseAnsaMetadata * _Nonnull"
     Parameters:
     - Position: 0
@@ -9017,6 +9047,8 @@ Classes:
       Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
     - Position: 2
       Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
+    - Position: 3
+      Type: "BOOL"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"

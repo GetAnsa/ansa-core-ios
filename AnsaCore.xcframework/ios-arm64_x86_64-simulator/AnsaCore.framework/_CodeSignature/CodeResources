@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AnsaCore-Swift.h</key>
 		<data>
-		KhHqXzRnO9chT83OVft14Tjt9UU=
+		h4canv6/KpQQoSMwZ/HhVSpziPY=
 		</data>
 		<key>Headers/AnsaCore.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GDdej+4GTGx+7nVUwSeR00WHw84=
+		eXHDvkYNQCssRmYmN8OZX29ifDE=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9Gq/bPXmZKAT/nm+yt6U2Y2pW94=
+		6zsogNE9oqCHKIEVPqNniajAcGg=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		R4B9D44JjhQmJbzQmubVNr/XtuQ=
+		42nGPRz3krq9KXIb+kE/D708xYY=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UjwTEDB5xRSw8zZ16I872bceP70=
+		dFsMnRDtPTTvOCbh6l6244JintA=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		R4B9D44JjhQmJbzQmubVNr/XtuQ=
+		42nGPRz3krq9KXIb+kE/D708xYY=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OX5WZhu7sG7BD0RCK8pOZs6cWvI=
+		+tWfH2lQx59dwjHQjvEUA8MOXyg=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9Gq/bPXmZKAT/nm+yt6U2Y2pW94=
+		6zsogNE9oqCHKIEVPqNniajAcGg=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TrxRZNqJldCIRp3CzhIFyX1hx8A=
+		py0PPUYiZIhqJsfB3nyHTL4VfLI=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vz88NjLXS1uxjfgLourwp/wymIA=
+		6QTgDqRy2QNPcBWtqkozHf0bYic=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TrxRZNqJldCIRp3CzhIFyX1hx8A=
+		py0PPUYiZIhqJsfB3nyHTL4VfLI=
 		</data>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FZdx0dW0uIWBOsyovYJL9NKO0tg=
+		/AIJg4OYF3f7SqKOvsusfJzESnk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mLvwlmoiuuzjH5Ml9Wnm+pPphxAYNyQQcCo/gOPkfu4=
+			WSaWWMCHRsO32sD1aARLTx/mZcitE6hRbDVl9wSaOJU=
 			</data>
 		</dict>
 		<key>Headers/AnsaCore.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6y1IUOGhzu4Q13vdwvs7NEAX5unx0/Gth75lNTVWDRM=
+			Fv2rg8HJs+ByW+uzGLsdVdpPz+IUxwj0lQGMjrzuE/M=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J37aDHWGH4mwTnUnhMqpAbf+fK6fPbtoooJPYNvq3LI=
+			4I4lO8q6txlW9U1krGhFnBle0Yz8D62gJ+mgjZWYCKw=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9gF7UPEToc4c67vdqXxLoN3JKiSxBrwQJFSkTResiws=
+			B84TbEI0GP3qkMR1IidWm+svt2hKSucL6altnVtCiVI=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J37aDHWGH4mwTnUnhMqpAbf+fK6fPbtoooJPYNvq3LI=
+			4I4lO8q6txlW9U1krGhFnBle0Yz8D62gJ+mgjZWYCKw=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KcEU2zoeqFivv2IYJSWvBrD9wV5ZD1dECScuW8Af+cs=
+			9+Qvwpr+S0M2vuS+wXQsUB4XgDRGbehQ7PCHVUxN5wU=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6y1IUOGhzu4Q13vdwvs7NEAX5unx0/Gth75lNTVWDRM=
+			Fv2rg8HJs+ByW+uzGLsdVdpPz+IUxwj0lQGMjrzuE/M=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K/MaVmvrIxxdYrmfZbg/uDN8M1H9AzoJo8WFs78UhJo=
+			h6OQWIorFSyXphvKKRLTTfC9/04jcRYzw9emtS5VEKc=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xdt3DZ7sywK3t7mDvRaKsHzpMj0qukYPP//w2Ml2GFY=
+			In2xdDJYoGCayyagV/ptbSCpwEOgSF+ldZRmsXZVqhk=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K/MaVmvrIxxdYrmfZbg/uDN8M1H9AzoJo8WFs78UhJo=
+			h6OQWIorFSyXphvKKRLTTfC9/04jcRYzw9emtS5VEKc=
 			</data>
 		</dict>
 		<key>Modules/AnsaCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vk+lVw5XxLHKT0iSrf+0cHz9gDeln2UHgqxLQTOQuSY=
+			ph7rTaK4vMfoLJ6bRYTu1bWQ82dIlblp0ONk3cbSRZ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

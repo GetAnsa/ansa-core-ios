@@ -56,6 +56,7 @@ public enum AddPaymentMethodType {
 public protocol AnsaClient {
   var customer: any AnsaCore.CustomerManager { get }
   var merchant: any AnsaCore.MerchantManager { get }
+  var ansaLogger: any AnsaShared.AnsaLogger { get }
   var isSandboxMode: Swift.Bool { get }
 }
 public protocol CustomerManager {

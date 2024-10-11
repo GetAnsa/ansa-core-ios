@@ -1295,6 +1295,48 @@
           },
           {
             "kind": "Var",
+            "name": "ansaLogger",
+            "printedName": "ansaLogger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaLogger",
+                "printedName": "any AnsaShared.AnsaLogger",
+                "usr": "c:objc(pl)AnsaSharedAnsaLogger"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A6ClientP10ansaLoggerSo0a6SharedaE0_pvp",
+            "mangledName": "$s8AnsaCore0A6ClientP10ansaLoggerSo0a6SharedaE0_pvp",
+            "moduleName": "AnsaCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaLogger",
+                    "printedName": "any AnsaShared.AnsaLogger",
+                    "usr": "c:objc(pl)AnsaSharedAnsaLogger"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A6ClientP10ansaLoggerSo0a6SharedaE0_pvg",
+                "mangledName": "$s8AnsaCore0A6ClientP10ansaLoggerSo0a6SharedaE0_pvg",
+                "moduleName": "AnsaCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.AnsaClient>",
+                "sugared_genericSig": "<Self where Self : AnsaCore.AnsaClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isSandboxMode",
             "printedName": "isSandboxMode",
             "children": [

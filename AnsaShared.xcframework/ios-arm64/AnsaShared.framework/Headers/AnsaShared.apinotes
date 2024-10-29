@@ -786,7 +786,7 @@ Classes:
   - Name: "promotions"
     PropertyKind: "Instance"
     SwiftName: "promotions"
-    Type: "AnsaSharedPromotions * _Nonnull"
+    Type: "AnsaSharedPromotions * _Nullable"
   - Name: "userReferralConfiguration"
     PropertyKind: "Instance"
     SwiftName: "userReferralConfiguration"
@@ -805,7 +805,7 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
-      Type: "AnsaSharedPromotions * _Nonnull"
+      Type: "AnsaSharedPromotions * _Nullable"
     - Position: 5
       Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
     - Position: 6
@@ -824,7 +824,7 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
-      Type: "AnsaSharedPromotions * _Nonnull"
+      Type: "AnsaSharedPromotions * _Nullable"
     - Position: 5
       Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
     - Position: 6
@@ -4053,7 +4053,7 @@ Classes:
   - Name: "promotions"
     PropertyKind: "Instance"
     SwiftName: "promotions"
-    Type: "AnsaSharedMerchant_implPromotionsResponse * _Nonnull"
+    Type: "AnsaSharedMerchant_implPromotionsResponse * _Nullable"
   - Name: "userReferralConfig"
     PropertyKind: "Instance"
     SwiftName: "userReferralConfig"
@@ -4072,7 +4072,7 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
-      Type: "AnsaSharedMerchant_implPromotionsResponse * _Nonnull"
+      Type: "AnsaSharedMerchant_implPromotionsResponse * _Nullable"
     - Position: 5
       Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
     - Position: 6
@@ -4091,7 +4091,7 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
-      Type: "AnsaSharedMerchant_implPromotionsResponse * _Nonnull"
+      Type: "AnsaSharedMerchant_implPromotionsResponse * _Nullable"
     - Position: 5
       Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
     - Position: 6

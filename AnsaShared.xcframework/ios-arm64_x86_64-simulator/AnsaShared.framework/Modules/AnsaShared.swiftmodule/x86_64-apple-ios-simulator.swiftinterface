@@ -130,6 +130,8 @@ public enum Skie {
     }
     public enum AddPaymentMethodType {
     }
+    public enum MobilePaymentSystemType {
+    }
   }
   public typealias Ansa_Android_SDK_kmp__customer_public = AnsaShared.Skie.CustomerPublic
   public enum KotlinxSerializationJson {
@@ -1682,6 +1684,19 @@ extension AnsaShared.Skie.CustomerPublic.AddPaymentMethodType {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed? where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
+extension AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.MobilePaymentSystemTypeKmpApplePay)
+    case googlePay(AnsaShared.MobilePaymentSystemTypeKmpGooglePay)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed, b: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed? where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
 extension AnsaShared.Skie.KotlinxSerializationJson.JsonElement {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonPrimitive(AnsaShared.Kotlinx_serialization_jsonJsonPrimitive)

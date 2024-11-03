@@ -4559,6 +4559,251 @@
                 "declAttributes": [
                   "AccessControl"
                 ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "MobilePaymentSystemType",
+                "printedName": "MobilePaymentSystemType",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "applePay",
+                        "printedName": "applePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed.Type) -> (AnsaShared.MobilePaymentSystemTypeKmpApplePay) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.MobilePaymentSystemTypeKmpApplePay) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MobilePaymentSystemTypeKmpApplePay",
+                                    "printedName": "AnsaShared.MobilePaymentSystemTypeKmpApplePay",
+                                    "usr": "c:objc(cs)AnsaSharedMobilePaymentSystemTypeKmpApplePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO8applePayyAISo0abfghi8KmpAppleL0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO8applePayyAISo0abfghi8KmpAppleL0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "googlePay",
+                        "printedName": "googlePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed.Type) -> (AnsaShared.MobilePaymentSystemTypeKmpGooglePay) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.MobilePaymentSystemTypeKmpGooglePay) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MobilePaymentSystemTypeKmpGooglePay",
+                                    "printedName": "AnsaShared.MobilePaymentSystemTypeKmpGooglePay",
+                                    "usr": "c:objc(cs)AnsaSharedMobilePaymentSystemTypeKmpGooglePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9googlePayyAISo0abfghi9KmpGoogleL0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9googlePayyAISo0abfghi9KmpGoogleL0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
               }
             ],
             "declKind": "Enum",
@@ -30619,6 +30864,89 @@
         "moduleName": "AnsaShared",
         "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.AddPaymentMethodTypeKmp>",
         "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedOx_tSo0abijkL3KmpRzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedOx_tSo0abijkL3KmpRzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.MobilePaymentSystemTypeKmp>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedOSgxSg_tSo0abijkL3KmpRzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO23MobilePaymentSystemTypeO8__SealedOSgxSg_tSo0abijkL3KmpRzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.MobilePaymentSystemTypeKmp>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"

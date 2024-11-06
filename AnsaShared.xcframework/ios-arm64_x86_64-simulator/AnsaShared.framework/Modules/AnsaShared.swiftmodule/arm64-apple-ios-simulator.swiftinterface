@@ -1657,6 +1657,8 @@ extension AnsaShared.Skie.CustomerPublic.TransactionType {
     case merchantAddPromo(AnsaShared.TransactionType.MerchantAddPromo)
     case merchantRefund(AnsaShared.TransactionType.MerchantRefund)
     case refundPaymentMethod(AnsaShared.TransactionType.RefundPaymentMethod)
+    case tapToPayTip(AnsaShared.TransactionType.TapToPayTip)
+    case tapToPayUseBalance(AnsaShared.TransactionType.TapToPayUseBalance)
     case unknown(AnsaShared.TransactionType.Unknown)
     case useBalance(AnsaShared.TransactionType.UseBalance)
     public func hash(into hasher: inout Swift.Hasher)

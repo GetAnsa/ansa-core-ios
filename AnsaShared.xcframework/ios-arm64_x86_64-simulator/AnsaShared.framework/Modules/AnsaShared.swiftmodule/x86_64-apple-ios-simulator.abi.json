@@ -3929,6 +3929,108 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "tapToPayTip",
+                        "printedName": "tapToPayTip",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.TapToPayTip) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.TapToPayTip) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TapToPayTip",
+                                    "printedName": "AnsaShared.TransactionType.TapToPayTip",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeTapToPayTip"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO11tapToPayTipyAISo0abfg3TapjkL0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO11tapToPayTipyAISo0abfg3TapjkL0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 4
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "tapToPayUseBalance",
+                        "printedName": "tapToPayUseBalance",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.TapToPayUseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.TapToPayUseBalance) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TapToPayUseBalance",
+                                    "printedName": "AnsaShared.TransactionType.TapToPayUseBalance",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeTapToPayUseBalance"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18tapToPayUseBalanceyAISo0abfg3TapjklM0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18tapToPayUseBalanceyAISo0abfg3TapjklM0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 5
+                      },
+                      {
+                        "kind": "Var",
                         "name": "unknown",
                         "printedName": "unknown",
                         "children": [
@@ -3976,7 +4078,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 4
+                        "fixedbinaryorder": 6
                       },
                       {
                         "kind": "Var",
@@ -4027,7 +4129,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 5
+                        "fixedbinaryorder": 7
                       },
                       {
                         "kind": "Var",

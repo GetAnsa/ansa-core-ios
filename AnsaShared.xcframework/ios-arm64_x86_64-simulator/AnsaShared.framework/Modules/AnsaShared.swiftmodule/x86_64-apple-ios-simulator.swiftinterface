@@ -119,28 +119,6 @@ public enum Skie {
     }
   }
   public typealias Ansa_Android_SDK_kmp__network_public = AnsaShared.Skie.NetworkPublic
-  public enum CustomerPublic {
-    public enum AutoReloadConfigurationStatus {
-    }
-    public enum WalletProvider {
-    }
-    public enum TransactionSource {
-    }
-    public enum TransactionType {
-    }
-    public enum AddPaymentMethodType {
-    }
-    public enum MobilePaymentSystemType {
-    }
-  }
-  public typealias Ansa_Android_SDK_kmp__customer_public = AnsaShared.Skie.CustomerPublic
-  public enum KotlinxSerializationJson {
-    public enum JsonElement {
-    }
-    public enum JsonPrimitive {
-    }
-  }
-  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = AnsaShared.Skie.KotlinxSerializationJson
   public enum KotlinxSerializationCore {
     public enum SerialKind {
     }
@@ -154,6 +132,30 @@ public enum Skie {
     }
   }
   public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = AnsaShared.Skie.KotlinxSerializationCore
+  public enum CustomerPublic {
+    public enum AutoReloadConfigurationStatus {
+    }
+    public enum WalletProvider {
+    }
+    public enum TransactionSource {
+    }
+    public enum TransactionType {
+    }
+    public enum AddPaymentMethodType {
+    }
+    public enum PaymentDataInterface {
+    }
+    public enum MobilePaymentSystemType {
+    }
+  }
+  public typealias Ansa_Android_SDK_kmp__customer_public = AnsaShared.Skie.CustomerPublic
+  public enum KotlinxSerializationJson {
+    public enum JsonElement {
+    }
+    public enum JsonPrimitive {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = AnsaShared.Skie.KotlinxSerializationJson
   public enum KtorHttp {
     public enum OutgoingContent {
     }
@@ -1368,11 +1370,15 @@ extension AnsaShared.__NetworkType {
   public var ordinal: Swift.Int32 {
     get
   }
+  public static var companion: AnsaShared.__BalanceAdjustment.Companion {
+    get
+  }
   public static func _forceBridgeFromObjectiveC(_ source: AnsaShared.__BalanceAdjustment, result: inout AnsaShared.BalanceAdjustment?)
   public static func _conditionallyBridgeFromObjectiveC(_ source: AnsaShared.__BalanceAdjustment, result: inout AnsaShared.BalanceAdjustment?) -> Swift.Bool
   public static func _unconditionallyBridgeFromObjectiveC(_ source: AnsaShared.__BalanceAdjustment?) -> AnsaShared.BalanceAdjustment
   public func _bridgeToObjectiveC() -> AnsaShared.__BalanceAdjustment
   public typealias _ObjectiveCType = AnsaShared.__BalanceAdjustment
+  public typealias Companion = AnsaShared.__BalanceAdjustment.Companion
   public static func == (a: AnsaShared.BalanceAdjustment, b: AnsaShared.BalanceAdjustment) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [AnsaShared.BalanceAdjustment]
@@ -1610,121 +1616,6 @@ extension AnsaShared.Skie.NetworkPublic.AuthType {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.NetworkPublic.AuthType.__Sealed where __Sealed : AnsaShared.AuthType
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.NetworkPublic.AuthType.__Sealed? where __Sealed : AnsaShared.AuthType
-extension AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case disabled(AnsaShared.AutoReloadConfigurationStatusDisabled)
-    case enabled(AnsaShared.AutoReloadConfigurationStatusEnabled)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed, b: AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed where __Sealed : AnsaShared.AutoReloadConfigurationStatus
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed? where __Sealed : AnsaShared.AutoReloadConfigurationStatus
-extension AnsaShared.Skie.CustomerPublic.WalletProvider {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case applePay(AnsaShared.WalletProvider.ApplePay)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed, b: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed where __Sealed : AnsaShared.WalletProvider
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed? where __Sealed : AnsaShared.WalletProvider
-extension AnsaShared.Skie.CustomerPublic.TransactionSource {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case addBalance(AnsaShared.TransactionSource.AddBalance)
-    case autoReload(AnsaShared.TransactionSource.AutoReload)
-    case unknown(AnsaShared.TransactionSource.Unknown)
-    case useBalance(AnsaShared.TransactionSource.UseBalance)
-    case useBalanceAndReload(AnsaShared.TransactionSource.UseBalanceAndReload)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed, b: AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed where __Sealed : AnsaShared.TransactionSource
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed? where __Sealed : AnsaShared.TransactionSource
-extension AnsaShared.Skie.CustomerPublic.TransactionType {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case addBalance(AnsaShared.TransactionType.AddBalance)
-    case merchantAddPromo(AnsaShared.TransactionType.MerchantAddPromo)
-    case merchantRefund(AnsaShared.TransactionType.MerchantRefund)
-    case refundPaymentMethod(AnsaShared.TransactionType.RefundPaymentMethod)
-    case tapToPayTip(AnsaShared.TransactionType.TapToPayTip)
-    case tapToPayUseBalance(AnsaShared.TransactionType.TapToPayUseBalance)
-    case unknown(AnsaShared.TransactionType.Unknown)
-    case useBalance(AnsaShared.TransactionType.UseBalance)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed, b: AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed where __Sealed : AnsaShared.TransactionType
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed? where __Sealed : AnsaShared.TransactionType
-extension AnsaShared.Skie.CustomerPublic.AddPaymentMethodType {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case applePay(AnsaShared.AddPaymentMethodTypeKmpApplePay)
-    case creditCard(AnsaShared.AddPaymentMethodTypeKmpCreditCard)
-    case googlePay(AnsaShared.AddPaymentMethodTypeKmpGooglePay)
-    case square(AnsaShared.AddPaymentMethodTypeKmpSquare)
-    case stripe(AnsaShared.AddPaymentMethodTypeKmpStripe)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed, b: AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed? where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
-extension AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case applePay(AnsaShared.MobilePaymentSystemTypeKmpApplePay)
-    case googlePay(AnsaShared.MobilePaymentSystemTypeKmpGooglePay)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed, b: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed? where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
-extension AnsaShared.Skie.KotlinxSerializationJson.JsonElement {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case jsonPrimitive(AnsaShared.Kotlinx_serialization_jsonJsonPrimitive)
-    case `else`
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement
-extension AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case jsonNull(AnsaShared.Kotlinx_serialization_jsonJsonNull)
-    case `else`
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive
 extension AnsaShared.Skie.KotlinxSerializationCore.SerialKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case polymorphicKind(AnsaShared.Kotlinx_serialization_corePolymorphicKind)
@@ -1801,6 +1692,133 @@ extension AnsaShared.Skie.KotlinxSerializationCore.StructureKind {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_coreStructureKind
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_coreStructureKind
+extension AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case disabled(AnsaShared.AutoReloadConfigurationStatusDisabled)
+    case enabled(AnsaShared.AutoReloadConfigurationStatusEnabled)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed, b: AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed where __Sealed : AnsaShared.AutoReloadConfigurationStatus
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed? where __Sealed : AnsaShared.AutoReloadConfigurationStatus
+extension AnsaShared.Skie.CustomerPublic.WalletProvider {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.WalletProvider.ApplePay)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed, b: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed where __Sealed : AnsaShared.WalletProvider
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed? where __Sealed : AnsaShared.WalletProvider
+extension AnsaShared.Skie.CustomerPublic.TransactionSource {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case addBalance(AnsaShared.TransactionSource.AddBalance)
+    case autoReload(AnsaShared.TransactionSource.AutoReload)
+    case unknown(AnsaShared.TransactionSource.Unknown)
+    case useBalance(AnsaShared.TransactionSource.UseBalance)
+    case useBalanceAndReload(AnsaShared.TransactionSource.UseBalanceAndReload)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed, b: AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed where __Sealed : AnsaShared.TransactionSource
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.TransactionSource.__Sealed? where __Sealed : AnsaShared.TransactionSource
+extension AnsaShared.Skie.CustomerPublic.TransactionType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case addBalance(AnsaShared.TransactionType.AddBalance)
+    case merchantAddPromo(AnsaShared.TransactionType.MerchantAddPromo)
+    case merchantRefund(AnsaShared.TransactionType.MerchantRefund)
+    case refundPaymentMethod(AnsaShared.TransactionType.RefundPaymentMethod)
+    case tapToPayTip(AnsaShared.TransactionType.TapToPayTip)
+    case tapToPayUseBalance(AnsaShared.TransactionType.TapToPayUseBalance)
+    case unknown(AnsaShared.TransactionType.Unknown)
+    case useBalance(AnsaShared.TransactionType.UseBalance)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed, b: AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed where __Sealed : AnsaShared.TransactionType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed? where __Sealed : AnsaShared.TransactionType
+extension AnsaShared.Skie.CustomerPublic.AddPaymentMethodType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.AddPaymentMethodTypeKmpApplePay)
+    case creditCard(AnsaShared.AddPaymentMethodTypeKmpCreditCard)
+    case googlePay(AnsaShared.AddPaymentMethodTypeKmpGooglePay)
+    case square(AnsaShared.AddPaymentMethodTypeKmpSquare)
+    case stripe(AnsaShared.AddPaymentMethodTypeKmpStripe)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed, b: AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.AddPaymentMethodType.__Sealed? where __Sealed : AnsaShared.AddPaymentMethodTypeKmp
+extension AnsaShared.Skie.CustomerPublic.PaymentDataInterface {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AnsaShared.Skie.CustomerPublic.PaymentDataInterface.__Sealed, b: AnsaShared.Skie.CustomerPublic.PaymentDataInterface.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.PaymentDataInterface.__Sealed where __Sealed : AnsaShared.PaymentDataInterface
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.PaymentDataInterface.__Sealed? where __Sealed : AnsaShared.PaymentDataInterface
+extension AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.MobilePaymentSystemTypeKmpApplePay)
+    case googlePay(AnsaShared.MobilePaymentSystemTypeKmpGooglePay)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed, b: AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.MobilePaymentSystemType.__Sealed? where __Sealed : AnsaShared.MobilePaymentSystemTypeKmp
+extension AnsaShared.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(AnsaShared.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonElement
+extension AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(AnsaShared.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : AnsaShared.Kotlinx_serialization_jsonJsonPrimitive
 extension AnsaShared.Skie.KtorHttp.OutgoingContent {
   @frozen public enum __Sealed : Swift.Hashable {
     case byteArrayContent(AnsaShared.Ktor_httpOutgoingContent.ByteArrayContent)
@@ -1845,3 +1863,4 @@ extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.
 extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
 extension AnsaShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
 extension AnsaShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension AnsaShared.Skie.CustomerPublic.PaymentDataInterface.__Sealed : Swift.Sendable {}

@@ -858,6 +858,13 @@
         "moduleName": "AnsaCore"
       },
       {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AddPaymentMethodType",
         "printedName": "AddPaymentMethodType",
@@ -1041,12 +1048,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
+                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (PassKit.PKPayment) -> AnsaCore.AddPaymentMethodType",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
+                    "printedName": "(PassKit.PKPayment) -> AnsaCore.AddPaymentMethodType",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1057,13 +1064,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(paymentData: Swift.String)",
+                        "printedName": "(paymentData: PassKit.PKPayment)",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "PKPayment",
+                            "printedName": "PassKit.PKPayment",
+                            "usr": "c:objc(cs)PKPayment"
                           }
                         ]
                       }
@@ -1086,65 +1093,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8AnsaCore20AddPaymentMethodTypeO8applePayyACSS_tcACmF",
-            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO8applePayyACSS_tcACmF",
-            "moduleName": "AnsaCore"
-          },
-          {
-            "kind": "Var",
-            "name": "googlePay",
-            "printedName": "googlePay",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AnsaCore.AddPaymentMethodType.Type) -> (Swift.String) -> AnsaCore.AddPaymentMethodType",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> AnsaCore.AddPaymentMethodType",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AddPaymentMethodType",
-                        "printedName": "AnsaCore.AddPaymentMethodType",
-                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(paymentData: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AnsaCore.AddPaymentMethodType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AddPaymentMethodType",
-                        "printedName": "AnsaCore.AddPaymentMethodType",
-                        "usr": "s:8AnsaCore20AddPaymentMethodTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8AnsaCore20AddPaymentMethodTypeO9googlePayyACSS_tcACmF",
-            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO9googlePayyACSS_tcACmF",
+            "usr": "s:8AnsaCore20AddPaymentMethodTypeO8applePayyACSo9PKPaymentC_tcACmF",
+            "mangledName": "$s8AnsaCore20AddPaymentMethodTypeO8applePayyACSo9PKPaymentC_tcACmF",
             "moduleName": "AnsaCore"
           }
         ],
@@ -1411,6 +1361,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
         "declKind": "Import",
         "moduleName": "AnsaCore"
       },

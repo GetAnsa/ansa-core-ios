@@ -708,6 +708,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedMerchantCartArtInfoCompanion"
+  SwiftName: "MerchantCartArtInfo.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedMerchant"
   SwiftName: "Merchant"
   Properties:
@@ -760,6 +767,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedMerchantCompanion"
+  SwiftName: "Merchant.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedMerchantMetadata"
   SwiftName: "MerchantMetadata"
   Properties:
@@ -852,6 +866,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedMerchantMetadataCompanion"
+  SwiftName: "MerchantMetadata.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedUserReferralConfiguration"
   SwiftName: "UserReferralConfiguration"
   Properties:
@@ -920,6 +941,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedUserReferralConfigurationCompanion"
+  SwiftName: "UserReferralConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedPromotions"
   SwiftName: "Promotions"
   Properties:
@@ -964,6 +992,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPromotionsCompanion"
+  SwiftName: "Promotions.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedRewardTier"
   SwiftName: "RewardTier"
   Properties:
@@ -1008,6 +1043,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedRewardTierCompanion"
+  SwiftName: "RewardTier.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedMerchantAutoReloadConfiguration"
   SwiftName: "MerchantAutoReloadConfiguration"
   Properties:
@@ -1060,6 +1102,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedMerchantAutoReloadConfigurationCompanion"
+  SwiftName: "MerchantAutoReloadConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAppReloadConfiguration"
   SwiftName: "AppReloadConfiguration"
   Properties:
@@ -1104,6 +1153,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAppReloadConfigurationCompanion"
+  SwiftName: "AppReloadConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedPresetReloadAmounts"
   SwiftName: "PresetReloadAmounts"
   Properties:
@@ -1156,6 +1212,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPresetReloadAmountsCompanion"
+  SwiftName: "PresetReloadAmounts.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedMerchantBasisTheoryInfo"
   SwiftName: "MerchantBasisTheoryInfo"
   Properties:
@@ -1192,6 +1255,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedMerchantBasisTheoryInfoCompanion"
+  SwiftName: "MerchantBasisTheoryInfo.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedKotlinx_coroutines_coreCoroutineDispatcher"
   SwiftName: "Kotlinx_coroutines_coreCoroutineDispatcher"
   Methods:
@@ -1939,6 +2009,94 @@ Classes:
       Type: "AnsaSharedKtor_client_coreHttpResponse * _Nonnull (^ _Nonnull)(void)"
     - Position: 1
       Type: "void (^ _Nonnull)(AnsaSharedApiResult<id> * _Nullable, NSError * _Nullable)"
+- Name: "AnsaSharedKotlinx_serialization_coreSerialKind"
+  SwiftName: "Kotlinx_serialization_coreSerialKind"
+  Methods:
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.CONTEXTUAL"
+- Name: "AnsaSharedKotlinx_serialization_coreSerialKindENUM"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.ENUM"
+- Name: "AnsaSharedKotlinx_serialization_coreSerializersModule"
+  SwiftName: "Kotlinx_serialization_coreSerializersModule"
+  Methods:
+  - Selector: "dumpToCollector:"
+    MethodKind: "Instance"
+    SwiftName: "dumpTo(collector:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKotlinx_serialization_coreSerializersModuleCollector> _Nonnull"
+  - Selector: "getContextualKClass:typeArgumentsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "getContextual(kClass:typeArgumentsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "getPolymorphicBaseClass:value:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:value:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreSerializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id _Nonnull"
+  - Selector: "getPolymorphicBaseClass:serializedClassName:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:serializedClassName:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKind"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind"
+- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.OPEN"
+- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.SEALED"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKind"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BOOLEAN"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BYTE"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.CHAR"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.DOUBLE"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.FLOAT"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindINT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.INT"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindLONG"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.LONG"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.SHORT"
+- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.STRING"
+- Name: "AnsaSharedKotlinx_serialization_coreStructureKind"
+  SwiftName: "Kotlinx_serialization_coreStructureKind"
+- Name: "AnsaSharedKotlinx_serialization_coreStructureKindCLASS"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.CLASS"
+- Name: "AnsaSharedKotlinx_serialization_coreStructureKindLIST"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.LIST"
+- Name: "AnsaSharedKotlinx_serialization_coreStructureKindMAP"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
+- Name: "AnsaSharedKotlinx_serialization_coreStructureKindOBJECT"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
 - Name: "AnsaSharedBalanceUpdate"
   SwiftName: "BalanceUpdate"
   Properties:
@@ -1999,6 +2157,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedBalanceUpdateCompanion"
+  SwiftName: "BalanceUpdate.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedBalance"
   SwiftName: "Balance"
   Properties:
@@ -2043,6 +2208,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedBalanceCompanion"
+  SwiftName: "Balance.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedUseBalanceRequest"
   SwiftName: "UseBalanceRequest"
   Properties:
@@ -2103,6 +2275,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedUseBalanceRequestCompanion"
+  SwiftName: "UseBalanceRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAutoReloadConfiguration"
   SwiftName: "AutoReloadConfiguration"
   Properties:
@@ -2163,6 +2342,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAutoReloadConfigurationCompanion"
+  SwiftName: "AutoReloadConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAutoReloadConfigurationRequest"
   SwiftName: "AutoReloadConfigurationRequest"
   Properties:
@@ -2207,6 +2393,27 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAutoReloadConfigurationRequestCompanion"
+  SwiftName: "AutoReloadConfigurationRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedAutoReloadConfigurationStatusCompanion"
+  SwiftName: "AutoReloadConfigurationStatusCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedAutoReloadConfigurationStatusDisabled"
   SwiftName: "AutoReloadConfigurationStatusDisabled"
   Methods:
@@ -2221,6 +2428,17 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "hash()"
     ResultType: "NSUInteger"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
   - Selector: "description"
     MethodKind: "Instance"
     SwiftName: "description()"
@@ -2277,6 +2495,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAutoReloadConfigurationStatusEnabledCompanion"
+  SwiftName: "AutoReloadConfigurationStatusEnabled.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedProvisioning"
   SwiftName: "Provisioning"
   Properties:
@@ -2329,6 +2554,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedProvisioningCompanion"
+  SwiftName: "Provisioning.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedProvisioningRequest"
   SwiftName: "ProvisioningRequest"
   Properties:
@@ -2381,6 +2613,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedProvisioningRequestCompanion"
+  SwiftName: "ProvisioningRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedWalletProvider"
   SwiftName: "WalletProvider"
   Properties:
@@ -2388,6 +2627,20 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "identifier"
     Type: "NSString * _Nonnull"
+- Name: "AnsaSharedWalletProviderCompanion"
+  SwiftName: "WalletProvider.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedWalletProviderApplePay"
   SwiftName: "WalletProvider.ApplePay"
   Properties:
@@ -2484,6 +2737,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedTransactionResultCompanion"
+  SwiftName: "TransactionResult.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedTransaction"
   SwiftName: "Transaction"
   Properties:
@@ -2620,6 +2880,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedTransactionCompanion"
+  SwiftName: "Transaction.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedTransactionSource"
   SwiftName: "TransactionSource"
 - Name: "AnsaSharedTransactionSourceCompanion"
@@ -2632,6 +2899,17 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedTransactionSourceAddBalance"
   SwiftName: "TransactionSource.AddBalance"
   Methods:
@@ -2760,6 +3038,17 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedTransactionTypeAddBalance"
   SwiftName: "TransactionType.AddBalance"
   Methods:
@@ -2944,6 +3233,20 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(name:ordinal:)"
     Availability: "nonswift"
+- Name: "AnsaSharedBalanceAdjustmentCompanion"
+  SwiftName: "__BalanceAdjustment.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedUserReloadConfiguration"
   SwiftName: "UserReloadConfiguration"
   Properties:
@@ -2988,6 +3291,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedUserReloadConfigurationCompanion"
+  SwiftName: "UserReloadConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedUserPresetReloadAmounts"
   SwiftName: "UserPresetReloadAmounts"
   Properties:
@@ -3048,6 +3358,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedUserPresetReloadAmountsCompanion"
+  SwiftName: "UserPresetReloadAmounts.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedPaymentMethodCollection"
   SwiftName: "PaymentMethodCollection"
   Properties:
@@ -3092,6 +3409,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentMethodCollectionCompanion"
+  SwiftName: "PaymentMethodCollection.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedPaymentMethod"
   SwiftName: "PaymentMethod"
   Properties:
@@ -3144,6 +3468,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentMethodCompanion"
+  SwiftName: "PaymentMethod.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedCard"
   SwiftName: "Card"
   Properties:
@@ -3204,6 +3535,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCardCompanion"
+  SwiftName: "Card.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedCustomer"
   SwiftName: "Customer"
   Properties:
@@ -3312,6 +3650,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCustomerCompanion"
+  SwiftName: "Customer.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedBillingDetails"
   SwiftName: "BillingDetails"
   Properties:
@@ -3356,6 +3701,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedBillingDetailsCompanion"
+  SwiftName: "BillingDetails.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedVirtualCard"
   SwiftName: "VirtualCard"
   Properties:
@@ -3440,27 +3792,34 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedVirtualCardCompanion"
+  SwiftName: "VirtualCard.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAddPaymentMethodTypeKmpApplePay"
   SwiftName: "AddPaymentMethodTypeKmpApplePay"
   Properties:
   - Name: "paymentData"
     PropertyKind: "Instance"
     SwiftName: "paymentData"
-    Type: "NSString * _Nonnull"
+    Type: "AnsaSharedPaymentDataInterfaceApplePaymentData * _Nonnull"
   Methods:
   - Selector: "initWithPaymentData:"
     MethodKind: "Instance"
     SwiftName: "init(paymentData:)"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "AnsaSharedPaymentDataInterfaceApplePaymentData * _Nonnull"
   - Selector: "doCopyPaymentData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(paymentData:)"
     ResultType: "AnsaSharedAddPaymentMethodTypeKmpApplePay * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "AnsaSharedPaymentDataInterfaceApplePaymentData * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3476,6 +3835,20 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAddPaymentMethodTypeKmpCompanion"
+  SwiftName: "AddPaymentMethodTypeKmpCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedAddPaymentMethodTypeKmpCreditCard"
   SwiftName: "AddPaymentMethodTypeKmpCreditCard"
   Properties:
@@ -3518,21 +3891,21 @@ Classes:
   - Name: "paymentData"
     PropertyKind: "Instance"
     SwiftName: "paymentData"
-    Type: "NSString * _Nonnull"
+    Type: "AnsaSharedPaymentDataInterfaceGooglePaymentData * _Nonnull"
   Methods:
   - Selector: "initWithPaymentData:"
     MethodKind: "Instance"
     SwiftName: "init(paymentData:)"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "AnsaSharedPaymentDataInterfaceGooglePaymentData * _Nonnull"
   - Selector: "doCopyPaymentData:"
     MethodKind: "Instance"
     SwiftName: "doCopy(paymentData:)"
     ResultType: "AnsaSharedAddPaymentMethodTypeKmpGooglePay * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "AnsaSharedPaymentDataInterfaceGooglePaymentData * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3696,6 +4069,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAddBalanceRequestCompanion"
+  SwiftName: "AddBalanceRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAddPaymentMethodRequest"
   SwiftName: "AddPaymentMethodRequest"
   Properties:
@@ -3749,6 +4129,349 @@ Classes:
       Type: "int32_t"
     - Position: 4
       Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedAddPaymentMethodRequestCompanion"
+  SwiftName: "AddPaymentMethodRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedPaymentDataInterfaceApplePaymentData"
+  SwiftName: "PaymentDataInterfaceApplePaymentData"
+  Properties:
+  - Name: "billingContact"
+    PropertyKind: "Instance"
+    SwiftName: "billingContact"
+    Type: "AnsaSharedApplePaymentContact * _Nonnull"
+  - Name: "paymentInfo"
+    PropertyKind: "Instance"
+    SwiftName: "paymentInfo"
+    Type: "AnsaSharedApplePaymentInformation * _Nonnull"
+  - Name: "paymentMethod"
+    PropertyKind: "Instance"
+    SwiftName: "paymentMethod"
+    Type: "AnsaSharedApplePaymentMethod * _Nonnull"
+  - Name: "shippingContact"
+    PropertyKind: "Instance"
+    SwiftName: "shippingContact"
+    Type: "AnsaSharedApplePaymentContact * _Nonnull"
+  - Name: "transactionIdentifier"
+    PropertyKind: "Instance"
+    SwiftName: "transactionIdentifier"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithPaymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:"
+    MethodKind: "Instance"
+    SwiftName: "init(paymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedApplePaymentMethod * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedApplePaymentInformation * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "AnsaSharedApplePaymentContact * _Nonnull"
+    - Position: 4
+      Type: "AnsaSharedApplePaymentContact * _Nonnull"
+  - Selector: "doCopyPaymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(paymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:)"
+    ResultType: "AnsaSharedPaymentDataInterfaceApplePaymentData * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedApplePaymentMethod * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedApplePaymentInformation * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "AnsaSharedApplePaymentContact * _Nonnull"
+    - Position: 4
+      Type: "AnsaSharedApplePaymentContact * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentDataInterfaceGooglePaymentData"
+  SwiftName: "PaymentDataInterfaceGooglePaymentData"
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithId:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:)"
+    ResultType: "AnsaSharedPaymentDataInterfaceGooglePaymentData * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedApplePaymentContact"
+  SwiftName: "ApplePaymentContact"
+  Properties:
+  - Name: "addressLines"
+    PropertyKind: "Instance"
+    SwiftName: "addressLines"
+    Type: "NSString * _Nullable"
+  - Name: "country"
+    PropertyKind: "Instance"
+    SwiftName: "country"
+    Type: "NSString * _Nullable"
+  - Name: "countryCode"
+    PropertyKind: "Instance"
+    SwiftName: "countryCode"
+    Type: "NSString * _Nullable"
+  - Name: "familyName"
+    PropertyKind: "Instance"
+    SwiftName: "familyName"
+    Type: "NSString * _Nullable"
+  - Name: "givenName"
+    PropertyKind: "Instance"
+    SwiftName: "givenName"
+    Type: "NSString * _Nullable"
+  - Name: "postalCode"
+    PropertyKind: "Instance"
+    SwiftName: "postalCode"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithAddressLines:country:countryCode:familyName:givenName:postalCode:"
+    MethodKind: "Instance"
+    SwiftName: "init(addressLines:country:countryCode:familyName:givenName:postalCode:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyAddressLines:country:countryCode:familyName:givenName:postalCode:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(addressLines:country:countryCode:familyName:givenName:postalCode:)"
+    ResultType: "AnsaSharedApplePaymentContact * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedApplePaymentInformation"
+  SwiftName: "ApplePaymentInformation"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "NSString * _Nonnull"
+  - Name: "header"
+    PropertyKind: "Instance"
+    SwiftName: "header"
+    Type: "AnsaSharedApplePaymentHeader * _Nonnull"
+  - Name: "signature"
+    PropertyKind: "Instance"
+    SwiftName: "signature"
+    Type: "NSString * _Nonnull"
+  - Name: "version"
+    PropertyKind: "Instance"
+    SwiftName: "version"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithData:signature:header:version:"
+    MethodKind: "Instance"
+    SwiftName: "init(data:signature:header:version:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "AnsaSharedApplePaymentHeader * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyData:signature:header:version:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(data:signature:header:version:)"
+    ResultType: "AnsaSharedApplePaymentInformation * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "AnsaSharedApplePaymentHeader * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedApplePaymentHeader"
+  SwiftName: "ApplePaymentHeader"
+  Properties:
+  - Name: "ephemeralPublicKey"
+    PropertyKind: "Instance"
+    SwiftName: "ephemeralPublicKey"
+    Type: "NSString * _Nonnull"
+  - Name: "publicKeyHash"
+    PropertyKind: "Instance"
+    SwiftName: "publicKeyHash"
+    Type: "NSString * _Nonnull"
+  - Name: "transactionId"
+    PropertyKind: "Instance"
+    SwiftName: "transactionId"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithPublicKeyHash:ephemeralPublicKey:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "init(publicKeyHash:ephemeralPublicKey:transactionId:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyPublicKeyHash:ephemeralPublicKey:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(publicKeyHash:ephemeralPublicKey:transactionId:)"
+    ResultType: "AnsaSharedApplePaymentHeader * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedApplePaymentMethod"
+  SwiftName: "ApplePaymentMethod"
+  Properties:
+  - Name: "displayName"
+    PropertyKind: "Instance"
+    SwiftName: "displayName"
+    Type: "NSString * _Nullable"
+  - Name: "network"
+    PropertyKind: "Instance"
+    SwiftName: "network"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithDisplayName:network:"
+    MethodKind: "Instance"
+    SwiftName: "init(displayName:network:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyDisplayName:network:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(displayName:network:)"
+    ResultType: "AnsaSharedApplePaymentMethod * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3855,94 +4578,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "AnsaSharedKotlinx_serialization_coreSerialKind"
-  SwiftName: "Kotlinx_serialization_coreSerialKind"
-  Methods:
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedKotlinx_serialization_coreSerialKindCONTEXTUAL"
-  SwiftName: "Kotlinx_serialization_coreSerialKind.CONTEXTUAL"
-- Name: "AnsaSharedKotlinx_serialization_coreSerialKindENUM"
-  SwiftName: "Kotlinx_serialization_coreSerialKind.ENUM"
-- Name: "AnsaSharedKotlinx_serialization_coreSerializersModule"
-  SwiftName: "Kotlinx_serialization_coreSerializersModule"
-  Methods:
-  - Selector: "dumpToCollector:"
-    MethodKind: "Instance"
-    SwiftName: "dumpTo(collector:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKotlinx_serialization_coreSerializersModuleCollector> _Nonnull"
-  - Selector: "getContextualKClass:typeArgumentsSerializers:"
-    MethodKind: "Instance"
-    SwiftName: "getContextual(kClass:typeArgumentsSerializers:)"
-    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
-    - Position: 1
-      Type: "NSArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
-  - Selector: "getPolymorphicBaseClass:value:"
-    MethodKind: "Instance"
-    SwiftName: "getPolymorphic(baseClass:value:)"
-    ResultType: "id<AnsaSharedKotlinx_serialization_coreSerializationStrategy> _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
-    - Position: 1
-      Type: "id _Nonnull"
-  - Selector: "getPolymorphicBaseClass:serializedClassName:"
-    MethodKind: "Instance"
-    SwiftName: "getPolymorphic(baseClass:serializedClassName:)"
-    ResultType: "id<AnsaSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKotlinKClass> _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKind"
-  SwiftName: "Kotlinx_serialization_corePolymorphicKind"
-- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKindOPEN"
-  SwiftName: "Kotlinx_serialization_corePolymorphicKind.OPEN"
-- Name: "AnsaSharedKotlinx_serialization_corePolymorphicKindSEALED"
-  SwiftName: "Kotlinx_serialization_corePolymorphicKind.SEALED"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKind"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindBOOLEAN"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BOOLEAN"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindBYTE"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BYTE"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindCHAR"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.CHAR"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindDOUBLE"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.DOUBLE"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindFLOAT"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.FLOAT"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindINT"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.INT"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindLONG"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.LONG"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindSHORT"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.SHORT"
-- Name: "AnsaSharedKotlinx_serialization_corePrimitiveKindSTRING"
-  SwiftName: "Kotlinx_serialization_corePrimitiveKind.STRING"
-- Name: "AnsaSharedKotlinx_serialization_coreStructureKind"
-  SwiftName: "Kotlinx_serialization_coreStructureKind"
-- Name: "AnsaSharedKotlinx_serialization_coreStructureKindCLASS"
-  SwiftName: "Kotlinx_serialization_coreStructureKind.CLASS"
-- Name: "AnsaSharedKotlinx_serialization_coreStructureKindLIST"
-  SwiftName: "Kotlinx_serialization_coreStructureKind.LIST"
-- Name: "AnsaSharedKotlinx_serialization_coreStructureKindMAP"
-  SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
-- Name: "AnsaSharedKotlinx_serialization_coreStructureKindOBJECT"
-  SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
 - Name: "AnsaSharedKotlin_inject_runtimeLazyMap"
   SwiftName: "Kotlin_inject_runtimeLazyMap"
   Methods:
@@ -11660,162 +12295,6 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "void (^ _Nonnull)(AnsaSharedPaymentSession * _Nullable_result, NSError * _Nullable)"
-- Name: "AnsaSharedCustomerRepository"
-  SwiftName: "CustomerRepository"
-  Methods:
-  - Selector: "addBalanceRequest:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__addBalance(request:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedAddBalanceRequest * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
-  - Selector: "addPaymentMethodCustomerId:paymentMethodType:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "id<AnsaSharedAddPaymentMethodTypeKmp> _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedPaymentMethod *> * _Nullable, NSError * _Nullable)"
-  - Selector: "createVirtualCardCustomerId:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__createVirtualCard(customerId:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedVirtualCard *> * _Nullable, NSError * _Nullable)"
-  - Selector: "deletePaymentMethodCustomerId:paymentMethodId:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__deletePaymentMethod(customerId:paymentMethodId:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedKotlinUnit *> * _Nullable, NSError * _Nullable)"
-  - Selector: "getAutoReloadConfigurationCustomerId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getAutoReloadConfiguration(customerId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable)"
-  - Selector: "getCustomerCustomerId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getCustomer(customerId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedCustomer *> * _Nullable, NSError * _Nullable)"
-  - Selector: "getPaymentMethodsCustomerId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getPaymentMethods(customerId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedPaymentMethodCollection *> * _Nullable, NSError * _Nullable)"
-  - Selector: "getReloadConfigCustomerId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getReloadConfig(customerId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedUserReloadConfiguration *> * _Nullable, NSError * _Nullable)"
-  - Selector: "getTransactionsCustomerId:cursor:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getTransactions(customerId:cursor:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedTransactionResult *> * _Nullable, NSError * _Nullable)"
-  - Selector: "observeCustomerCustomerId:"
-    MethodKind: "Instance"
-    SwiftName: "observeCustomer(customerId:)"
-    ResultType: "AnsaSharedSkieKotlinOptionalFlow<AnsaSharedCustomer *> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "provisionVirtualCardRequest:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__provisionVirtualCard(request:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedProvisioningRequest * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedProvisioning *> * _Nullable, NSError * _Nullable)"
-  - Selector: "setAutoReloadConfigurationRequest:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedAutoReloadConfigurationRequest * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable)"
-  - Selector: "useBalanceRequest:idempotencyKey:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__useBalance(request:idempotencyKey:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedUseBalanceRequest * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
-- Name: "AnsaSharedAutoReloadConfigurationStatus"
-  SwiftName: "AutoReloadConfigurationStatus"
-- Name: "AnsaSharedAddPaymentMethodTypeKmp"
-  SwiftName: "AddPaymentMethodTypeKmp"
-- Name: "AnsaSharedMobilePaymentSystemTypeKmp"
-  SwiftName: "MobilePaymentSystemTypeKmp"
 - Name: "AnsaSharedKotlinx_serialization_coreKSerializer"
   SwiftName: "Kotlinx_serialization_coreKSerializer"
   Properties:
@@ -12500,6 +12979,164 @@ Protocols:
       Type: "id<AnsaSharedKotlinKClass> _Nonnull"
     - Position: 1
       Type: "id<AnsaSharedKotlinx_serialization_coreSerializationStrategy> _Nullable (^ _Nonnull)(id _Nonnull)"
+- Name: "AnsaSharedCustomerRepository"
+  SwiftName: "CustomerRepository"
+  Methods:
+  - Selector: "addBalanceRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__addBalance(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedAddBalanceRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+  - Selector: "addPaymentMethodCustomerId:paymentMethodType:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<AnsaSharedAddPaymentMethodTypeKmp> _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedPaymentMethod *> * _Nullable, NSError * _Nullable)"
+  - Selector: "createVirtualCardCustomerId:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__createVirtualCard(customerId:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedVirtualCard *> * _Nullable, NSError * _Nullable)"
+  - Selector: "deletePaymentMethodCustomerId:paymentMethodId:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__deletePaymentMethod(customerId:paymentMethodId:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedKotlinUnit *> * _Nullable, NSError * _Nullable)"
+  - Selector: "getAutoReloadConfigurationCustomerId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getAutoReloadConfiguration(customerId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable)"
+  - Selector: "getCustomerCustomerId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getCustomer(customerId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedCustomer *> * _Nullable, NSError * _Nullable)"
+  - Selector: "getPaymentMethodsCustomerId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getPaymentMethods(customerId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedPaymentMethodCollection *> * _Nullable, NSError * _Nullable)"
+  - Selector: "getReloadConfigCustomerId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getReloadConfig(customerId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedUserReloadConfiguration *> * _Nullable, NSError * _Nullable)"
+  - Selector: "getTransactionsCustomerId:cursor:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getTransactions(customerId:cursor:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedTransactionResult *> * _Nullable, NSError * _Nullable)"
+  - Selector: "observeCustomerCustomerId:"
+    MethodKind: "Instance"
+    SwiftName: "observeCustomer(customerId:)"
+    ResultType: "AnsaSharedSkieKotlinOptionalFlow<AnsaSharedCustomer *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "provisionVirtualCardRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__provisionVirtualCard(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedProvisioningRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedProvisioning *> * _Nullable, NSError * _Nullable)"
+  - Selector: "setAutoReloadConfigurationRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedAutoReloadConfigurationRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedAutoReloadConfiguration *> * _Nullable, NSError * _Nullable)"
+  - Selector: "useBalanceRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__useBalance(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedUseBalanceRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+- Name: "AnsaSharedAutoReloadConfigurationStatus"
+  SwiftName: "AutoReloadConfigurationStatus"
+- Name: "AnsaSharedAddPaymentMethodTypeKmp"
+  SwiftName: "AddPaymentMethodTypeKmp"
+- Name: "AnsaSharedPaymentDataInterface"
+  SwiftName: "PaymentDataInterface"
+- Name: "AnsaSharedMobilePaymentSystemTypeKmp"
+  SwiftName: "MobilePaymentSystemTypeKmp"
 - Name: "AnsaSharedKotlin_inject_runtimeScopedComponent"
   SwiftName: "Kotlin_inject_runtimeScopedComponent"
   Properties:

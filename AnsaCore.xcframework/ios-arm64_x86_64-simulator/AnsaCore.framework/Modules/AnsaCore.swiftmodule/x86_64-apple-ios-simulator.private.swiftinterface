@@ -4,6 +4,7 @@
 @_exported import AnsaCore
 @_exported import AnsaShared
 import Foundation
+import PassKit
 import Swift
 import _Concurrency
 import _StringProcessing
@@ -50,8 +51,7 @@ public enum AddPaymentMethodType {
   case creditCard(token: Swift.String)
   case stripe(paymentMethodId: Swift.String)
   case square(cardNonce: Swift.String)
-  case applePay(paymentData: Swift.String)
-  case googlePay(paymentData: Swift.String)
+  case applePay(paymentData: PassKit.PKPayment)
 }
 public protocol AnsaClient {
   var customer: any AnsaCore.CustomerManager { get }

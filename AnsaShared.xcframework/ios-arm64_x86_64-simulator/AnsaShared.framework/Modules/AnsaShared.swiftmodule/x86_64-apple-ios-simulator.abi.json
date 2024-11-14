@@ -4672,6 +4672,251 @@
             "children": [
               {
                 "kind": "TypeDecl",
+                "name": "BalanceUpdate",
+                "printedName": "BalanceUpdate",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "giftCardRedemption",
+                        "printedName": "giftCardRedemption",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed.Type) -> (AnsaShared.BalanceUpdateGiftCardRedemption) -> AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.BalanceUpdateGiftCardRedemption) -> AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "BalanceUpdateGiftCardRedemption",
+                                    "printedName": "AnsaShared.BalanceUpdateGiftCardRedemption",
+                                    "usr": "c:objc(cs)AnsaSharedBalanceUpdateGiftCardRedemption"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO18giftCardRedemptionyAISo0abfg4GiftjK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO18giftCardRedemptionyAISo0abfg4GiftjK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "normal",
+                        "printedName": "normal",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed.Type) -> (AnsaShared.BalanceUpdateNormal) -> AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.BalanceUpdateNormal) -> AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "BalanceUpdateNormal",
+                                    "printedName": "AnsaShared.BalanceUpdateNormal",
+                                    "usr": "c:objc(cs)AnsaSharedBalanceUpdateNormal"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO6normalyAISo0abfG6NormalCcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO6normalyAISo0abfG6NormalCcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
                 "name": "AutoReloadConfigurationStatus",
                 "printedName": "AutoReloadConfigurationStatus",
                 "children": [
@@ -4910,6 +5155,200 @@
                 "declKind": "Enum",
                 "usr": "s:10AnsaShared4SkieO14CustomerPublicO29AutoReloadConfigurationStatusO",
                 "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO29AutoReloadConfigurationStatusO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "GiftCard",
+                "printedName": "GiftCard",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "square",
+                        "printedName": "square",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed.Type) -> (AnsaShared.GiftCardSquare) -> AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.GiftCardSquare) -> AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GiftCardSquare",
+                                    "printedName": "AnsaShared.GiftCardSquare",
+                                    "usr": "c:objc(cs)AnsaSharedGiftCardSquare"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO6squareyAISo0abfG6SquareCcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO6squareyAISo0abfG6SquareCcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO8GiftCardO",
                 "moduleName": "AnsaShared",
                 "declAttributes": [
                   "AccessControl"
@@ -5570,6 +6009,57 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "giftCardRedemption",
+                        "printedName": "giftCardRedemption",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type) -> (AnsaShared.TransactionType.GiftCardRedemption) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.TransactionType.GiftCardRedemption) -> AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GiftCardRedemption",
+                                    "printedName": "AnsaShared.TransactionType.GiftCardRedemption",
+                                    "usr": "c:objc(cs)AnsaSharedTransactionTypeGiftCardRedemption"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.TransactionType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18giftCardRedemptionyAISo0abfg4GiftjK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18giftCardRedemptionyAISo0abfg4GiftjK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
                         "name": "merchantAddPromo",
                         "printedName": "merchantAddPromo",
                         "children": [
@@ -5617,7 +6107,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO16merchantAddPromoyAISo0abfg8MerchantjK0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO16merchantAddPromoyAISo0abfg8MerchantjK0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 1
+                        "fixedbinaryorder": 2
                       },
                       {
                         "kind": "Var",
@@ -5668,7 +6158,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO14merchantRefundyAISo0abfg8MerchantJ0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO14merchantRefundyAISo0abfg8MerchantJ0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 2
+                        "fixedbinaryorder": 3
                       },
                       {
                         "kind": "Var",
@@ -5719,7 +6209,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO19refundPaymentMethodyAISo0abfg6RefundjK0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO19refundPaymentMethodyAISo0abfg6RefundjK0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 3
+                        "fixedbinaryorder": 4
                       },
                       {
                         "kind": "Var",
@@ -5770,7 +6260,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO11tapToPayTipyAISo0abfg3TapjkL0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO11tapToPayTipyAISo0abfg3TapjkL0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 4
+                        "fixedbinaryorder": 5
                       },
                       {
                         "kind": "Var",
@@ -5821,7 +6311,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18tapToPayUseBalanceyAISo0abfg3TapjklM0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO18tapToPayUseBalanceyAISo0abfg3TapjklM0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 5
+                        "fixedbinaryorder": 6
                       },
                       {
                         "kind": "Var",
@@ -5872,7 +6362,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO7unknownyAISo0abfG7UnknownCcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 6
+                        "fixedbinaryorder": 7
                       },
                       {
                         "kind": "Var",
@@ -5923,7 +6413,7 @@
                         "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO8__SealedO10useBalanceyAISo0abfg3UseJ0CcAImF",
                         "moduleName": "AnsaShared",
-                        "fixedbinaryorder": 7
+                        "fixedbinaryorder": 8
                       },
                       {
                         "kind": "Var",
@@ -6053,6 +6543,353 @@
                 "declKind": "Enum",
                 "usr": "s:10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO",
                 "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO15TransactionTypeO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "PaymentMethodType",
+                "printedName": "PaymentMethodType",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "applePay",
+                        "printedName": "applePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type) -> (AnsaShared.PaymentMethodTypeApplePay) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.PaymentMethodTypeApplePay) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentMethodTypeApplePay",
+                                    "printedName": "AnsaShared.PaymentMethodTypeApplePay",
+                                    "usr": "c:objc(cs)AnsaSharedPaymentMethodTypeApplePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO8applePayyAISo0abfgh5AppleK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO8applePayyAISo0abfgh5AppleK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "creditCard",
+                        "printedName": "creditCard",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type) -> (AnsaShared.PaymentMethodTypeCreditCard) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.PaymentMethodTypeCreditCard) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentMethodTypeCreditCard",
+                                    "printedName": "AnsaShared.PaymentMethodTypeCreditCard",
+                                    "usr": "c:objc(cs)AnsaSharedPaymentMethodTypeCreditCard"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO10creditCardyAISo0abfgh6CreditK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO10creditCardyAISo0abfgh6CreditK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "googlePay",
+                        "printedName": "googlePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type) -> (AnsaShared.PaymentMethodTypeGooglePay) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.PaymentMethodTypeGooglePay) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentMethodTypeGooglePay",
+                                    "printedName": "AnsaShared.PaymentMethodTypeGooglePay",
+                                    "usr": "c:objc(cs)AnsaSharedPaymentMethodTypeGooglePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9googlePayyAISo0abfgh6GoogleK0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9googlePayyAISo0abfgh6GoogleK0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 2
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "unknown",
+                        "printedName": "unknown",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type) -> (AnsaShared.PaymentMethodTypeUnknown) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.PaymentMethodTypeUnknown) -> AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentMethodTypeUnknown",
+                                    "printedName": "AnsaShared.PaymentMethodTypeUnknown",
+                                    "usr": "c:objc(cs)AnsaSharedPaymentMethodTypeUnknown"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO7unknownyAISo0abfgH7UnknownCcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO7unknownyAISo0abfgH7UnknownCcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 3
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO",
                 "moduleName": "AnsaShared",
                 "declAttributes": [
                   "AccessControl"
@@ -31220,6 +32057,89 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO13BalanceUpdateO8__SealedOx_tSo0abiJ0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO13BalanceUpdateO8__SealedOx_tSo0abiJ0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.BalanceUpdate>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.BalanceUpdate>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.BalanceUpdate.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO13BalanceUpdateO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO13BalanceUpdateO8__SealedOSgxSg_tSo0abiJ0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO13BalanceUpdateO8__SealedOSgxSg_tSo0abiJ0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.BalanceUpdate>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.BalanceUpdate>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "AnsaShared.Skie.CustomerPublic.AutoReloadConfigurationStatus.__Sealed",
             "usr": "s:10AnsaShared4SkieO14CustomerPublicO29AutoReloadConfigurationStatusO8__SealedO"
           },
@@ -31279,6 +32199,89 @@
         "moduleName": "AnsaShared",
         "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.AutoReloadConfigurationStatus>",
         "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.AutoReloadConfigurationStatus>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO8GiftCardO8__SealedOx_tSo0abiJ0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO8GiftCardO8__SealedOx_tSo0abiJ0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.GiftCard>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.GiftCard>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO8GiftCardO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO8GiftCardO8__SealedOSgxSg_tSo0abiJ0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO8GiftCardO8__SealedOSgxSg_tSo0abiJ0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.GiftCard>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.GiftCard>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -31528,6 +32531,89 @@
         "moduleName": "AnsaShared",
         "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.TransactionType>",
         "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.TransactionType>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedOx_tSo0abijK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedOx_tSo0abijK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.PaymentMethodType>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.PaymentMethodType>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.PaymentMethodType.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedOSgxSg_tSo0abijK0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO17PaymentMethodTypeO8__SealedOSgxSg_tSo0abijK0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.PaymentMethodType>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.PaymentMethodType>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -32541,13 +33627,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "ApiResult",
-                "printedName": "AnsaShared.ApiResult<AnsaShared.BalanceUpdate>",
+                "printedName": "AnsaShared.ApiResult<any AnsaShared.BalanceUpdate>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   }
                 ],
                 "usr": "c:objc(cs)AnsaSharedApiResult"
@@ -32574,8 +33660,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E10addBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6UpdateCGSo0ab3AddF7RequestC_SSSgtYaKF",
-            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E10addBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6UpdateCGSo0ab3AddF7RequestC_SSSgtYaKF",
+            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E10addBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6Update_pGSo0ab3AddF7RequestC_SSSgtYaKF",
+            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E10addBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6Update_pGSo0ab3AddF7RequestC_SSSgtYaKF",
             "moduleName": "AnsaShared",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
             "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",
@@ -33101,6 +34187,67 @@
           },
           {
             "kind": "Function",
+            "name": "redeemGiftCard",
+            "printedName": "redeemGiftCard(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiResult",
+                "printedName": "AnsaShared.ApiResult<AnsaShared.BalanceUpdateGiftCardRedemption>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdateGiftCardRedemption",
+                    "printedName": "AnsaShared.BalanceUpdateGiftCardRedemption",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdateGiftCardRedemption"
+                  }
+                ],
+                "usr": "c:objc(cs)AnsaSharedApiResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GiftCardRedemptionRequest",
+                "printedName": "AnsaShared.GiftCardRedemptionRequest",
+                "usr": "c:objc(cs)AnsaSharedGiftCardRedemptionRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E14redeemGiftCard7request14idempotencyKeySo0aB9ApiResultCySo0ab13BalanceUpdatefG10RedemptionCGSo0abfgO7RequestC_SSSgtYaKF",
+            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E14redeemGiftCard7request14idempotencyKeySo0aB9ApiResultCySo0ab13BalanceUpdatefG10RedemptionCGSo0abfgO7RequestC_SSSgtYaKF",
+            "moduleName": "AnsaShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
+            "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAutoReloadConfiguration",
             "printedName": "setAutoReloadConfiguration(request:idempotencyKey:)",
             "children": [
@@ -33168,13 +34315,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "ApiResult",
-                "printedName": "AnsaShared.ApiResult<AnsaShared.BalanceUpdate>",
+                "printedName": "AnsaShared.ApiResult<any AnsaShared.BalanceUpdate>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   }
                 ],
                 "usr": "c:objc(cs)AnsaSharedApiResult"
@@ -33201,8 +34348,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E10useBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6UpdateCGSo0ab3UseF7RequestC_SSSgtYaKF",
-            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E10useBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6UpdateCGSo0ab3UseF7RequestC_SSSgtYaKF",
+            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E10useBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6Update_pGSo0ab3UseF7RequestC_SSSgtYaKF",
+            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E10useBalance7request14idempotencyKeySo0aB9ApiResultCySo0abF6Update_pGSo0ab3UseF7RequestC_SSSgtYaKF",
             "moduleName": "AnsaShared",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
             "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",

@@ -789,6 +789,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "displayName"
     Type: "NSString * _Nonnull"
+  - Name: "giftCardConfiguration"
+    PropertyKind: "Instance"
+    SwiftName: "giftCardConfiguration"
+    Type: "AnsaSharedGiftCardConfiguration * _Nullable"
   - Name: "isTapToPayEnabled"
     PropertyKind: "Instance"
     SwiftName: "isTapToPayEnabled"
@@ -810,9 +814,9 @@ Classes:
     SwiftName: "userReferralConfiguration"
     Type: "AnsaSharedUserReferralConfiguration * _Nonnull"
   Methods:
-  - Selector: "initWithAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:"
+  - Selector: "initWithAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:giftCardConfiguration:"
     MethodKind: "Instance"
-    SwiftName: "init(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:)"
+    SwiftName: "init(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:giftCardConfiguration:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedAppReloadConfiguration * _Nonnull"
@@ -830,9 +834,11 @@ Classes:
       Type: "BOOL"
     - Position: 7
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:"
+    - Position: 8
+      Type: "AnsaSharedGiftCardConfiguration * _Nullable"
+  - Selector: "doCopyAppReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:giftCardConfiguration:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:)"
+    SwiftName: "doCopy(appReloadConfiguration:autoReloadConfiguration:omsProvider:paymentProcessor:promotions:userReferralConfiguration:isTapToPayEnabled:displayName:giftCardConfiguration:)"
     ResultType: "AnsaSharedMerchantMetadata * _Nonnull"
     Parameters:
     - Position: 0
@@ -851,6 +857,8 @@ Classes:
       Type: "BOOL"
     - Position: 7
       Type: "NSString * _Nonnull"
+    - Position: 8
+      Type: "AnsaSharedGiftCardConfiguration * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -868,6 +876,100 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "AnsaSharedMerchantMetadataCompanion"
   SwiftName: "MerchantMetadata.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedGiftCardConfiguration"
+  SwiftName: "GiftCardConfiguration"
+  Properties:
+  - Name: "isEnabled"
+    PropertyKind: "Instance"
+    SwiftName: "isEnabled"
+    Type: "BOOL"
+  - Name: "square"
+    PropertyKind: "Instance"
+    SwiftName: "square"
+    Type: "AnsaSharedSquareGiftCardProviderConfig * _Nullable"
+  Methods:
+  - Selector: "initWithIsEnabled:square:"
+    MethodKind: "Instance"
+    SwiftName: "init(isEnabled:square:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "AnsaSharedSquareGiftCardProviderConfig * _Nullable"
+  - Selector: "doCopyIsEnabled:square:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(isEnabled:square:)"
+    ResultType: "AnsaSharedGiftCardConfiguration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+    - Position: 1
+      Type: "AnsaSharedSquareGiftCardProviderConfig * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedGiftCardConfigurationCompanion"
+  SwiftName: "GiftCardConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedSquareGiftCardProviderConfig"
+  SwiftName: "SquareGiftCardProviderConfig"
+  Properties:
+  - Name: "redemptionLocationId"
+    PropertyKind: "Instance"
+    SwiftName: "redemptionLocationId"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithRedemptionLocationId:"
+    MethodKind: "Instance"
+    SwiftName: "init(redemptionLocationId:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyRedemptionLocationId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(redemptionLocationId:)"
+    ResultType: "AnsaSharedSquareGiftCardProviderConfig * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedSquareGiftCardProviderConfigCompanion"
+  SwiftName: "SquareGiftCardProviderConfig.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -2097,8 +2199,83 @@ Classes:
   SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
 - Name: "AnsaSharedKotlinx_serialization_coreStructureKindOBJECT"
   SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
-- Name: "AnsaSharedBalanceUpdate"
-  SwiftName: "BalanceUpdate"
+- Name: "AnsaSharedBalanceUpdateGiftCardRedemption"
+  SwiftName: "BalanceUpdateGiftCardRedemption"
+  Properties:
+  - Name: "currentBalance"
+    PropertyKind: "Instance"
+    SwiftName: "currentBalance"
+    Type: "AnsaSharedBalance * _Nonnull"
+  - Name: "label"
+    PropertyKind: "Instance"
+    SwiftName: "label"
+    Type: "NSString * _Nullable"
+  - Name: "redeemedBalance"
+    PropertyKind: "Instance"
+    SwiftName: "redeemedBalance"
+    Type: "AnsaSharedBalance * _Nonnull"
+  - Name: "timestamp"
+    PropertyKind: "Instance"
+    SwiftName: "timestamp"
+    Type: "NSString * _Nonnull"
+  - Name: "transactionId"
+    PropertyKind: "Instance"
+    SwiftName: "transactionId"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithRedeemedBalance:currentBalance:label:timestamp:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "init(redeemedBalance:currentBalance:label:timestamp:transactionId:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedBalance * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedBalance * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyRedeemedBalance:currentBalance:label:timestamp:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(redeemedBalance:currentBalance:label:timestamp:transactionId:)"
+    ResultType: "AnsaSharedBalanceUpdateGiftCardRedemption * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedBalance * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedBalance * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedBalanceUpdateGiftCardRedemptionCompanion"
+  SwiftName: "BalanceUpdateGiftCardRedemption.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedBalanceUpdateNormal"
+  SwiftName: "BalanceUpdateNormal"
   Properties:
   - Name: "currentBalance"
     PropertyKind: "Instance"
@@ -2132,7 +2309,7 @@ Classes:
   - Selector: "doCopyCurrentBalance:label:timestamp:transactionId:"
     MethodKind: "Instance"
     SwiftName: "doCopy(currentBalance:label:timestamp:transactionId:)"
-    ResultType: "AnsaSharedBalanceUpdate * _Nonnull"
+    ResultType: "AnsaSharedBalanceUpdateNormal * _Nonnull"
     Parameters:
     - Position: 0
       Type: "AnsaSharedBalance * _Nonnull"
@@ -2157,13 +2334,27 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedBalanceUpdateCompanion"
-  SwiftName: "BalanceUpdate.Companion"
+- Name: "AnsaSharedBalanceUpdateNormalCompanion"
+  SwiftName: "BalanceUpdateNormal.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedBalanceUpdateCompanion"
+  SwiftName: "BalanceUpdateCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "AnsaSharedBalance"
   SwiftName: "Balance"
   Properties:
@@ -2502,6 +2693,107 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedGiftCardRedemptionRequest"
+  SwiftName: "GiftCardRedemptionRequest"
+  Properties:
+  - Name: "customerId"
+    PropertyKind: "Instance"
+    SwiftName: "customerId"
+    Type: "NSString * _Nonnull"
+  - Name: "giftCard"
+    PropertyKind: "Instance"
+    SwiftName: "giftCard"
+    Type: "id<AnsaSharedGiftCard> _Nonnull"
+  Methods:
+  - Selector: "initWithCustomerId:giftCard:"
+    MethodKind: "Instance"
+    SwiftName: "init(customerId:giftCard:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<AnsaSharedGiftCard> _Nonnull"
+  - Selector: "doCopyCustomerId:giftCard:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(customerId:giftCard:)"
+    ResultType: "AnsaSharedGiftCardRedemptionRequest * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<AnsaSharedGiftCard> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedGiftCardRedemptionRequestCompanion"
+  SwiftName: "GiftCardRedemptionRequest.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedGiftCardCompanion"
+  SwiftName: "GiftCardCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "AnsaSharedGiftCardSquare"
+  SwiftName: "GiftCardSquare"
+  Properties:
+  - Name: "gan"
+    PropertyKind: "Instance"
+    SwiftName: "gan"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithGan:"
+    MethodKind: "Instance"
+    SwiftName: "init(gan:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyGan:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(gan:)"
+    ResultType: "AnsaSharedGiftCardSquare * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
 - Name: "AnsaSharedProvisioning"
   SwiftName: "Provisioning"
   Properties:
@@ -3067,6 +3359,24 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedTransactionTypeGiftCardRedemption"
+  SwiftName: "TransactionType.GiftCardRedemption"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
 - Name: "AnsaSharedTransactionTypeMerchantAddPromo"
   SwiftName: "TransactionType.MerchantAddPromo"
   Methods:
@@ -3419,10 +3729,6 @@ Classes:
 - Name: "AnsaSharedPaymentMethod"
   SwiftName: "PaymentMethod"
   Properties:
-  - Name: "card"
-    PropertyKind: "Instance"
-    SwiftName: "card"
-    Type: "AnsaSharedCard * _Nonnull"
   - Name: "id"
     PropertyKind: "Instance"
     SwiftName: "id"
@@ -3430,29 +3736,25 @@ Classes:
   - Name: "type"
     PropertyKind: "Instance"
     SwiftName: "type"
-    Type: "NSString * _Nonnull"
+    Type: "id<AnsaSharedPaymentMethodType> _Nonnull"
   Methods:
-  - Selector: "initWithCard:id:type:"
+  - Selector: "initWithId:type:"
     MethodKind: "Instance"
-    SwiftName: "init(card:id:type:)"
+    SwiftName: "init(id:type:)"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCard * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyCard:id:type:"
+      Type: "Skie__TypeDef__0__id_AnsaSharedPaymentMethodType_"
+  - Selector: "doCopyId:type:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(card:id:type:)"
+    SwiftName: "doCopy(id:type:)"
     ResultType: "AnsaSharedPaymentMethod * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCard * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
+      Type: "Skie__TypeDef__0__id_AnsaSharedPaymentMethodType_"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3475,51 +3777,9 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "AnsaSharedCard"
-  SwiftName: "Card"
-  Properties:
-  - Name: "brand"
-    PropertyKind: "Instance"
-    SwiftName: "brand"
-    Type: "NSString * _Nonnull"
-  - Name: "fingerprint"
-    PropertyKind: "Instance"
-    SwiftName: "fingerprint"
-    Type: "NSString * _Nonnull"
-  - Name: "firstSix"
-    PropertyKind: "Instance"
-    SwiftName: "firstSix"
-    Type: "NSString * _Nonnull"
-  - Name: "lastFour"
-    PropertyKind: "Instance"
-    SwiftName: "lastFour"
-    Type: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentMethodTypeApplePay"
+  SwiftName: "PaymentMethodTypeApplePay"
   Methods:
-  - Selector: "initWithBrand:fingerprint:firstSix:lastFour:"
-    MethodKind: "Instance"
-    SwiftName: "init(brand:fingerprint:firstSix:lastFour:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyBrand:fingerprint:firstSix:lastFour:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(brand:fingerprint:firstSix:lastFour:)"
-    ResultType: "AnsaSharedCard * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3535,13 +3795,92 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedCardCompanion"
-  SwiftName: "Card.Companion"
+- Name: "AnsaSharedPaymentMethodTypeCompanion"
+  SwiftName: "PaymentMethodTypeCompanion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedKotlinArray<id<AnsaSharedKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "AnsaSharedPaymentMethodTypeCreditCard"
+  SwiftName: "PaymentMethodTypeCreditCard"
+  Properties:
+  - Name: "card"
+    PropertyKind: "Instance"
+    SwiftName: "card"
+    Type: "AnsaSharedCard * _Nonnull"
+  Methods:
+  - Selector: "initWithCard:"
+    MethodKind: "Instance"
+    SwiftName: "init(card:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCard * _Nonnull"
+  - Selector: "doCopyCard:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(card:)"
+    ResultType: "AnsaSharedPaymentMethodTypeCreditCard * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCard * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentMethodTypeGooglePay"
+  SwiftName: "PaymentMethodTypeGooglePay"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedPaymentMethodTypeUnknown"
+  SwiftName: "PaymentMethodTypeUnknown"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
 - Name: "AnsaSharedCustomer"
   SwiftName: "Customer"
   Properties:
@@ -4076,6 +4415,73 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCard"
+  SwiftName: "Card"
+  Properties:
+  - Name: "brand"
+    PropertyKind: "Instance"
+    SwiftName: "brand"
+    Type: "NSString * _Nonnull"
+  - Name: "fingerprint"
+    PropertyKind: "Instance"
+    SwiftName: "fingerprint"
+    Type: "NSString * _Nonnull"
+  - Name: "firstSix"
+    PropertyKind: "Instance"
+    SwiftName: "firstSix"
+    Type: "NSString * _Nonnull"
+  - Name: "lastFour"
+    PropertyKind: "Instance"
+    SwiftName: "lastFour"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithBrand:fingerprint:firstSix:lastFour:"
+    MethodKind: "Instance"
+    SwiftName: "init(brand:fingerprint:firstSix:lastFour:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyBrand:fingerprint:firstSix:lastFour:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(brand:fingerprint:firstSix:lastFour:)"
+    ResultType: "AnsaSharedCard * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCardCompanion"
+  SwiftName: "Card.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "AnsaSharedAddPaymentMethodRequest"
   SwiftName: "AddPaymentMethodRequest"
   Properties:
@@ -4154,10 +4560,6 @@ Classes:
 - Name: "AnsaSharedPaymentDataInterfaceApplePaymentData"
   SwiftName: "PaymentDataInterfaceApplePaymentData"
   Properties:
-  - Name: "billingContact"
-    PropertyKind: "Instance"
-    SwiftName: "billingContact"
-    Type: "AnsaSharedApplePaymentContact * _Nonnull"
   - Name: "paymentInfo"
     PropertyKind: "Instance"
     SwiftName: "paymentInfo"
@@ -4166,18 +4568,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "paymentMethod"
     Type: "AnsaSharedApplePaymentMethod * _Nonnull"
-  - Name: "shippingContact"
-    PropertyKind: "Instance"
-    SwiftName: "shippingContact"
-    Type: "AnsaSharedApplePaymentContact * _Nonnull"
   - Name: "transactionIdentifier"
     PropertyKind: "Instance"
     SwiftName: "transactionIdentifier"
     Type: "NSString * _Nonnull"
   Methods:
-  - Selector: "initWithPaymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:"
+  - Selector: "initWithPaymentMethod:paymentInfo:transactionIdentifier:"
     MethodKind: "Instance"
-    SwiftName: "init(paymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:)"
+    SwiftName: "init(paymentMethod:paymentInfo:transactionIdentifier:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedApplePaymentMethod * _Nonnull"
@@ -4185,13 +4583,9 @@ Classes:
       Type: "AnsaSharedApplePaymentInformation * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "AnsaSharedApplePaymentContact * _Nonnull"
-    - Position: 4
-      Type: "AnsaSharedApplePaymentContact * _Nonnull"
-  - Selector: "doCopyPaymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:"
+  - Selector: "doCopyPaymentMethod:paymentInfo:transactionIdentifier:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(paymentMethod:paymentInfo:transactionIdentifier:billingContact:shippingContact:)"
+    SwiftName: "doCopy(paymentMethod:paymentInfo:transactionIdentifier:)"
     ResultType: "AnsaSharedPaymentDataInterfaceApplePaymentData * _Nonnull"
     Parameters:
     - Position: 0
@@ -4200,10 +4594,6 @@ Classes:
       Type: "AnsaSharedApplePaymentInformation * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "AnsaSharedApplePaymentContact * _Nonnull"
-    - Position: 4
-      Type: "AnsaSharedApplePaymentContact * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -4240,82 +4630,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedApplePaymentContact"
-  SwiftName: "ApplePaymentContact"
-  Properties:
-  - Name: "addressLines"
-    PropertyKind: "Instance"
-    SwiftName: "addressLines"
-    Type: "NSString * _Nullable"
-  - Name: "country"
-    PropertyKind: "Instance"
-    SwiftName: "country"
-    Type: "NSString * _Nullable"
-  - Name: "countryCode"
-    PropertyKind: "Instance"
-    SwiftName: "countryCode"
-    Type: "NSString * _Nullable"
-  - Name: "familyName"
-    PropertyKind: "Instance"
-    SwiftName: "familyName"
-    Type: "NSString * _Nullable"
-  - Name: "givenName"
-    PropertyKind: "Instance"
-    SwiftName: "givenName"
-    Type: "NSString * _Nullable"
-  - Name: "postalCode"
-    PropertyKind: "Instance"
-    SwiftName: "postalCode"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithAddressLines:country:countryCode:familyName:givenName:postalCode:"
-    MethodKind: "Instance"
-    SwiftName: "init(addressLines:country:countryCode:familyName:givenName:postalCode:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyAddressLines:country:countryCode:familyName:givenName:postalCode:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(addressLines:country:countryCode:familyName:givenName:postalCode:)"
-    ResultType: "AnsaSharedApplePaymentContact * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -4765,6 +5079,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "displayName"
     Type: "NSString * _Nonnull"
+  - Name: "giftCardConfiguration"
+    PropertyKind: "Instance"
+    SwiftName: "giftCardConfiguration"
+    Type: "AnsaSharedGiftCardConfiguration * _Nullable"
   - Name: "isTapToPayEnabled"
     PropertyKind: "Instance"
     SwiftName: "isTapToPayEnabled"
@@ -4786,9 +5104,9 @@ Classes:
     SwiftName: "userReferralConfig"
     Type: "AnsaSharedMerchant_implUserReferralConfigResponse * _Nonnull"
   Methods:
-  - Selector: "initWithAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:"
+  - Selector: "initWithAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:giftCardConfiguration:"
     MethodKind: "Instance"
-    SwiftName: "init(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:)"
+    SwiftName: "init(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:giftCardConfiguration:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedMerchant_implAppReloadConfigurationResponse * _Nonnull"
@@ -4806,9 +5124,11 @@ Classes:
       Type: "BOOL"
     - Position: 7
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:"
+    - Position: 8
+      Type: "AnsaSharedGiftCardConfiguration * _Nullable"
+  - Selector: "doCopyAppReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:giftCardConfiguration:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:)"
+    SwiftName: "doCopy(appReloadConfig:autoReloadConfig:omsProvider:paymentProcessor:promotions:userReferralConfig:isTapToPayEnabled:displayName:giftCardConfiguration:)"
     ResultType: "AnsaSharedMerchant_implMetadataResponse * _Nonnull"
     Parameters:
     - Position: 0
@@ -4827,6 +5147,8 @@ Classes:
       Type: "BOOL"
     - Position: 7
       Type: "NSString * _Nonnull"
+    - Position: 8
+      Type: "AnsaSharedGiftCardConfiguration * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -8219,9 +8541,9 @@ Classes:
     SwiftName: "coroutineContext"
     Type: "id<AnsaSharedKotlinCoroutineContext> _Nonnull"
   Methods:
-  - Selector: "initWithKtorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:userReloadConfigurationMapper:transactionsMapper:provisioningMapper:virtualCardMapper:"
+  - Selector: "initWithKtorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:redemptionBalanceMapper:userReloadConfigurationMapper:transactionsMapper:provisioningMapper:virtualCardMapper:"
     MethodKind: "Instance"
-    SwiftName: "init(ktorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:userReloadConfigurationMapper:transactionsMapper:provisioningMapper:virtualCardMapper:)"
+    SwiftName: "init(ktorWrapper:networkType:customerMapper:paymentMethodListMapper:addPaymentMethodMapper:autoReloadConfigMapper:addBalanceMapper:useBalanceMapper:redemptionBalanceMapper:userReloadConfigurationMapper:transactionsMapper:provisioningMapper:virtualCardMapper:)"
     Parameters:
     - Position: 0
       Type: "AnsaSharedKtorWrapper * _Nonnull"
@@ -8240,12 +8562,14 @@ Classes:
     - Position: 7
       Type: "AnsaSharedCustomer_implUseBalanceMapper * _Nonnull"
     - Position: 8
-      Type: "AnsaSharedCustomer_implUserReloadConfigurationMapper * _Nonnull"
+      Type: "AnsaSharedCustomer_implRedeemedBalanceMapper * _Nonnull"
     - Position: 9
-      Type: "AnsaSharedCustomer_implTransactionMapper * _Nonnull"
+      Type: "AnsaSharedCustomer_implUserReloadConfigurationMapper * _Nonnull"
     - Position: 10
-      Type: "AnsaSharedCustomer_implProvisioningMapper * _Nonnull"
+      Type: "AnsaSharedCustomer_implTransactionMapper * _Nonnull"
     - Position: 11
+      Type: "AnsaSharedCustomer_implProvisioningMapper * _Nonnull"
+    - Position: 12
       Type: "AnsaSharedCustomer_implCreateVirtualCardMapper * _Nonnull"
   - Selector: "addBalanceRequest:idempotencyKey:completionHandler:"
     MethodKind: "Instance"
@@ -8258,7 +8582,7 @@ Classes:
     - Position: 1
       Type: "NSString * _Nullable"
     - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdateNormal *> * _Nullable, NSError * _Nullable)"
   - Selector: "addPaymentMethodCustomerId:paymentMethodType:idempotencyKey:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)"
@@ -8370,6 +8694,18 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedProvisioning *> * _Nullable, NSError * _Nullable)"
+  - Selector: "redeemGiftCardRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__redeemGiftCard(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedGiftCardRedemptionRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdateGiftCardRedemption *> * _Nullable, NSError * _Nullable)"
   - Selector: "setAutoReloadConfigurationRequest:idempotencyKey:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)"
@@ -8393,7 +8729,7 @@ Classes:
     - Position: 1
       Type: "NSString * _Nullable"
     - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<id<AnsaSharedBalanceUpdate>> * _Nullable, NSError * _Nullable)"
 - Name: "AnsaSharedCustomer_implCreateVirtualCardMapper"
   SwiftName: "Customer_implCreateVirtualCardMapper"
   Methods:
@@ -8896,6 +9232,227 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemedBalanceMapper"
+  SwiftName: "Customer_implRedeemedBalanceMapper"
+  Methods:
+  - Selector: "initWithBalanceMapper:redeemBalanceMapper:"
+    MethodKind: "Instance"
+    SwiftName: "init(balanceMapper:redeemBalanceMapper:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implBalanceMapper_ * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedCustomer_implRedeemBalanceMapper * _Nonnull"
+  - Selector: "mapFrom:"
+    MethodKind: "Instance"
+    SwiftName: "map(from:)"
+    ResultType: "AnsaSharedBalanceUpdateGiftCardRedemption * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implRedeemedBalanceResponse * _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemedBalanceResponse"
+  SwiftName: "Customer_implRedeemedBalanceResponse"
+  Properties:
+  - Name: "currentBalance"
+    PropertyKind: "Instance"
+    SwiftName: "currentBalance"
+    Type: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
+  - Name: "label"
+    PropertyKind: "Instance"
+    SwiftName: "label"
+    Type: "NSString * _Nullable"
+  - Name: "redeemedBalance"
+    PropertyKind: "Instance"
+    SwiftName: "redeemedBalance"
+    Type: "AnsaSharedCustomer_implRedeemedBalance * _Nonnull"
+  - Name: "timestamp"
+    PropertyKind: "Instance"
+    SwiftName: "timestamp"
+    Type: "NSString * _Nonnull"
+  - Name: "transactionId"
+    PropertyKind: "Instance"
+    SwiftName: "transactionId"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithRedeemedBalance:currentBalance:label:timestamp:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "init(redeemedBalance:currentBalance:label:timestamp:transactionId:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implRedeemedBalance * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyRedeemedBalance:currentBalance:label:timestamp:transactionId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(redeemedBalance:currentBalance:label:timestamp:transactionId:)"
+    ResultType: "AnsaSharedCustomer_implRedeemedBalanceResponse * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implRedeemedBalance * _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemedBalanceResponseCompanion"
+  SwiftName: "Customer_implRedeemedBalanceResponse.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCustomer_implCurrentBalance"
+  SwiftName: "Customer_implCurrentBalance"
+  Properties:
+  - Name: "amount"
+    PropertyKind: "Instance"
+    SwiftName: "amount"
+    Type: "int64_t"
+  - Name: "currency"
+    PropertyKind: "Instance"
+    SwiftName: "currency"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithAmount:currency:"
+    MethodKind: "Instance"
+    SwiftName: "init(amount:currency:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyAmount:currency:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(amount:currency:)"
+    ResultType: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCustomer_implCurrentBalanceCompanion"
+  SwiftName: "Customer_implCurrentBalance.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemedBalance"
+  SwiftName: "Customer_implRedeemedBalance"
+  Properties:
+  - Name: "amount"
+    PropertyKind: "Instance"
+    SwiftName: "amount"
+    Type: "int64_t"
+  - Name: "currency"
+    PropertyKind: "Instance"
+    SwiftName: "currency"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithAmount:currency:"
+    MethodKind: "Instance"
+    SwiftName: "init(amount:currency:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyAmount:currency:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(amount:currency:)"
+    ResultType: "AnsaSharedCustomer_implRedeemedBalance * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemedBalanceCompanion"
+  SwiftName: "Customer_implRedeemedBalance.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCustomer_implRedeemBalanceMapper"
+  SwiftName: "Customer_implRedeemBalanceMapper"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "mapFrom:"
+    MethodKind: "Instance"
+    SwiftName: "map(from:)"
+    ResultType: "AnsaSharedBalance * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implRedeemedBalance * _Nonnull"
+- Name: "AnsaSharedCustomer_implBalanceMapper_"
+  SwiftName: "Customer_implBalanceMapper_"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "mapFrom:"
+    MethodKind: "Instance"
+    SwiftName: "map(from:)"
+    ResultType: "AnsaSharedBalance * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
 - Name: "AnsaSharedCustomer_implUseBalanceMapper"
   SwiftName: "Customer_implUseBalanceMapper"
   Methods:
@@ -8908,7 +9465,7 @@ Classes:
   - Selector: "mapFrom:"
     MethodKind: "Instance"
     SwiftName: "map(from:)"
-    ResultType: "AnsaSharedBalanceUpdate * _Nonnull"
+    ResultType: "id<AnsaSharedBalanceUpdate> _Nonnull"
     Parameters:
     - Position: 0
       Type: "AnsaSharedCustomer_implUseBalanceResponse * _Nonnull"
@@ -8979,70 +9536,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "AnsaSharedCustomer_implCurrentBalance"
-  SwiftName: "Customer_implCurrentBalance"
-  Properties:
-  - Name: "amount"
-    PropertyKind: "Instance"
-    SwiftName: "amount"
-    Type: "int64_t"
-  - Name: "currency"
-    PropertyKind: "Instance"
-    SwiftName: "currency"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithAmount:currency:"
-    MethodKind: "Instance"
-    SwiftName: "init(amount:currency:)"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyAmount:currency:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(amount:currency:)"
-    ResultType: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedCustomer_implCurrentBalanceCompanion"
-  SwiftName: "Customer_implCurrentBalance.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "AnsaSharedCustomer_implBalanceMapper_"
-  SwiftName: "Customer_implBalanceMapper_"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "mapFrom:"
-    MethodKind: "Instance"
-    SwiftName: "map(from:)"
-    ResultType: "AnsaSharedBalance * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "AnsaSharedCustomer_implCurrentBalance * _Nonnull"
 - Name: "AnsaSharedCustomer_implAddBalanceMapper"
   SwiftName: "Customer_implAddBalanceMapper"
   Methods:
@@ -9055,7 +9548,7 @@ Classes:
   - Selector: "mapFrom:"
     MethodKind: "Instance"
     SwiftName: "map(from:)"
-    ResultType: "AnsaSharedBalanceUpdate * _Nonnull"
+    ResultType: "AnsaSharedBalanceUpdateNormal * _Nonnull"
     Parameters:
     - Position: 0
       Type: "AnsaSharedCustomer_implAddBalanceResponse * _Nonnull"
@@ -9209,12 +9702,12 @@ Classes:
 - Name: "AnsaSharedCustomer_implAddPaymentMethodMapper"
   SwiftName: "Customer_implAddPaymentMethodMapper"
   Methods:
-  - Selector: "initWithCardMapper:"
+  - Selector: "initWithPaymentMethodMapper:"
     MethodKind: "Instance"
-    SwiftName: "init(cardMapper:)"
+    SwiftName: "init(paymentMethodMapper:)"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCustomer_implCardMapper * _Nonnull"
+      Type: "AnsaSharedCustomer_implAddPaymentMethodTypeMapper * _Nonnull"
   - Selector: "mapFrom:"
     MethodKind: "Instance"
     SwiftName: "map(from:)"
@@ -9228,7 +9721,7 @@ Classes:
   - Name: "card"
     PropertyKind: "Instance"
     SwiftName: "card"
-    Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+    Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
   - Name: "id"
     PropertyKind: "Instance"
     SwiftName: "id"
@@ -9243,7 +9736,7 @@ Classes:
     SwiftName: "init(card:id:type:)"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+      Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -9254,7 +9747,7 @@ Classes:
     ResultType: "AnsaSharedCustomer_implAddPaymentMethodResponse * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+      Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -9348,6 +9841,22 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "AnsaSharedCustomer_implAddPaymentMethodTypeMapper"
+  SwiftName: "Customer_implAddPaymentMethodTypeMapper"
+  Methods:
+  - Selector: "initWithCardMapper:"
+    MethodKind: "Instance"
+    SwiftName: "init(cardMapper:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implCardMapper * _Nonnull"
+  - Selector: "mapFrom:"
+    MethodKind: "Instance"
+    SwiftName: "map(from:)"
+    ResultType: "id<AnsaSharedPaymentMethodType> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implAddPaymentMethodResponse * _Nonnull"
 - Name: "AnsaSharedCustomer_implCardMapper"
   SwiftName: "Customer_implCardMapper"
   Methods:
@@ -9434,7 +9943,7 @@ Classes:
   - Name: "card"
     PropertyKind: "Instance"
     SwiftName: "card"
-    Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+    Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
   - Name: "id"
     PropertyKind: "Instance"
     SwiftName: "id"
@@ -9449,7 +9958,7 @@ Classes:
     SwiftName: "init(card:id:type:)"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+      Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -9460,7 +9969,7 @@ Classes:
     ResultType: "AnsaSharedCustomer_implPaymentMethodResponse * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "AnsaSharedCustomer_implCardResponse * _Nonnull"
+      Type: "AnsaSharedCustomer_implCardResponse * _Nullable"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -9490,6 +9999,22 @@ Classes:
 - Name: "AnsaSharedCustomer_implPaymentMethodMapper"
   SwiftName: "Customer_implPaymentMethodMapper"
   Methods:
+  - Selector: "initWithPaymentMethodMapper:"
+    MethodKind: "Instance"
+    SwiftName: "init(paymentMethodMapper:)"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implPaymentMethodTypeMapper * _Nonnull"
+  - Selector: "mapFrom:"
+    MethodKind: "Instance"
+    SwiftName: "map(from:)"
+    ResultType: "AnsaSharedPaymentMethod * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedCustomer_implPaymentMethodResponse * _Nonnull"
+- Name: "AnsaSharedCustomer_implPaymentMethodTypeMapper"
+  SwiftName: "Customer_implPaymentMethodTypeMapper"
+  Methods:
   - Selector: "initWithCardMapper:"
     MethodKind: "Instance"
     SwiftName: "init(cardMapper:)"
@@ -9499,7 +10024,7 @@ Classes:
   - Selector: "mapFrom:"
     MethodKind: "Instance"
     SwiftName: "map(from:)"
-    ResultType: "AnsaSharedPaymentMethod * _Nonnull"
+    ResultType: "id<AnsaSharedPaymentMethodType> _Nonnull"
     Parameters:
     - Position: 0
       Type: "AnsaSharedCustomer_implPaymentMethodResponse * _Nonnull"
@@ -10696,9 +11221,23 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__16__setAutoReloadConfigurationDispatchReceiver:request:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__16__redeemGiftCardDispatchReceiver:request:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__16__setAutoReloadConfiguration(dispatchReceiver:request:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__16__redeemGiftCard(dispatchReceiver:request:idempotencyKey:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedCustomerRepository> _Nonnull"
+    - Position: 1
+      Type: "AnsaSharedGiftCardRedemptionRequest * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__17__setAutoReloadConfigurationDispatchReceiver:request:idempotencyKey:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__17__setAutoReloadConfiguration(dispatchReceiver:request:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10710,9 +11249,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__17__useBalanceDispatchReceiver:request:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__18__useBalanceDispatchReceiver:request:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__17__useBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__18__useBalance(dispatchReceiver:request:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10724,9 +11263,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__18__provideClientSecretDispatchReceiver:ansaCustomerId:suspendHandler:"
+  - Selector: "Skie_Suspend__19__provideClientSecretDispatchReceiver:ansaCustomerId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__18__provideClientSecret(dispatchReceiver:ansaCustomerId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__19__provideClientSecret(dispatchReceiver:ansaCustomerId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10736,9 +11275,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__19__deleteResultDispatchReceiver:resource:authType:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__20__deleteResultDispatchReceiver:resource:authType:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__19__deleteResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__20__deleteResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10752,9 +11291,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__20__getResultDispatchReceiver:resource:authType:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__21__getResultDispatchReceiver:resource:authType:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__20__getResult(dispatchReceiver:resource:authType:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__21__getResult(dispatchReceiver:resource:authType:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10768,9 +11307,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__21__postResultDispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__22__postResultDispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__21__postResult(dispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__22__postResult(dispatchReceiver:resource:body:authType:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10786,9 +11325,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__22__postResultDispatchReceiver:resource:authType:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__23__postResultDispatchReceiver:resource:authType:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__22__postResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__23__postResult(dispatchReceiver:resource:authType:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10802,9 +11341,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__23__postResultDispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:"
+  - Selector: "Skie_Suspend__24__postResultDispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__23__postResult(dispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:)"
+    SwiftName: "Skie_Suspend__24__postResult(dispatchReceiver:url:body:authType:idempotencyKey:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10820,9 +11359,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__24__handleAuthDispatchReceiver:extensionReceiver:authType:suspendHandler:"
+  - Selector: "Skie_Suspend__25__handleAuthDispatchReceiver:extensionReceiver:authType:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__24__handleAuth(dispatchReceiver:extensionReceiver:authType:suspendHandler:)"
+    SwiftName: "Skie_Suspend__25__handleAuth(dispatchReceiver:extensionReceiver:authType:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10834,9 +11373,9 @@ Classes:
       Type: "id<AnsaSharedAuthType> _Nonnull"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__25__joinDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__26__joinDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__25__join(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__26__join(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10844,9 +11383,9 @@ Classes:
       Type: "id<AnsaSharedKotlinx_coroutines_coreJob> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__26__executeDispatchReceiver:context:subject:suspendHandler:"
+  - Selector: "Skie_Suspend__27__executeDispatchReceiver:context:subject:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__26__execute(dispatchReceiver:context:subject:suspendHandler:)"
+    SwiftName: "Skie_Suspend__27__execute(dispatchReceiver:context:subject:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10858,9 +11397,9 @@ Classes:
       Type: "id _Nonnull"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__27__invokeDispatchReceiver:p1:p2:suspendHandler:"
+  - Selector: "Skie_Suspend__28__invokeDispatchReceiver:p1:p2:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__27__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
+    SwiftName: "Skie_Suspend__28__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10872,9 +11411,9 @@ Classes:
       Type: "id _Nullable"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__28__bodyDispatchReceiver:info:suspendHandler:"
+  - Selector: "Skie_Suspend__29__bodyDispatchReceiver:info:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__28__body(dispatchReceiver:info:suspendHandler:)"
+    SwiftName: "Skie_Suspend__29__body(dispatchReceiver:info:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10884,9 +11423,9 @@ Classes:
       Type: "AnsaSharedKtor_utilsTypeInfo * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__29__bodyNullableDispatchReceiver:info:suspendHandler:"
+  - Selector: "Skie_Suspend__30__bodyNullableDispatchReceiver:info:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__29__bodyNullable(dispatchReceiver:info:suspendHandler:)"
+    SwiftName: "Skie_Suspend__30__bodyNullable(dispatchReceiver:info:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10896,9 +11435,9 @@ Classes:
       Type: "AnsaSharedKtor_utilsTypeInfo * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__30__getResponseContentDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__31__getResponseContentDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__30__getResponseContent(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__31__getResponseContent(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10906,9 +11445,9 @@ Classes:
       Type: "AnsaSharedKtor_client_coreHttpClientCall * _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__31__awaitContentDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__32__awaitContentDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__31__awaitContent(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__32__awaitContent(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10916,9 +11455,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__32__discardDispatchReceiver:max:suspendHandler:"
+  - Selector: "Skie_Suspend__33__discardDispatchReceiver:max:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__32__discard(dispatchReceiver:max:suspendHandler:)"
+    SwiftName: "Skie_Suspend__33__discard(dispatchReceiver:max:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10928,9 +11467,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__33__peekToDispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:"
+  - Selector: "Skie_Suspend__34__peekToDispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__33__peekTo(dispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:)"
+    SwiftName: "Skie_Suspend__34__peekTo(dispatchReceiver:destination:destinationOffset:offset:min:max:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10948,9 +11487,9 @@ Classes:
       Type: "int64_t"
     - Position: 6
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__34__readAvailableDispatchReceiver:dst:suspendHandler:"
+  - Selector: "Skie_Suspend__35__readAvailableDispatchReceiver:dst:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__34__readAvailable(dispatchReceiver:dst:suspendHandler:)"
+    SwiftName: "Skie_Suspend__35__readAvailable(dispatchReceiver:dst:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -10959,22 +11498,6 @@ Classes:
     - Position: 1
       Type: "AnsaSharedKtor_ioChunkBuffer * _Nonnull"
     - Position: 2
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__35__readAvailableDispatchReceiver:dst:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__35__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
-    - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__36__readAvailableDispatchReceiver:dst:offset:length:suspendHandler:"
     MethodKind: "Class"
@@ -10985,7 +11508,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
-      Type: "void * _Nonnull"
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -11003,14 +11526,30 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__38__readAvailableDispatchReceiver:dst:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__38__readAvailable(dispatchReceiver:dst:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
+    - Position: 1
+      Type: "void * _Nonnull"
+    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__readBooleanDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__39__readBooleanDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__readBoolean(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__readBoolean(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11018,9 +11557,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__readByteDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__40__readByteDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__readByte(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__readByte(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11028,9 +11567,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__readDoubleDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__41__readDoubleDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__readDouble(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__readDouble(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11038,9 +11577,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__readFloatDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__42__readFloatDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__readFloat(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__42__readFloat(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11048,9 +11587,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__42__readFullyDispatchReceiver:dst:n:suspendHandler:"
+  - Selector: "Skie_Suspend__43__readFullyDispatchReceiver:dst:n:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__42__readFully(dispatchReceiver:dst:n:suspendHandler:)"
+    SwiftName: "Skie_Suspend__43__readFully(dispatchReceiver:dst:n:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11062,22 +11601,6 @@ Classes:
       Type: "int32_t"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__43__readFullyDispatchReceiver:dst:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__43__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
-    - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__44__readFullyDispatchReceiver:dst:offset:length:suspendHandler:"
     MethodKind: "Class"
     SwiftName: "Skie_Suspend__44__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)"
@@ -11087,7 +11610,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
-      Type: "void * _Nonnull"
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -11105,14 +11628,30 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__46__readFullyDispatchReceiver:dst:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__46__readFully(dispatchReceiver:dst:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
+    - Position: 1
+      Type: "void * _Nonnull"
+    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__46__readIntDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__47__readIntDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__46__readInt(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__47__readInt(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11120,9 +11659,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__47__readLongDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__48__readLongDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__47__readLong(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__48__readLong(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11130,9 +11669,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__48__readPacketDispatchReceiver:size:suspendHandler:"
+  - Selector: "Skie_Suspend__49__readPacketDispatchReceiver:size:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__48__readPacket(dispatchReceiver:size:suspendHandler:)"
+    SwiftName: "Skie_Suspend__49__readPacket(dispatchReceiver:size:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11142,9 +11681,9 @@ Classes:
       Type: "int32_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__49__readRemainingDispatchReceiver:limit:suspendHandler:"
+  - Selector: "Skie_Suspend__50__readRemainingDispatchReceiver:limit:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__49__readRemaining(dispatchReceiver:limit:suspendHandler:)"
+    SwiftName: "Skie_Suspend__50__readRemaining(dispatchReceiver:limit:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11154,9 +11693,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__50__readShortDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__51__readShortDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__50__readShort(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__51__readShort(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11164,9 +11703,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteReadChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__51__readSuspendableSessionDispatchReceiver:consumer:suspendHandler:"
+  - Selector: "Skie_Suspend__52__readSuspendableSessionDispatchReceiver:consumer:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__51__readSuspendableSession(dispatchReceiver:consumer:suspendHandler:)"
+    SwiftName: "Skie_Suspend__52__readSuspendableSession(dispatchReceiver:consumer:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11176,9 +11715,9 @@ Classes:
       Type: "id<AnsaSharedKotlinSuspendFunction1> _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__52__readUTF8LineDispatchReceiver:limit:suspendHandler:"
+  - Selector: "Skie_Suspend__53__readUTF8LineDispatchReceiver:limit:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__52__readUTF8Line(dispatchReceiver:limit:suspendHandler:)"
+    SwiftName: "Skie_Suspend__53__readUTF8Line(dispatchReceiver:limit:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11188,9 +11727,9 @@ Classes:
       Type: "int32_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__53__readUTF8LineToDispatchReceiver:out:limit:suspendHandler:"
+  - Selector: "Skie_Suspend__54__readUTF8LineToDispatchReceiver:out:limit:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__53__readUTF8LineTo(dispatchReceiver:out:limit:suspendHandler:)"
+    SwiftName: "Skie_Suspend__54__readUTF8LineTo(dispatchReceiver:out:limit:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11202,9 +11741,9 @@ Classes:
       Type: "int32_t"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__54__invokeDispatchReceiver:p1:suspendHandler:"
+  - Selector: "Skie_Suspend__55__invokeDispatchReceiver:p1:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__54__invoke(dispatchReceiver:p1:suspendHandler:)"
+    SwiftName: "Skie_Suspend__55__invoke(dispatchReceiver:p1:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11214,9 +11753,9 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__55__executeDispatchReceiver:data:suspendHandler:"
+  - Selector: "Skie_Suspend__56__executeDispatchReceiver:data:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__55__execute(dispatchReceiver:data:suspendHandler:)"
+    SwiftName: "Skie_Suspend__56__execute(dispatchReceiver:data:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11226,9 +11765,9 @@ Classes:
       Type: "AnsaSharedKtor_client_coreHttpRequestData * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__56__getValidSessionOrNullDispatchReceiver:ansaCustomerId:suspendHandler:"
+  - Selector: "Skie_Suspend__57__getValidSessionOrNullDispatchReceiver:ansaCustomerId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__56__getValidSessionOrNull(dispatchReceiver:ansaCustomerId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__57__getValidSessionOrNull(dispatchReceiver:ansaCustomerId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11238,9 +11777,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__57__refreshSessionDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__58__refreshSessionDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__57__refreshSession(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__58__refreshSession(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11248,9 +11787,9 @@ Classes:
       Type: "id<AnsaSharedAuthSessionManager> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__58__hasNextDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__59__hasNextDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__58__hasNext(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__59__hasNext(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11258,9 +11797,9 @@ Classes:
       Type: "AnsaSharedSkieColdFlowIterator<id> * _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__59__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
+  - Selector: "Skie_Suspend__60__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__59__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__60__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11276,9 +11815,9 @@ Classes:
       Type: "id<AnsaSharedKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__60__awaitFreeSpaceDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__61__awaitFreeSpaceDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__60__awaitFreeSpace(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__61__awaitFreeSpace(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11286,9 +11825,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__61__writeAvailableDispatchReceiver:src:suspendHandler:"
+  - Selector: "Skie_Suspend__62__writeAvailableDispatchReceiver:src:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__61__writeAvailable(dispatchReceiver:src:suspendHandler:)"
+    SwiftName: "Skie_Suspend__62__writeAvailable(dispatchReceiver:src:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11297,22 +11836,6 @@ Classes:
     - Position: 1
       Type: "AnsaSharedKtor_ioChunkBuffer * _Nonnull"
     - Position: 2
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__62__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__62__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
-    - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__63__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
     MethodKind: "Class"
@@ -11323,7 +11846,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
-      Type: "void * _Nonnull"
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -11341,14 +11864,30 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__65__writeAvailableDispatchReceiver:src:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__65__writeAvailable(dispatchReceiver:src:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
+    - Position: 1
+      Type: "void * _Nonnull"
+    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__65__writeByteDispatchReceiver:b:suspendHandler:"
+  - Selector: "Skie_Suspend__66__writeByteDispatchReceiver:b:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__65__writeByte(dispatchReceiver:b:suspendHandler:)"
+    SwiftName: "Skie_Suspend__66__writeByte(dispatchReceiver:b:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11358,9 +11897,9 @@ Classes:
       Type: "int8_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__66__writeDoubleDispatchReceiver:d:suspendHandler:"
+  - Selector: "Skie_Suspend__67__writeDoubleDispatchReceiver:d:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__66__writeDouble(dispatchReceiver:d:suspendHandler:)"
+    SwiftName: "Skie_Suspend__67__writeDouble(dispatchReceiver:d:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11370,9 +11909,9 @@ Classes:
       Type: "double"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__67__writeFloatDispatchReceiver:f:suspendHandler:"
+  - Selector: "Skie_Suspend__68__writeFloatDispatchReceiver:f:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__67__writeFloat(dispatchReceiver:f:suspendHandler:)"
+    SwiftName: "Skie_Suspend__68__writeFloat(dispatchReceiver:f:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11382,9 +11921,9 @@ Classes:
       Type: "float"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__68__writeFullyDispatchReceiver:memory:startIndex:endIndex:suspendHandler:"
+  - Selector: "Skie_Suspend__69__writeFullyDispatchReceiver:memory:startIndex:endIndex:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__68__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)"
+    SwiftName: "Skie_Suspend__69__writeFully(dispatchReceiver:memory:startIndex:endIndex:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11398,9 +11937,9 @@ Classes:
       Type: "int32_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__69__writeFullyDispatchReceiver:src:suspendHandler:"
+  - Selector: "Skie_Suspend__70__writeFullyDispatchReceiver:src:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__69__writeFully(dispatchReceiver:src:suspendHandler:)"
+    SwiftName: "Skie_Suspend__70__writeFully(dispatchReceiver:src:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11409,22 +11948,6 @@ Classes:
     - Position: 1
       Type: "AnsaSharedKtor_ioBuffer * _Nonnull"
     - Position: 2
-      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__70__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__70__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
-    - Position: 1
-      Type: "AnsaSharedKotlinByteArray * _Nonnull"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__71__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
     MethodKind: "Class"
@@ -11435,7 +11958,7 @@ Classes:
     - Position: 0
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
-      Type: "void * _Nonnull"
+      Type: "AnsaSharedKotlinByteArray * _Nonnull"
     - Position: 2
       Type: "int32_t"
     - Position: 3
@@ -11453,14 +11976,30 @@ Classes:
     - Position: 1
       Type: "void * _Nonnull"
     - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__73__writeFullyDispatchReceiver:src:offset:length:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__73__writeFully(dispatchReceiver:src:offset:length:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
+    - Position: 1
+      Type: "void * _Nonnull"
+    - Position: 2
       Type: "int64_t"
     - Position: 3
       Type: "int64_t"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__73__writeIntDispatchReceiver:i:suspendHandler:"
+  - Selector: "Skie_Suspend__74__writeIntDispatchReceiver:i:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__73__writeInt(dispatchReceiver:i:suspendHandler:)"
+    SwiftName: "Skie_Suspend__74__writeInt(dispatchReceiver:i:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11470,9 +12009,9 @@ Classes:
       Type: "int32_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__74__writeLongDispatchReceiver:l:suspendHandler:"
+  - Selector: "Skie_Suspend__75__writeLongDispatchReceiver:l:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__74__writeLong(dispatchReceiver:l:suspendHandler:)"
+    SwiftName: "Skie_Suspend__75__writeLong(dispatchReceiver:l:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11482,9 +12021,9 @@ Classes:
       Type: "int64_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__75__writePacketDispatchReceiver:packet:suspendHandler:"
+  - Selector: "Skie_Suspend__76__writePacketDispatchReceiver:packet:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__75__writePacket(dispatchReceiver:packet:suspendHandler:)"
+    SwiftName: "Skie_Suspend__76__writePacket(dispatchReceiver:packet:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11494,9 +12033,9 @@ Classes:
       Type: "AnsaSharedKtor_ioByteReadPacket * _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__76__writeShortDispatchReceiver:s:suspendHandler:"
+  - Selector: "Skie_Suspend__77__writeShortDispatchReceiver:s:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__76__writeShort(dispatchReceiver:s:suspendHandler:)"
+    SwiftName: "Skie_Suspend__77__writeShort(dispatchReceiver:s:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11506,9 +12045,9 @@ Classes:
       Type: "int16_t"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__77__writeSuspendSessionDispatchReceiver:visitor:suspendHandler:"
+  - Selector: "Skie_Suspend__78__writeSuspendSessionDispatchReceiver:visitor:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__77__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)"
+    SwiftName: "Skie_Suspend__78__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11518,9 +12057,9 @@ Classes:
       Type: "id<AnsaSharedKotlinSuspendFunction1> _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__78__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__79__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__78__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__79__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11530,9 +12069,9 @@ Classes:
       Type: "id<AnsaSharedKtor_ioByteWriteChannel> _Nonnull"
     - Position: 2
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__79__deleteResultExtensionReceiver:resource:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__80__deleteResultExtensionReceiver:resource:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__79__deleteResult(extensionReceiver:resource:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__80__deleteResult(extensionReceiver:resource:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11544,9 +12083,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__80__getResultExtensionReceiver:resource:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__81__getResultExtensionReceiver:resource:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__80__getResult(extensionReceiver:resource:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__81__getResult(extensionReceiver:resource:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11558,9 +12097,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__81__postResultExtensionReceiver:resource:body:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__82__postResultExtensionReceiver:resource:body:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__81__postResult(extensionReceiver:resource:body:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__82__postResult(extensionReceiver:resource:body:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11574,9 +12113,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__82__postResultExtensionReceiver:resource:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__83__postResultExtensionReceiver:resource:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__82__postResult(extensionReceiver:resource:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__83__postResult(extensionReceiver:resource:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11588,9 +12127,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 3
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__83__postResultExtensionReceiver:url:body:builder:suspendHandler:"
+  - Selector: "Skie_Suspend__84__postResultExtensionReceiver:url:body:builder:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__83__postResult(extensionReceiver:url:body:builder:suspendHandler:)"
+    SwiftName: "Skie_Suspend__84__postResult(extensionReceiver:url:body:builder:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11604,9 +12143,9 @@ Classes:
       Type: "void (^ _Nonnull)(AnsaSharedKtor_client_coreHttpRequestBuilder * _Nonnull)"
     - Position: 4
       Type: "AnsaSharedSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__84__safeBodyExtensionReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__85__safeBodyExtensionReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__84__safeBody(extensionReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__85__safeBody(extensionReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -11970,6 +12509,8 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+- Name: "AnsaSharedGiftCardProviderConfig"
+  SwiftName: "GiftCardProviderConfig"
 - Name: "AnsaSharedKotlinx_coroutines_coreFlow"
   SwiftName: "Kotlinx_coroutines_coreFlow"
   Methods:
@@ -12993,7 +13534,7 @@ Protocols:
     - Position: 1
       Type: "NSString * _Nullable"
     - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<id<AnsaSharedBalanceUpdate>> * _Nullable, NSError * _Nullable)"
   - Selector: "addPaymentMethodCustomerId:paymentMethodType:idempotencyKey:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__addPaymentMethod(customerId:paymentMethodType:idempotencyKey:completionHandler:)"
@@ -13105,6 +13646,18 @@ Protocols:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedProvisioning *> * _Nullable, NSError * _Nullable)"
+  - Selector: "redeemGiftCardRequest:idempotencyKey:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__redeemGiftCard(request:idempotencyKey:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "AnsaSharedGiftCardRedemptionRequest * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdateGiftCardRedemption *> * _Nullable, NSError * _Nullable)"
   - Selector: "setAutoReloadConfigurationRequest:idempotencyKey:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__setAutoReloadConfiguration(request:idempotencyKey:completionHandler:)"
@@ -13128,9 +13681,32 @@ Protocols:
     - Position: 1
       Type: "NSString * _Nullable"
     - Position: 2
-      Type: "void (^ _Nonnull)(AnsaSharedApiResult<AnsaSharedBalanceUpdate *> * _Nullable, NSError * _Nullable)"
+      Type: "void (^ _Nonnull)(AnsaSharedApiResult<id<AnsaSharedBalanceUpdate>> * _Nullable, NSError * _Nullable)"
+- Name: "AnsaSharedBalanceUpdate"
+  SwiftName: "BalanceUpdate"
+  Properties:
+  - Name: "currentBalance"
+    PropertyKind: "Instance"
+    SwiftName: "currentBalance"
+    Type: "AnsaSharedBalance * _Nonnull"
+  - Name: "label"
+    PropertyKind: "Instance"
+    SwiftName: "label"
+    Type: "NSString * _Nullable"
+  - Name: "timestamp"
+    PropertyKind: "Instance"
+    SwiftName: "timestamp"
+    Type: "NSString * _Nonnull"
+  - Name: "transactionId"
+    PropertyKind: "Instance"
+    SwiftName: "transactionId"
+    Type: "NSString * _Nonnull"
 - Name: "AnsaSharedAutoReloadConfigurationStatus"
   SwiftName: "AutoReloadConfigurationStatus"
+- Name: "AnsaSharedGiftCard"
+  SwiftName: "GiftCard"
+- Name: "AnsaSharedPaymentMethodType"
+  SwiftName: "PaymentMethodType"
 - Name: "AnsaSharedAddPaymentMethodTypeKmp"
   SwiftName: "AddPaymentMethodTypeKmp"
 - Name: "AnsaSharedPaymentDataInterface"

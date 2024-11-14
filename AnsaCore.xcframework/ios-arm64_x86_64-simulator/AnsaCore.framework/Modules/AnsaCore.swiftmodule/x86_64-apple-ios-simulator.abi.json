@@ -1735,13 +1735,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1774,8 +1774,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
+            "usr": "s:8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP10addBalance7request14idempotencyKeys6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ak3AddF7RequestC_SSSgtYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
@@ -1794,13 +1794,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1833,8 +1833,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
+            "usr": "s:8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP10useBalance7request14idempotencyKeys6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ak3UseF7RequestC_SSSgtYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
@@ -2069,6 +2069,65 @@
           },
           {
             "kind": "Function",
+            "name": "redeemGiftCard",
+            "printedName": "redeemGiftCard(request:idempotencyKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdateGiftCardRedemption, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdateGiftCardRedemption",
+                    "printedName": "AnsaShared.BalanceUpdateGiftCardRedemption",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdateGiftCardRedemption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GiftCardRedemptionRequest",
+                "printedName": "AnsaShared.GiftCardRedemptionRequest",
+                "usr": "c:objc(cs)AnsaSharedGiftCardRedemptionRequest"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerP14redeemGiftCard7request14idempotencyKeys6ResultOySo0a19SharedBalanceUpdatefG10RedemptionCAA0A8ApiErrorVGSo0alfgO7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP14redeemGiftCard7request14idempotencyKeys6ResultOySo0a19SharedBalanceUpdatefG10RedemptionCAA0A8ApiErrorVGSo0alfgO7RequestC_SSSgtYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addPaymentMethod",
             "printedName": "addPaymentMethod(customerId:paymentMethodType:)",
             "children": [
@@ -2221,13 +2280,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2246,8 +2305,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10addBalance7requests6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ai3AddF7RequestC_tYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
@@ -2266,13 +2325,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BalanceUpdate",
-                    "printedName": "AnsaShared.BalanceUpdate",
-                    "usr": "c:objc(cs)AnsaSharedBalanceUpdate"
+                    "printedName": "any AnsaShared.BalanceUpdate",
+                    "usr": "c:objc(pl)AnsaSharedBalanceUpdate"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2291,8 +2350,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6UpdateCAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE10useBalance7requests6ResultOySo0a6SharedF6Update_pAA0A8ApiErrorVGSo0ai3UseF7RequestC_tYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
@@ -2383,6 +2442,51 @@
             "declKind": "Func",
             "usr": "s:8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
             "mangledName": "$s8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
+            "moduleName": "AnsaCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
+            "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "redeemGiftCard",
+            "printedName": "redeemGiftCard(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<AnsaShared.BalanceUpdateGiftCardRedemption, AnsaCore.AnsaApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BalanceUpdateGiftCardRedemption",
+                    "printedName": "AnsaShared.BalanceUpdateGiftCardRedemption",
+                    "usr": "c:objc(cs)AnsaSharedBalanceUpdateGiftCardRedemption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaApiError",
+                    "printedName": "AnsaCore.AnsaApiError",
+                    "usr": "s:8AnsaCore0A8ApiErrorV"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GiftCardRedemptionRequest",
+                "printedName": "AnsaShared.GiftCardRedemptionRequest",
+                "usr": "c:objc(cs)AnsaSharedGiftCardRedemptionRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE14redeemGiftCard7requests6ResultOySo0a19SharedBalanceUpdatefG10RedemptionCAA0A8ApiErrorVGSo0ajfgM7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE14redeemGiftCard7requests6ResultOySo0a19SharedBalanceUpdatefG10RedemptionCAA0A8ApiErrorVGSo0ajfgM7RequestC_tYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",

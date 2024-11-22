@@ -94,7 +94,7 @@ public protocol CustomerManager {
   func createVirtualCard(customerId: Swift.String, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func provisionVirtualCard(request: AnsaShared.ProvisioningRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>
+  func provisionVirtualCard(request: AnsaShared.ProvisioningRequest, idempotencyKey: Swift.String?) async -> Swift.Result<any AnsaShared.Provisioning, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func redeemGiftCard(request: AnsaShared.GiftCardRedemptionRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.BalanceUpdateGiftCardRedemption, AnsaCore.AnsaApiError>
@@ -120,7 +120,7 @@ extension AnsaCore.CustomerManager {
   public func createVirtualCard(customerId: Swift.String) async -> Swift.Result<AnsaShared.VirtualCard, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func provisionVirtualCard(request: AnsaShared.ProvisioningRequest) async -> Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>
+  public func provisionVirtualCard(request: AnsaShared.ProvisioningRequest) async -> Swift.Result<any AnsaShared.Provisioning, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func redeemGiftCard(request: AnsaShared.GiftCardRedemptionRequest) async -> Swift.Result<AnsaShared.BalanceUpdateGiftCardRedemption, AnsaCore.AnsaApiError>

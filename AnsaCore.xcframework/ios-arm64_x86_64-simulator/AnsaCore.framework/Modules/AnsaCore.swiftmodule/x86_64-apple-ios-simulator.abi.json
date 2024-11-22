@@ -2016,13 +2016,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Provisioning",
-                    "printedName": "AnsaShared.Provisioning",
-                    "usr": "c:objc(cs)AnsaSharedProvisioning"
+                    "printedName": "any AnsaShared.Provisioning",
+                    "usr": "c:objc(pl)AnsaSharedProvisioning"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2055,8 +2055,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
+            "usr": "s:8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioning_pAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerP20provisionVirtualCard7request14idempotencyKeys6ResultOySo0A18SharedProvisioning_pAA0A8ApiErrorVGSo0alM7RequestC_SSSgtYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",
@@ -2415,13 +2415,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<any AnsaShared.Provisioning, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Provisioning",
-                    "printedName": "AnsaShared.Provisioning",
-                    "usr": "c:objc(cs)AnsaSharedProvisioning"
+                    "printedName": "any AnsaShared.Provisioning",
+                    "usr": "c:objc(pl)AnsaSharedProvisioning"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2440,8 +2440,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
-            "mangledName": "$s8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioningCAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
+            "usr": "s:8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioning_pAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
+            "mangledName": "$s8AnsaCore15CustomerManagerPAAE20provisionVirtualCard7requests6ResultOySo0A18SharedProvisioning_pAA0A8ApiErrorVGSo0ajK7RequestC_tYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.CustomerManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.CustomerManager>",

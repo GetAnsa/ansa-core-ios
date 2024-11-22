@@ -139,6 +139,8 @@ public enum Skie {
     }
     public enum GiftCard {
     }
+    public enum Provisioning {
+    }
     public enum WalletProvider {
     }
     public enum TransactionSource {
@@ -167,6 +169,11 @@ public enum Skie {
     }
   }
   public typealias io_ktor__ktor_http = AnsaShared.Skie.KtorHttp
+  public enum CustomerImpl {
+    public enum ProvisioningResponse {
+    }
+  }
+  public typealias Ansa_Android_SDK_kmp__customer_impl = AnsaShared.Skie.CustomerImpl
 }
 #if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
@@ -463,7 +470,7 @@ extension AnsaShared.CustomerRepository {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func provisionVirtualCard(request: AnsaShared.ProvisioningRequest, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<AnsaShared.Provisioning>
+  public func provisionVirtualCard(request: AnsaShared.ProvisioningRequest, idempotencyKey: Swift.String?) async throws -> AnsaShared.ApiResult<any AnsaShared.Provisioning>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1740,9 +1747,23 @@ extension AnsaShared.Skie.CustomerPublic.GiftCard {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed where __Sealed : AnsaShared.GiftCard
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.GiftCard.__Sealed? where __Sealed : AnsaShared.GiftCard
+extension AnsaShared.Skie.CustomerPublic.Provisioning {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case appleProvisioning(AnsaShared.AppleProvisioning)
+    case googleProvisioning(AnsaShared.GoogleProvisioning)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed, b: AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed where __Sealed : AnsaShared.Provisioning
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed? where __Sealed : AnsaShared.Provisioning
 extension AnsaShared.Skie.CustomerPublic.WalletProvider {
   @frozen public enum __Sealed : Swift.Hashable {
     case applePay(AnsaShared.WalletProvider.ApplePay)
+    case googlePay(AnsaShared.WalletProvider.GooglePay)
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed, b: AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
@@ -1886,6 +1907,19 @@ extension AnsaShared.Skie.KtorHttp.OutgoingContent {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : AnsaShared.Ktor_httpOutgoingContent
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : AnsaShared.Ktor_httpOutgoingContent
+extension AnsaShared.Skie.CustomerImpl.ProvisioningResponse {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applePay(AnsaShared.Customer_implProvisioningResponse.ApplePay)
+    case googlePay(AnsaShared.Customer_implProvisioningResponse.GooglePay)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed, b: AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed where __Sealed : AnsaShared.Customer_implProvisioningResponse
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed? where __Sealed : AnsaShared.Customer_implProvisioningResponse
 extension AnsaShared.Skie.RuntimeKotlin.Skie_SuspendResult {
   @frozen public enum __Sealed : Swift.Hashable {
     case canceled(AnsaShared.Skie_SuspendResult.Canceled)

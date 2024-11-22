@@ -5356,6 +5356,251 @@
               },
               {
                 "kind": "TypeDecl",
+                "name": "Provisioning",
+                "printedName": "Provisioning",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "appleProvisioning",
+                        "printedName": "appleProvisioning",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed.Type) -> (AnsaShared.AppleProvisioning) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.AppleProvisioning) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AppleProvisioning",
+                                    "printedName": "AnsaShared.AppleProvisioning",
+                                    "usr": "c:objc(cs)AnsaSharedAppleProvisioning"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO05appleF0yAISo0ab5AppleF0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO05appleF0yAISo0ab5AppleF0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "googleProvisioning",
+                        "printedName": "googleProvisioning",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed.Type) -> (AnsaShared.GoogleProvisioning) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.GoogleProvisioning) -> AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GoogleProvisioning",
+                                    "printedName": "AnsaShared.GoogleProvisioning",
+                                    "usr": "c:objc(cs)AnsaSharedGoogleProvisioning"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO06googleF0yAISo0ab6GoogleF0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO06googleF0yAISo0ab6GoogleF0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO",
+                "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO12ProvisioningO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
                 "name": "WalletProvider",
                 "printedName": "WalletProvider",
                 "children": [
@@ -5414,6 +5659,57 @@
                         "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO8applePayyAISo0abfg5AppleJ0CcAImF",
                         "moduleName": "AnsaShared",
                         "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "googlePay",
+                        "printedName": "googlePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed.Type) -> (AnsaShared.WalletProvider.GooglePay) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.WalletProvider.GooglePay) -> AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GooglePay",
+                                    "printedName": "AnsaShared.WalletProvider.GooglePay",
+                                    "usr": "c:objc(cs)AnsaSharedWalletProviderGooglePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO9googlePayyAISo0abfg6GoogleJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO9googlePayyAISo0abfg6GoogleJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
                       },
                       {
                         "kind": "Var",
@@ -8620,6 +8916,265 @@
             "declKind": "Enum",
             "usr": "s:10AnsaShared4SkieO8KtorHttpO",
             "mangledName": "$s10AnsaShared4SkieO8KtorHttpO",
+            "moduleName": "AnsaShared",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CustomerImpl",
+            "printedName": "CustomerImpl",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "ProvisioningResponse",
+                "printedName": "ProvisioningResponse",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "applePay",
+                        "printedName": "applePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed.Type) -> (AnsaShared.Customer_implProvisioningResponse.ApplePay) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.Customer_implProvisioningResponse.ApplePay) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ApplePay",
+                                    "printedName": "AnsaShared.Customer_implProvisioningResponse.ApplePay",
+                                    "usr": "c:objc(cs)AnsaSharedCustomer_implProvisioningResponseApplePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO8applePayyAISo0abd5_implfg5AppleJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO8applePayyAISo0abd5_implfg5AppleJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "googlePay",
+                        "printedName": "googlePay",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed.Type) -> (AnsaShared.Customer_implProvisioningResponse.GooglePay) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(AnsaShared.Customer_implProvisioningResponse.GooglePay) -> AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GooglePay",
+                                    "printedName": "AnsaShared.Customer_implProvisioningResponse.GooglePay",
+                                    "usr": "c:objc(cs)AnsaSharedCustomer_implProvisioningResponseGooglePay"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                                    "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9googlePayyAISo0abd5_implfg6GoogleJ0CcAImF",
+                        "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9googlePayyAISo0abd5_implfg6GoogleJ0CcAImF",
+                        "moduleName": "AnsaShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9hashValueSivp",
+                        "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9hashValueSivp",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9hashValueSivg",
+                            "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO9hashValueSivg",
+                            "moduleName": "AnsaShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "AnsaShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                            "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "AnsaShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO",
+                    "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO",
+                    "moduleName": "AnsaShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO",
+                "mangledName": "$s10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO",
+                "moduleName": "AnsaShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10AnsaShared4SkieO12CustomerImplO",
+            "mangledName": "$s10AnsaShared4SkieO12CustomerImplO",
             "moduleName": "AnsaShared",
             "declAttributes": [
               "AccessControl"
@@ -32306,6 +32861,89 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+            "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO12ProvisioningO8__SealedOx_tSo0abI0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO12ProvisioningO8__SealedOx_tSo0abI0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Provisioning>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Provisioning>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerPublic.Provisioning.__Sealed",
+                "usr": "s:10AnsaShared4SkieO14CustomerPublicO12ProvisioningO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO12ProvisioningO8__SealedOSgxSg_tSo0abI0RzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO14CustomerPublicO12ProvisioningO8__SealedOSgxSg_tSo0abI0RzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Provisioning>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Provisioning>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "AnsaShared.Skie.CustomerPublic.WalletProvider.__Sealed",
             "usr": "s:10AnsaShared4SkieO14CustomerPublicO14WalletProviderO8__SealedO"
           },
@@ -33112,6 +33750,89 @@
         "moduleName": "AnsaShared",
         "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Ktor_httpOutgoingContent>",
         "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Ktor_httpOutgoingContent>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AnsaShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
+            "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+            "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO12CustomerImplO20ProvisioningResponseO8__SealedOx_tSo0abg5_impliJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO12CustomerImplO20ProvisioningResponseO8__SealedOx_tSo0abg5_impliJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Customer_implProvisioningResponse>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Customer_implProvisioningResponse>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "AnsaShared.Skie.CustomerImpl.ProvisioningResponse.__Sealed",
+                "usr": "s:10AnsaShared4SkieO12CustomerImplO20ProvisioningResponseO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10AnsaShared6onEnum2ofAA4SkieO12CustomerImplO20ProvisioningResponseO8__SealedOSgxSg_tSo0abg5_impliJ0CRbzlF",
+        "mangledName": "$s10AnsaShared6onEnum2ofAA4SkieO12CustomerImplO20ProvisioningResponseO8__SealedOSgxSg_tSo0abg5_impliJ0CRbzlF",
+        "moduleName": "AnsaShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.Customer_implProvisioningResponse>",
+        "sugared_genericSig": "<__Sealed where __Sealed : AnsaShared.Customer_implProvisioningResponse>",
         "declAttributes": [
           "AccessControl",
           "DisfavoredOverload"
@@ -34132,13 +34853,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "ApiResult",
-                "printedName": "AnsaShared.ApiResult<AnsaShared.Provisioning>",
+                "printedName": "AnsaShared.ApiResult<any AnsaShared.Provisioning>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Provisioning",
-                    "printedName": "AnsaShared.Provisioning",
-                    "usr": "c:objc(cs)AnsaSharedProvisioning"
+                    "printedName": "any AnsaShared.Provisioning",
+                    "usr": "c:objc(pl)AnsaSharedProvisioning"
                   }
                 ],
                 "usr": "c:objc(cs)AnsaSharedApiResult"
@@ -34165,8 +34886,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E20provisionVirtualCard7request14idempotencyKeySo0aB9ApiResultCySo0aB12ProvisioningCGSo0abM7RequestC_SSSgtYaKF",
-            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E20provisionVirtualCard7request14idempotencyKeySo0aB9ApiResultCySo0aB12ProvisioningCGSo0abM7RequestC_SSSgtYaKF",
+            "usr": "s:So28AnsaSharedCustomerRepositoryP0aB0E20provisionVirtualCard7request14idempotencyKeySo0aB9ApiResultCySo0aB12Provisioning_pGSo0abM7RequestC_SSSgtYaKF",
+            "mangledName": "$sSo28AnsaSharedCustomerRepositoryP0aB0E20provisionVirtualCard7request14idempotencyKeySo0aB9ApiResultCySo0aB12Provisioning_pGSo0abM7RequestC_SSSgtYaKF",
             "moduleName": "AnsaShared",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaShared.CustomerRepository>",
             "sugared_genericSig": "<Self where Self : AnsaShared.CustomerRepository>",

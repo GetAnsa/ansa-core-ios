@@ -2384,6 +2384,7 @@ __attribute__((swift_name("MerchantRepository")))
 */
 - (void)getVirtualCardArtWithCompletionHandler:(void (^)(AnsaSharedApiResult<AnsaSharedMerchantCartArtInfo *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getVirtualCardArt(completionHandler:)")));
 - (id<AnsaSharedKotlinx_coroutines_coreFlow>)observeMerchantMerchantId:(NSString *)merchantId __attribute__((swift_name("observeMerchant(merchantId:)")));
+@property (readonly) AnsaSharedMerchant * _Nullable latestMerchant __attribute__((swift_name("latestMerchant")));
 @end
 
 __attribute__((swift_name("ApiResult")))
@@ -3077,6 +3078,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Merchant_implRealMerchantRepository")))
 @interface AnsaSharedMerchant_implRealMerchantRepository : AnsaSharedBase <AnsaSharedMerchantRepository, AnsaSharedKotlinx_coroutines_coreCoroutineScope>
 @property (readonly) id<AnsaSharedKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@property (readonly) AnsaSharedMerchant * _Nullable latestMerchant __attribute__((swift_name("latestMerchant")));
 - (instancetype)initWithKtorWrapper:(AnsaSharedKtorWrapper *)ktorWrapper merchantMapper:(AnsaSharedMerchant_implMerchantMapper *)merchantMapper __attribute__((swift_name("init(ktorWrapper:merchantMapper:)"))) __attribute__((objc_designated_initializer));
 
 /**

@@ -5097,6 +5097,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "coroutineContext"
     Type: "id<AnsaSharedKotlinCoroutineContext> _Nonnull"
+  - Name: "latestMerchant"
+    PropertyKind: "Instance"
+    SwiftName: "latestMerchant"
+    Type: "AnsaSharedMerchant * _Nullable"
   Methods:
   - Selector: "initWithKtorWrapper:merchantMapper:"
     MethodKind: "Instance"
@@ -12682,6 +12686,11 @@ Protocols:
   SwiftName: "KmpAppComponentBindings"
 - Name: "AnsaSharedMerchantRepository"
   SwiftName: "MerchantRepository"
+  Properties:
+  - Name: "latestMerchant"
+    PropertyKind: "Instance"
+    SwiftName: "latestMerchant"
+    Type: "AnsaSharedMerchant * _Nullable"
   Methods:
   - Selector: "getBasisTheoryApiKeyMerchantId:completionHandler:"
     MethodKind: "Instance"

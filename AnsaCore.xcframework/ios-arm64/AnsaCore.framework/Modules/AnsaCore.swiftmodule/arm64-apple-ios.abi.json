@@ -717,13 +717,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<AnsaShared.Merchant, AnsaCore.AnsaApiError>",
+                "printedName": "Swift.Result<AnsaCore.AnsaMerchant, AnsaCore.AnsaApiError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Merchant",
-                    "printedName": "AnsaShared.Merchant",
-                    "usr": "c:objc(cs)AnsaSharedMerchant"
+                    "name": "AnsaMerchant",
+                    "printedName": "AnsaCore.AnsaMerchant",
+                    "usr": "s:8AnsaCore0A8MerchantV"
                   },
                   {
                     "kind": "TypeNominal",
@@ -742,8 +742,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8AnsaCore15MerchantManagerP3get10merchantIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
-            "mangledName": "$s8AnsaCore15MerchantManagerP3get10merchantIds6ResultOySo0a6SharedC0CAA0A8ApiErrorVGSS_tYaF",
+            "usr": "s:8AnsaCore15MerchantManagerP3get10merchantIds6ResultOyAA0aC0VAA0A8ApiErrorVGSS_tYaF",
+            "mangledName": "$s8AnsaCore15MerchantManagerP3get10merchantIds6ResultOyAA0aC0VAA0A8ApiErrorVGSS_tYaF",
             "moduleName": "AnsaCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AnsaCore.MerchantManager>",
             "sugared_genericSig": "<Self where Self : AnsaCore.MerchantManager>",
@@ -848,6 +848,2352 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsaMerchant",
+        "printedName": "AnsaMerchant",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8MerchantV2idSSvp",
+            "mangledName": "$s8AnsaCore0A8MerchantV2idSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8MerchantV2idSSvg",
+                "mangledName": "$s8AnsaCore0A8MerchantV2idSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8MerchantV4nameSSvp",
+            "mangledName": "$s8AnsaCore0A8MerchantV4nameSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8MerchantV4nameSSvg",
+                "mangledName": "$s8AnsaCore0A8MerchantV4nameSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaMerchantMetadata",
+                "printedName": "AnsaCore.AnsaMerchantMetadata",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A8MerchantV8metadataAA0aC8MetadataVvp",
+            "mangledName": "$s8AnsaCore0A8MerchantV8metadataAA0aC8MetadataVvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnsaMerchantMetadata",
+                    "printedName": "AnsaCore.AnsaMerchantMetadata",
+                    "usr": "s:8AnsaCore0A16MerchantMetadataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A8MerchantV8metadataAA0aC8MetadataVvg",
+                "mangledName": "$s8AnsaCore0A8MerchantV8metadataAA0aC8MetadataVvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaMerchant",
+                "printedName": "AnsaCore.AnsaMerchant",
+                "usr": "s:8AnsaCore0A8MerchantV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore0A8MerchantV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore0A8MerchantV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore0A8MerchantV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore0A8MerchantV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore0A8MerchantV",
+        "mangledName": "$s8AnsaCore0A8MerchantV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsaMerchantMetadata",
+        "printedName": "AnsaMerchantMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appReloadConfiguration",
+            "printedName": "appReloadConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppReloadConfiguration",
+                "printedName": "AnsaCore.AppReloadConfiguration",
+                "usr": "s:8AnsaCore22AppReloadConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV22appReloadConfigurationAA03AppfG0Vvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV22appReloadConfigurationAA03AppfG0Vvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppReloadConfiguration",
+                    "printedName": "AnsaCore.AppReloadConfiguration",
+                    "usr": "s:8AnsaCore22AppReloadConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV22appReloadConfigurationAA03AppfG0Vvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV22appReloadConfigurationAA03AppfG0Vvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "autoReloadConfiguration",
+            "printedName": "autoReloadConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MerchantAutoReloadConfiguration",
+                "printedName": "AnsaCore.MerchantAutoReloadConfiguration",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV23autoReloadConfigurationAA0c4AutofG0Vvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV23autoReloadConfigurationAA0c4AutofG0Vvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MerchantAutoReloadConfiguration",
+                    "printedName": "AnsaCore.MerchantAutoReloadConfiguration",
+                    "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV23autoReloadConfigurationAA0c4AutofG0Vvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV23autoReloadConfigurationAA0c4AutofG0Vvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "omsProvider",
+            "printedName": "omsProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV11omsProviderSSSgvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV11omsProviderSSSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV11omsProviderSSSgvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV11omsProviderSSSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentProcessor",
+            "printedName": "paymentProcessor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV16paymentProcessorSSSgvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV16paymentProcessorSSSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV16paymentProcessorSSSgvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV16paymentProcessorSSSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "promotions",
+            "printedName": "promotions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaCore.Promotions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Promotions",
+                    "printedName": "AnsaCore.Promotions",
+                    "usr": "s:8AnsaCore10PromotionsV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV10promotionsAA10PromotionsVSgvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV10promotionsAA10PromotionsVSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaCore.Promotions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Promotions",
+                        "printedName": "AnsaCore.Promotions",
+                        "usr": "s:8AnsaCore10PromotionsV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV10promotionsAA10PromotionsVSgvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV10promotionsAA10PromotionsVSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userReferralConfiguration",
+            "printedName": "userReferralConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserReferralConfiguration",
+                "printedName": "AnsaCore.UserReferralConfiguration",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV25userReferralConfigurationAA04UserfG0Vvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV25userReferralConfigurationAA04UserfG0Vvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserReferralConfiguration",
+                    "printedName": "AnsaCore.UserReferralConfiguration",
+                    "usr": "s:8AnsaCore25UserReferralConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV25userReferralConfigurationAA04UserfG0Vvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV25userReferralConfigurationAA04UserfG0Vvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTapToPayEnabled",
+            "printedName": "isTapToPayEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV17isTapToPayEnabledSbvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV17isTapToPayEnabledSbvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV17isTapToPayEnabledSbvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV17isTapToPayEnabledSbvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV11displayNameSSvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV11displayNameSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV11displayNameSSvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV11displayNameSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "giftCardConfiguration",
+            "printedName": "giftCardConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaCore.GiftCardConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GiftCardConfiguration",
+                    "printedName": "AnsaCore.GiftCardConfiguration",
+                    "usr": "s:8AnsaCore21GiftCardConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV21giftCardConfigurationAA04GiftfG0VSgvp",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV21giftCardConfigurationAA04GiftfG0VSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaCore.GiftCardConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GiftCardConfiguration",
+                        "printedName": "AnsaCore.GiftCardConfiguration",
+                        "usr": "s:8AnsaCore21GiftCardConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV21giftCardConfigurationAA04GiftfG0VSgvg",
+                "mangledName": "$s8AnsaCore0A16MerchantMetadataV21giftCardConfigurationAA04GiftfG0VSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaMerchantMetadata",
+                "printedName": "AnsaCore.AnsaMerchantMetadata",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore0A16MerchantMetadataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore0A16MerchantMetadataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore0A16MerchantMetadataV",
+        "mangledName": "$s8AnsaCore0A16MerchantMetadataV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppReloadConfiguration",
+        "printedName": "AppReloadConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allowCustomAmount",
+            "printedName": "allowCustomAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore22AppReloadConfigurationV17allowCustomAmountSbvp",
+            "mangledName": "$s8AnsaCore22AppReloadConfigurationV17allowCustomAmountSbvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore22AppReloadConfigurationV17allowCustomAmountSbvg",
+                "mangledName": "$s8AnsaCore22AppReloadConfigurationV17allowCustomAmountSbvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presetAmounts",
+            "printedName": "presetAmounts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AnsaCore.PresetReloadAmounts]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresetReloadAmounts",
+                    "printedName": "AnsaCore.PresetReloadAmounts",
+                    "usr": "s:8AnsaCore19PresetReloadAmountsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore22AppReloadConfigurationV13presetAmountsSayAA06PresetdG0VGvp",
+            "mangledName": "$s8AnsaCore22AppReloadConfigurationV13presetAmountsSayAA06PresetdG0VGvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AnsaCore.PresetReloadAmounts]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresetReloadAmounts",
+                        "printedName": "AnsaCore.PresetReloadAmounts",
+                        "usr": "s:8AnsaCore19PresetReloadAmountsV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore22AppReloadConfigurationV13presetAmountsSayAA06PresetdG0VGvg",
+                "mangledName": "$s8AnsaCore22AppReloadConfigurationV13presetAmountsSayAA06PresetdG0VGvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppReloadConfiguration",
+                "printedName": "AnsaCore.AppReloadConfiguration",
+                "usr": "s:8AnsaCore22AppReloadConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore22AppReloadConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore22AppReloadConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore22AppReloadConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore22AppReloadConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore22AppReloadConfigurationV",
+        "mangledName": "$s8AnsaCore22AppReloadConfigurationV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresetReloadAmounts",
+        "printedName": "PresetReloadAmounts",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore19PresetReloadAmountsV6amountSivp",
+            "mangledName": "$s8AnsaCore19PresetReloadAmountsV6amountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore19PresetReloadAmountsV6amountSivg",
+                "mangledName": "$s8AnsaCore19PresetReloadAmountsV6amountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore19PresetReloadAmountsV2idSSvp",
+            "mangledName": "$s8AnsaCore19PresetReloadAmountsV2idSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore19PresetReloadAmountsV2idSSvg",
+                "mangledName": "$s8AnsaCore19PresetReloadAmountsV2idSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMostPopular",
+            "printedName": "isMostPopular",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore19PresetReloadAmountsV13isMostPopularSbvp",
+            "mangledName": "$s8AnsaCore19PresetReloadAmountsV13isMostPopularSbvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore19PresetReloadAmountsV13isMostPopularSbvg",
+                "mangledName": "$s8AnsaCore19PresetReloadAmountsV13isMostPopularSbvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresetReloadAmounts",
+                "printedName": "AnsaCore.PresetReloadAmounts",
+                "usr": "s:8AnsaCore19PresetReloadAmountsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore19PresetReloadAmountsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore19PresetReloadAmountsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore19PresetReloadAmountsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore19PresetReloadAmountsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore19PresetReloadAmountsV",
+        "mangledName": "$s8AnsaCore19PresetReloadAmountsV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MerchantAutoReloadConfiguration",
+        "printedName": "MerchantAutoReloadConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "maximumAutoReloadAmount",
+            "printedName": "maximumAutoReloadAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07maximumdE6AmountSivp",
+            "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07maximumdE6AmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07maximumdE6AmountSivg",
+                "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07maximumdE6AmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumAutoReloadAmount",
+            "printedName": "minimumAutoReloadAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE6AmountSivp",
+            "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE6AmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE6AmountSivg",
+                "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE6AmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumAutoReloadThreshold",
+            "printedName": "minimumAutoReloadThreshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE9ThresholdSivp",
+            "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE9ThresholdSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE9ThresholdSivg",
+                "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV07minimumdE9ThresholdSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MerchantAutoReloadConfiguration",
+                "printedName": "AnsaCore.MerchantAutoReloadConfiguration",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV",
+        "mangledName": "$s8AnsaCore31MerchantAutoReloadConfigurationV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Promotions",
+        "printedName": "Promotions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tiers",
+            "printedName": "tiers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AnsaCore.RewardTier]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RewardTier",
+                    "printedName": "AnsaCore.RewardTier",
+                    "usr": "s:8AnsaCore10RewardTierV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore10PromotionsV5tiersSayAA10RewardTierVGvp",
+            "mangledName": "$s8AnsaCore10PromotionsV5tiersSayAA10RewardTierVGvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AnsaCore.RewardTier]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RewardTier",
+                        "printedName": "AnsaCore.RewardTier",
+                        "usr": "s:8AnsaCore10RewardTierV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore10PromotionsV5tiersSayAA10RewardTierVGvg",
+                "mangledName": "$s8AnsaCore10PromotionsV5tiersSayAA10RewardTierVGvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore10PromotionsV4typeSSvp",
+            "mangledName": "$s8AnsaCore10PromotionsV4typeSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore10PromotionsV4typeSSvg",
+                "mangledName": "$s8AnsaCore10PromotionsV4typeSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promotions",
+                "printedName": "AnsaCore.Promotions",
+                "usr": "s:8AnsaCore10PromotionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore10PromotionsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore10PromotionsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore10PromotionsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore10PromotionsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore10PromotionsV",
+        "mangledName": "$s8AnsaCore10PromotionsV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RewardTier",
+        "printedName": "RewardTier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "minTransactionRequirement",
+            "printedName": "minTransactionRequirement",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore10RewardTierV25minTransactionRequirementSivp",
+            "mangledName": "$s8AnsaCore10RewardTierV25minTransactionRequirementSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore10RewardTierV25minTransactionRequirementSivg",
+                "mangledName": "$s8AnsaCore10RewardTierV25minTransactionRequirementSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "promotionAmount",
+            "printedName": "promotionAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore10RewardTierV15promotionAmountSivp",
+            "mangledName": "$s8AnsaCore10RewardTierV15promotionAmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore10RewardTierV15promotionAmountSivg",
+                "mangledName": "$s8AnsaCore10RewardTierV15promotionAmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RewardTier",
+                "printedName": "AnsaCore.RewardTier",
+                "usr": "s:8AnsaCore10RewardTierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore10RewardTierV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore10RewardTierV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore10RewardTierV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore10RewardTierV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore10RewardTierV",
+        "mangledName": "$s8AnsaCore10RewardTierV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserReferralConfiguration",
+        "printedName": "UserReferralConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV7enabledSbvp",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV7enabledSbvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV7enabledSbvg",
+                "mangledName": "$s8AnsaCore25UserReferralConfigurationV7enabledSbvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recipientCreditAmount",
+            "printedName": "recipientCreditAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV21recipientCreditAmountSivp",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV21recipientCreditAmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV21recipientCreditAmountSivg",
+                "mangledName": "$s8AnsaCore25UserReferralConfigurationV21recipientCreditAmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redemptionEvent",
+            "printedName": "redemptionEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV15redemptionEventSSvp",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV15redemptionEventSSvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV15redemptionEventSSvg",
+                "mangledName": "$s8AnsaCore25UserReferralConfigurationV15redemptionEventSSvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redemptionThresholdAmount",
+            "printedName": "redemptionThresholdAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV25redemptionThresholdAmountSivp",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV25redemptionThresholdAmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV25redemptionThresholdAmountSivg",
+                "mangledName": "$s8AnsaCore25UserReferralConfigurationV25redemptionThresholdAmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "senderCreditAmount",
+            "printedName": "senderCreditAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV18senderCreditAmountSivp",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV18senderCreditAmountSivp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV18senderCreditAmountSivg",
+                "mangledName": "$s8AnsaCore25UserReferralConfigurationV18senderCreditAmountSivg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserReferralConfiguration",
+                "printedName": "AnsaCore.UserReferralConfiguration",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore25UserReferralConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore25UserReferralConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore25UserReferralConfigurationV",
+        "mangledName": "$s8AnsaCore25UserReferralConfigurationV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GiftCardConfiguration",
+        "printedName": "GiftCardConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore21GiftCardConfigurationV9isEnabledSbvp",
+            "mangledName": "$s8AnsaCore21GiftCardConfigurationV9isEnabledSbvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore21GiftCardConfigurationV9isEnabledSbvg",
+                "mangledName": "$s8AnsaCore21GiftCardConfigurationV9isEnabledSbvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "square",
+            "printedName": "square",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnsaCore.SquareGiftCardProviderConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SquareGiftCardProviderConfig",
+                    "printedName": "AnsaCore.SquareGiftCardProviderConfig",
+                    "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore21GiftCardConfigurationV6squareAA06SquarecD14ProviderConfigVSgvp",
+            "mangledName": "$s8AnsaCore21GiftCardConfigurationV6squareAA06SquarecD14ProviderConfigVSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AnsaCore.SquareGiftCardProviderConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SquareGiftCardProviderConfig",
+                        "printedName": "AnsaCore.SquareGiftCardProviderConfig",
+                        "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore21GiftCardConfigurationV6squareAA06SquarecD14ProviderConfigVSgvg",
+                "mangledName": "$s8AnsaCore21GiftCardConfigurationV6squareAA06SquarecD14ProviderConfigVSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GiftCardConfiguration",
+                "printedName": "AnsaCore.GiftCardConfiguration",
+                "usr": "s:8AnsaCore21GiftCardConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore21GiftCardConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore21GiftCardConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore21GiftCardConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore21GiftCardConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore21GiftCardConfigurationV",
+        "mangledName": "$s8AnsaCore21GiftCardConfigurationV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SquareGiftCardProviderConfig",
+        "printedName": "SquareGiftCardProviderConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "redemptionLocationId",
+            "printedName": "redemptionLocationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV20redemptionLocationIdSSSgvp",
+            "mangledName": "$s8AnsaCore28SquareGiftCardProviderConfigV20redemptionLocationIdSSSgvp",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV20redemptionLocationIdSSSgvg",
+                "mangledName": "$s8AnsaCore28SquareGiftCardProviderConfigV20redemptionLocationIdSSSgvg",
+                "moduleName": "AnsaCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SquareGiftCardProviderConfig",
+                "printedName": "AnsaCore.SquareGiftCardProviderConfig",
+                "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8AnsaCore28SquareGiftCardProviderConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8AnsaCore28SquareGiftCardProviderConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AnsaCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV",
+        "mangledName": "$s8AnsaCore28SquareGiftCardProviderConfigV",
+        "moduleName": "AnsaCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -3632,6 +5978,13 @@
       },
       {
         "kind": "Import",
+        "name": "AnsaShared",
+        "printedName": "AnsaShared",
+        "declKind": "Import",
+        "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "Import",
         "name": "Factory",
         "printedName": "Factory",
         "declKind": "Import",
@@ -5291,6 +7644,956 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AnsaCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Merchant",
+        "printedName": "Merchant",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaMerchant",
+                "printedName": "AnsaCore.AnsaMerchant",
+                "usr": "s:8AnsaCore0A8MerchantV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So18AnsaSharedMerchantC0A4CoreE13toSwiftStructAC0aC0VyF",
+            "mangledName": "$sSo18AnsaSharedMerchantC0A4CoreE13toSwiftStructAC0aC0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedMerchant",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedMerchant",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MerchantMetadata",
+        "printedName": "MerchantMetadata",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsaMerchantMetadata",
+                "printedName": "AnsaCore.AnsaMerchantMetadata",
+                "usr": "s:8AnsaCore0A16MerchantMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So26AnsaSharedMerchantMetadataC0A4CoreE13toSwiftStructAC0acD0VyF",
+            "mangledName": "$sSo26AnsaSharedMerchantMetadataC0A4CoreE13toSwiftStructAC0acD0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedMerchantMetadata",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedMerchantMetadata",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppReloadConfiguration",
+        "printedName": "AppReloadConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppReloadConfiguration",
+                "printedName": "AnsaCore.AppReloadConfiguration",
+                "usr": "s:8AnsaCore22AppReloadConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So32AnsaSharedAppReloadConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "mangledName": "$sSo32AnsaSharedAppReloadConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedAppReloadConfiguration",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedAppReloadConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresetReloadAmounts",
+        "printedName": "PresetReloadAmounts",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresetReloadAmounts",
+                "printedName": "AnsaCore.PresetReloadAmounts",
+                "usr": "s:8AnsaCore19PresetReloadAmountsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So29AnsaSharedPresetReloadAmountsC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "mangledName": "$sSo29AnsaSharedPresetReloadAmountsC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedPresetReloadAmounts",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedPresetReloadAmounts",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MerchantAutoReloadConfiguration",
+        "printedName": "MerchantAutoReloadConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MerchantAutoReloadConfiguration",
+                "printedName": "AnsaCore.MerchantAutoReloadConfiguration",
+                "usr": "s:8AnsaCore31MerchantAutoReloadConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So41AnsaSharedMerchantAutoReloadConfigurationC0A4CoreE13toSwiftStructAC0cdeF0VyF",
+            "mangledName": "$sSo41AnsaSharedMerchantAutoReloadConfigurationC0A4CoreE13toSwiftStructAC0cdeF0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedMerchantAutoReloadConfiguration",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedMerchantAutoReloadConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Promotions",
+        "printedName": "Promotions",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promotions",
+                "printedName": "AnsaCore.Promotions",
+                "usr": "s:8AnsaCore10PromotionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So20AnsaSharedPromotionsC0A4CoreE13toSwiftStructAC0C0VyF",
+            "mangledName": "$sSo20AnsaSharedPromotionsC0A4CoreE13toSwiftStructAC0C0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedPromotions",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedPromotions",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RewardTier",
+        "printedName": "RewardTier",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RewardTier",
+                "printedName": "AnsaCore.RewardTier",
+                "usr": "s:8AnsaCore10RewardTierV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So20AnsaSharedRewardTierC0A4CoreE13toSwiftStructAC0cD0VyF",
+            "mangledName": "$sSo20AnsaSharedRewardTierC0A4CoreE13toSwiftStructAC0cD0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedRewardTier",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedRewardTier",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserReferralConfiguration",
+        "printedName": "UserReferralConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserReferralConfiguration",
+                "printedName": "AnsaCore.UserReferralConfiguration",
+                "usr": "s:8AnsaCore25UserReferralConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So35AnsaSharedUserReferralConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "mangledName": "$sSo35AnsaSharedUserReferralConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedUserReferralConfiguration",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedUserReferralConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GiftCardConfiguration",
+        "printedName": "GiftCardConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GiftCardConfiguration",
+                "printedName": "AnsaCore.GiftCardConfiguration",
+                "usr": "s:8AnsaCore21GiftCardConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So31AnsaSharedGiftCardConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "mangledName": "$sSo31AnsaSharedGiftCardConfigurationC0A4CoreE13toSwiftStructAC0cdE0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedGiftCardConfiguration",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedGiftCardConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SquareGiftCardProviderConfig",
+        "printedName": "SquareGiftCardProviderConfig",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftStruct",
+            "printedName": "toSwiftStruct()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SquareGiftCardProviderConfig",
+                "printedName": "AnsaCore.SquareGiftCardProviderConfig",
+                "usr": "s:8AnsaCore28SquareGiftCardProviderConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So38AnsaSharedSquareGiftCardProviderConfigC0A4CoreE13toSwiftStructAC0cdefG0VyF",
+            "mangledName": "$sSo38AnsaSharedSquareGiftCardProviderConfigC0A4CoreE13toSwiftStructAC0cdefG0VyF",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AnsaSharedSquareGiftCardProviderConfig",
+        "moduleName": "AnsaShared",
+        "objc_name": "AnsaSharedSquareGiftCardProviderConfig",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)AnsaSharedBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "AnsaShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",

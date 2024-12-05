@@ -38,7 +38,7 @@ public protocol ClientSecretProvider {
 }
 public protocol MerchantManager {
   #if compiler(>=5.3) && $AsyncAwait
-  func get(merchantId: Swift.String) async -> Swift.Result<AnsaShared.Merchant, AnsaCore.AnsaApiError>
+  func get(merchantId: Swift.String) async -> Swift.Result<AnsaCore.AnsaMerchant, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getBasisTheoryApiKey(merchantId: Swift.String) async -> Swift.Result<Swift.String, AnsaCore.AnsaApiError>
@@ -46,6 +46,78 @@ public protocol MerchantManager {
   #if compiler(>=5.3) && $AsyncAwait
   func getCardArtUrls() async -> Swift.Result<[Swift.String], AnsaCore.AnsaApiError>
   #endif
+}
+public struct AnsaMerchant : Swift.Codable {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let metadata: AnsaCore.AnsaMerchantMetadata
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnsaMerchantMetadata : Swift.Codable {
+  public let appReloadConfiguration: AnsaCore.AppReloadConfiguration
+  public let autoReloadConfiguration: AnsaCore.MerchantAutoReloadConfiguration
+  public let omsProvider: Swift.String?
+  public let paymentProcessor: Swift.String?
+  public let promotions: AnsaCore.Promotions?
+  public let userReferralConfiguration: AnsaCore.UserReferralConfiguration
+  public let isTapToPayEnabled: Swift.Bool
+  public let displayName: Swift.String
+  public let giftCardConfiguration: AnsaCore.GiftCardConfiguration?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AppReloadConfiguration : Swift.Codable {
+  public let allowCustomAmount: Swift.Bool
+  public let presetAmounts: [AnsaCore.PresetReloadAmounts]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PresetReloadAmounts : Swift.Codable {
+  public let amount: Swift.Int
+  public let id: Swift.String
+  public let isMostPopular: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MerchantAutoReloadConfiguration : Swift.Codable {
+  public let maximumAutoReloadAmount: Swift.Int
+  public let minimumAutoReloadAmount: Swift.Int
+  public let minimumAutoReloadThreshold: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Promotions : Swift.Codable {
+  public let tiers: [AnsaCore.RewardTier]
+  public let type: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RewardTier : Swift.Codable {
+  public let minTransactionRequirement: Swift.Int
+  public let promotionAmount: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserReferralConfiguration : Swift.Codable {
+  public let enabled: Swift.Bool
+  public let recipientCreditAmount: Swift.Int
+  public let redemptionEvent: Swift.String
+  public let redemptionThresholdAmount: Swift.Int
+  public let senderCreditAmount: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GiftCardConfiguration : Swift.Codable {
+  public let isEnabled: Swift.Bool
+  public let square: AnsaCore.SquareGiftCardProviderConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SquareGiftCardProviderConfig : Swift.Codable {
+  public let redemptionLocationId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AnsaCustomer : Swift.Codable {
   public let id: Swift.String
@@ -126,6 +198,36 @@ public protocol AnsaClient {
   var merchant: any AnsaCore.MerchantManager { get }
   var ansaLogger: any AnsaShared.AnsaLogger { get }
   var isSandboxMode: Swift.Bool { get }
+}
+extension AnsaShared.Merchant {
+  public func toSwiftStruct() -> AnsaCore.AnsaMerchant
+}
+extension AnsaShared.MerchantMetadata {
+  public func toSwiftStruct() -> AnsaCore.AnsaMerchantMetadata
+}
+extension AnsaShared.AppReloadConfiguration {
+  public func toSwiftStruct() -> AnsaCore.AppReloadConfiguration
+}
+extension AnsaShared.PresetReloadAmounts {
+  public func toSwiftStruct() -> AnsaCore.PresetReloadAmounts
+}
+extension AnsaShared.MerchantAutoReloadConfiguration {
+  public func toSwiftStruct() -> AnsaCore.MerchantAutoReloadConfiguration
+}
+extension AnsaShared.Promotions {
+  public func toSwiftStruct() -> AnsaCore.Promotions
+}
+extension AnsaShared.RewardTier {
+  public func toSwiftStruct() -> AnsaCore.RewardTier
+}
+extension AnsaShared.UserReferralConfiguration {
+  public func toSwiftStruct() -> AnsaCore.UserReferralConfiguration
+}
+extension AnsaShared.GiftCardConfiguration {
+  public func toSwiftStruct() -> AnsaCore.GiftCardConfiguration
+}
+extension AnsaShared.SquareGiftCardProviderConfig {
+  public func toSwiftStruct() -> AnsaCore.SquareGiftCardProviderConfig
 }
 extension PassKit.PKPayment {
   public func ansaApplePaymentData() throws -> AnsaCore.ApplePaymentData

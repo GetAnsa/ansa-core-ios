@@ -47,11 +47,79 @@ public protocol MerchantManager {
   func getCardArtUrls() async -> Swift.Result<[Swift.String], AnsaCore.AnsaApiError>
   #endif
 }
+public struct AnsaCustomer : Swift.Codable {
+  public let id: Swift.String
+  public let balance: AnsaCore.CustomerBalance
+  public let billingDetails: AnsaCore.CustomerBillingDetails
+  public let email: Swift.String?
+  public let merchantID: Swift.String
+  public let phone: Swift.String?
+  public let status: Swift.String
+  public let isTapToPayEnabled: Swift.Bool
+  public let autoReloadConfig: AnsaCore.CustomerAutoReloadConfiguration?
+  public let paymentMethods: [AnsaCore.CustomerPaymentMethod]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerBalance : Swift.Codable {
+  public let amount: Swift.Int64
+  public let currency: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerBillingDetails : Swift.Codable {
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerAutoReloadConfiguration : Swift.Codable {
+  public let enabled: Swift.Bool
+  public let paymentMethodId: Swift.String?
+  public let reloadAmount: Swift.Int?
+  public let reloadThreshold: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerPaymentMethod : Swift.Codable {
+  public let id: Swift.String
+  public let type: AnsaCore.CustomerPaymentMethodType
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CustomerPaymentMethodType : Swift.Codable {
+  case applePay
+  case googlePay
+  case creditCard(AnsaCore.CustomerCreditCard)
+  case unknown
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerCreditCard : Swift.Codable {
+  public let brand: Swift.String
+  public let fingerprint: Swift.String
+  public let firstSix: Swift.String
+  public let lastFour: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerReloadConfiguration : Swift.Encodable {
+  public let allowCustomAmount: Swift.Bool
+  public let presetAmounts: [AnsaCore.CustomerPresetReloadAmounts]
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CustomerPresetReloadAmounts : Swift.Encodable {
+  public let id: Swift.String
+  public let amount: Swift.Int
+  public let promotionAmount: Swift.Int
+  public let isMostPopular: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public enum AddPaymentMethodType {
   case creditCard(token: Swift.String)
   case stripe(paymentMethodId: Swift.String)
   case square(cardNonce: Swift.String)
-  case applePay(paymentData: PassKit.PKPayment)
+  case applePay(paymentData: AnsaCore.ApplePaymentData)
 }
 public protocol AnsaClient {
   var customer: any AnsaCore.CustomerManager { get }
@@ -59,24 +127,39 @@ public protocol AnsaClient {
   var ansaLogger: any AnsaShared.AnsaLogger { get }
   var isSandboxMode: Swift.Bool { get }
 }
+extension PassKit.PKPayment {
+  public func ansaApplePaymentData() throws -> AnsaCore.ApplePaymentData
+}
+public struct ApplePaymentData : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaymentDataApplePay : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaymentHeaderApplePay : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public protocol CustomerManager {
   #if compiler(>=5.3) && $AsyncAwait
-  func get(customerId: Swift.String) async -> Swift.Result<AnsaShared.Customer, AnsaCore.AnsaApiError>
+  func get(customerId: Swift.String) async -> Swift.Result<AnsaCore.AnsaCustomer, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getPaymentMethods(customerId: Swift.String) async -> Swift.Result<AnsaShared.PaymentMethodCollection, AnsaCore.AnsaApiError>
+  func getPaymentMethods(customerId: Swift.String) async -> Swift.Result<[AnsaCore.CustomerPaymentMethod], AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>
+  func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaCore.CustomerPaymentMethod, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func deletePaymentMethod(customerId: Swift.String, paymentMethodId: Swift.String, idempotencyKey: Swift.String?) async -> Swift.Result<Swift.Void, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getAutoReloadConfiguration(customerId: Swift.String) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  func getAutoReloadConfiguration(customerId: Swift.String) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest, idempotencyKey: Swift.String?) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func addBalance(request: AnsaShared.AddBalanceRequest, idempotencyKey: Swift.String?) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
@@ -85,7 +168,7 @@ public protocol CustomerManager {
   func useBalance(request: AnsaShared.UseBalanceRequest, idempotencyKey: Swift.String?) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getReloadConfig(customerId: Swift.String) async -> Swift.Result<AnsaShared.UserReloadConfiguration, AnsaCore.AnsaApiError>
+  func getReloadConfig(customerId: Swift.String) async -> Swift.Result<AnsaCore.CustomerReloadConfiguration, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getTransactions(customerId: Swift.String, cursor: Swift.String?) async -> Swift.Result<AnsaShared.TransactionResult, AnsaCore.AnsaApiError>
@@ -102,13 +185,13 @@ public protocol CustomerManager {
 }
 extension AnsaCore.CustomerManager {
   #if compiler(>=5.3) && $AsyncAwait
-  public func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType) async -> Swift.Result<AnsaShared.PaymentMethod, AnsaCore.AnsaApiError>
+  public func addPaymentMethod(customerId: Swift.String, paymentMethodType: AnsaCore.AddPaymentMethodType) async -> Swift.Result<AnsaCore.CustomerPaymentMethod, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func deletePaymentMethod(customerId: Swift.String, paymentMethodId: Swift.String) async -> Swift.Result<Swift.Void, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest) async -> Swift.Result<AnsaShared.AutoReloadConfiguration, AnsaCore.AnsaApiError>
+  public func setAutoReloadConfiguration(request: AnsaShared.AutoReloadConfigurationRequest) async -> Swift.Result<AnsaCore.CustomerAutoReloadConfiguration, AnsaCore.AnsaApiError>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func addBalance(request: AnsaShared.AddBalanceRequest) async -> Swift.Result<any AnsaShared.BalanceUpdate, AnsaCore.AnsaApiError>

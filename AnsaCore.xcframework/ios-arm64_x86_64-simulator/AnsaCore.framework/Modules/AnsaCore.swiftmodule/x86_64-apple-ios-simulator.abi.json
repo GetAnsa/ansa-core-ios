@@ -4521,6 +4521,39 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(id:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomerPaymentMethod",
+                "printedName": "AnsaCore.CustomerPaymentMethod",
+                "usr": "s:8AnsaCore21CustomerPaymentMethodV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomerPaymentMethodType",
+                "printedName": "AnsaCore.CustomerPaymentMethodType",
+                "usr": "s:8AnsaCore25CustomerPaymentMethodTypeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore21CustomerPaymentMethodV2id4typeACSS_AA0cdE4TypeOtcfc",
+            "mangledName": "$s8AnsaCore21CustomerPaymentMethodV2id4typeACSS_AA0cdE4TypeOtcfc",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -5016,6 +5049,51 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(brand:fingerprint:firstSix:lastFour:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomerCreditCard",
+                "printedName": "AnsaCore.CustomerCreditCard",
+                "usr": "s:8AnsaCore18CustomerCreditCardV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AnsaCore18CustomerCreditCardV5brand11fingerprint8firstSix8lastFourACSS_S3Stcfc",
+            "mangledName": "$s8AnsaCore18CustomerCreditCardV5brand11fingerprint8firstSix8lastFourACSS_S3Stcfc",
+            "moduleName": "AnsaCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",

@@ -156,6 +156,7 @@ public struct CustomerAutoReloadConfiguration : Swift.Codable {
 public struct CustomerPaymentMethod : Swift.Codable {
   public let id: Swift.String
   public let type: AnsaCore.CustomerPaymentMethodType
+  public init(id: Swift.String, type: AnsaCore.CustomerPaymentMethodType)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -172,6 +173,7 @@ public struct CustomerCreditCard : Swift.Codable {
   public let fingerprint: Swift.String
   public let firstSix: Swift.String
   public let lastFour: Swift.String
+  public init(brand: Swift.String, fingerprint: Swift.String, firstSix: Swift.String, lastFour: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

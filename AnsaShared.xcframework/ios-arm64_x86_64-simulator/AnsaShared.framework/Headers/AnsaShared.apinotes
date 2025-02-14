@@ -9209,7 +9209,7 @@ Classes:
   - Name: "metadataJson"
     PropertyKind: "Instance"
     SwiftName: "metadataJson"
-    Type: "NSString * _Nullable"
+    Type: "AnsaSharedKotlinx_serialization_jsonJsonElement * _Nullable"
   - Name: "paymentMethodId"
     PropertyKind: "Instance"
     SwiftName: "paymentMethodId"
@@ -9254,7 +9254,7 @@ Classes:
     - Position: 8
       Type: "NSString * _Nonnull"
     - Position: 9
-      Type: "NSString * _Nullable"
+      Type: "AnsaSharedKotlinx_serialization_jsonJsonElement * _Nullable"
     - Position: 10
       Type: "NSString * _Nullable"
     - Position: 11
@@ -9283,7 +9283,7 @@ Classes:
     - Position: 8
       Type: "NSString * _Nonnull"
     - Position: 9
-      Type: "NSString * _Nullable"
+      Type: "AnsaSharedKotlinx_serialization_jsonJsonElement * _Nullable"
     - Position: 10
       Type: "NSString * _Nullable"
     - Position: 11

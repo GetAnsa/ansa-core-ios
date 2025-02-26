@@ -10,7 +10,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public class Logging {
-  public init(level: AnsaCore.LogLevel = .none, log: @escaping (Swift.String) -> Swift.Void = { message in print(message) })
+  public init(level: AnsaCore.LogLevel = .none, log: @escaping (Swift.String, AnsaCore.LogLevel) -> Swift.Void = { message, level in print(message) })
   @objc deinit
 }
 public enum LogLevel {

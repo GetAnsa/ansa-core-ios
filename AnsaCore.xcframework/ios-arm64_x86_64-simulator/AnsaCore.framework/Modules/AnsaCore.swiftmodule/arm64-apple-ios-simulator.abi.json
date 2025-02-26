@@ -50,7 +50,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.String) -> ()",
+                "printedName": "(Swift.String, AnsaCore.LogLevel) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -59,17 +59,30 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, AnsaCore.LogLevel)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AnsaCore.LogLevel",
+                        "usr": "s:8AnsaCore8LogLevelO"
+                      }
+                    ]
                   }
                 ],
                 "hasDefaultArg": true
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySSctcfc",
-            "mangledName": "$s8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySSctcfc",
+            "usr": "s:8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySS_AGtctcfc",
+            "mangledName": "$s8AnsaCore7LoggingC5level3logAcA8LogLevelO_ySS_AGtctcfc",
             "moduleName": "AnsaCore",
             "declAttributes": [
               "AccessControl"

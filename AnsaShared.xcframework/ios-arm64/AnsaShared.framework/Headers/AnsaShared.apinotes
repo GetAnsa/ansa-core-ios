@@ -1485,6 +1485,10 @@ Classes:
 - Name: "AnsaSharedApiResult"
   SwiftName: "ApiResult"
   Methods:
+  - Selector: "errorMessageOrNull"
+    MethodKind: "Instance"
+    SwiftName: "errorMessageOrNull()"
+    ResultType: "NSString * _Nullable"
   - Selector: "exceptionOrNull"
     MethodKind: "Instance"
     SwiftName: "exceptionOrNull()"

@@ -2750,6 +2750,7 @@ __attribute__((swift_name("PaymentSession")))
 @end
 
 @interface AnsaSharedApiResult (Extensions)
+- (NSString * _Nullable)errorMessageOrNull __attribute__((swift_name("errorMessageOrNull()")));
 - (AnsaSharedKotlinThrowable * _Nullable)exceptionOrNull __attribute__((swift_name("exceptionOrNull()")));
 - (id _Nullable)getOrNull __attribute__((swift_name("getOrNull()")));
 - (AnsaSharedApiResult<id> *)mapTransform:(id _Nullable (^)(id))transform __attribute__((swift_name("map(transform:)")));

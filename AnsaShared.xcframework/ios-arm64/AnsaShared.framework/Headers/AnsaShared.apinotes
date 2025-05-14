@@ -4011,14 +4011,18 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "phone"
     Type: "NSString * _Nullable"
+  - Name: "referralCode"
+    PropertyKind: "Instance"
+    SwiftName: "referralCode"
+    Type: "NSString * _Nonnull"
   - Name: "status"
     PropertyKind: "Instance"
     SwiftName: "status"
     Type: "NSString * _Nonnull"
   Methods:
-  - Selector: "initWithId:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
+  - Selector: "initWithId:balance:billingDetails:email:merchantID:phone:status:referralCode:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "init(id:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
+    SwiftName: "init(id:balance:billingDetails:email:merchantID:phone:status:referralCode:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -4035,14 +4039,16 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "BOOL"
+      Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+      Type: "BOOL"
     - Position: 9
+      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+    - Position: 10
       Type: "NSArray<AnsaSharedPaymentMethod *> * _Nonnull"
-  - Selector: "doCopyId:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
+  - Selector: "doCopyId:balance:billingDetails:email:merchantID:phone:status:referralCode:isTapToPayEnabled:autoReloadConfig:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:balance:billingDetails:email:merchantID:phone:status:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
+    SwiftName: "doCopy(id:balance:billingDetails:email:merchantID:phone:status:referralCode:isTapToPayEnabled:autoReloadConfig:paymentMethods:)"
     ResultType: "AnsaSharedCustomer * _Nonnull"
     Parameters:
     - Position: 0
@@ -4060,10 +4066,12 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "BOOL"
+      Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+      Type: "BOOL"
     - Position: 9
+      Type: "AnsaSharedAutoReloadConfiguration * _Nullable"
+    - Position: 10
       Type: "NSArray<AnsaSharedPaymentMethod *> * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -10524,39 +10532,23 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "referralCode"
     Type: "NSString * _Nonnull"
-  - Name: "square"
-    PropertyKind: "Instance"
-    SwiftName: "square"
-    Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-  - Name: "stripe"
-    PropertyKind: "Instance"
-    SwiftName: "stripe"
-    Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
   Methods:
-  - Selector: "initWithReferralCode:square:stripe:isTapToPayEnabled:"
+  - Selector: "initWithReferralCode:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "init(referralCode:square:stripe:isTapToPayEnabled:)"
+    SwiftName: "init(referralCode:isTapToPayEnabled:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-    - Position: 2
-      Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-    - Position: 3
       Type: "BOOL"
-  - Selector: "doCopyReferralCode:square:stripe:isTapToPayEnabled:"
+  - Selector: "doCopyReferralCode:isTapToPayEnabled:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(referralCode:square:stripe:isTapToPayEnabled:)"
+    SwiftName: "doCopy(referralCode:isTapToPayEnabled:)"
     ResultType: "AnsaSharedCustomer_implCustomerResponseAnsaMetadata * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-    - Position: 2
-      Type: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-    - Position: 3
       Type: "BOOL"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -10575,49 +10567,6 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "AnsaSharedCustomer_implCustomerResponseAnsaMetadataCompanion"
   SwiftName: "Customer_implCustomerResponse.AnsaMetadataCompanion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<AnsaSharedKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "AnsaSharedCustomer_implCustomerResponseSquare"
-  SwiftName: "Customer_implCustomerResponse.Square"
-  Properties:
-  - Name: "customerID"
-    PropertyKind: "Instance"
-    SwiftName: "customerID"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithCustomerID:"
-    MethodKind: "Instance"
-    SwiftName: "init(customerID:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyCustomerID:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(customerID:)"
-    ResultType: "AnsaSharedCustomer_implCustomerResponseSquare * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "AnsaSharedCustomer_implCustomerResponseSquareCompanion"
-  SwiftName: "Customer_implCustomerResponse.SquareCompanion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"

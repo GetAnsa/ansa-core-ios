@@ -14,14 +14,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
       - name: Checkout to grab version
         # Can also specify if this should be a draft or a pre-release as well
         run: echo "RELEASE_VERSION=$(grep -rH "VERSION" RELEASE | cut -d = -f2)" >> $GITHUB_ENV
       
       - name: Create Release
         id: release-snapshot
-        uses: actions/create-release@latest
+        uses: actions/create-release@0cb9c9b65d5d1901c1f53e5e66eaf4afd303e70e # latest
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         with:
